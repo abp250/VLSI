@@ -1,0 +1,26 @@
+00.README:     Readme file.
+
+testfixture.v: Test bench includes the definition of clock 
+               period and the file names of test patterns.
+
+triangle.v:    Verilog black box.
+               The input and output ports are declared in this file.
+               
+triangle.vhd:  VHDL black box.
+               The input and output ports are declared in this file.
+
+triangle.sdc:  The operating conditions and boundary conditions file 
+               for the Synopsys Design Compiler setup (without the 
+               statements of design constraint).
+
+input.dat:     The input coordinates (xi, yi) of the triangle are
+               listed in this file.
+               
+expect.dat:    The expect results (xo,yo) are recorded in this file.
+
+report.000:    This file is used to describe the materials that should 
+               be handed in by each team. The design and related file names, 
+               tool names, related specifications and others are described 
+               in this file.
+
+

@@ -1,0 +1,76 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-573.3.1.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project Lab8
+vsim work.ALT_MULTADD_TB
+# vsim work.ALT_MULTADD_TB 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.ALT_MULTADD_TB(fast)
+vsim -novopt work.ALT_MULTADD_TB
+# vsim -novopt work.ALT_MULTADD_TB 
+# Loading work.ALT_MULTADD_TB
+# Loading work.ALT_MULTADD_re
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALT_MULTADD_re' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ALT_MULTADD_TB/X
+vsim -novopt work.ALT_MULTADD_TB
+# vsim -novopt work.ALT_MULTADD_TB 
+# Loading work.ALT_MULTADD_TB
+# Loading work.ALT_MULTADD_re
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALT_MULTADD_re' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ALT_MULTADD_TB/X
+add wave sim:/ALT_MULTADD_TB/X/*
+run -all
+# Test control
+#     iCLK_t   iRST_N_t     iSEL_t      iA0_t      iA1_t      iB0_t      iB1_t  oRESULT_t
+#          0          0          0          0          0          0          0          0
+#          1          1          0          0          0          0          0          x
+#          0          1          0          3          2          3          2          x
+#          1          1          0          3          2          3          2          x
+#          0          1          0          3          2          3          2          x
+#          1          1          0          3          2          3          2          4
+#          0          1          1          1          1          1          1          4
+#          1          1          1          1          1          1          1         24
+#          0          1          1          1          1          1          1         24
+#          1          1          1          1          1          1          1         19
+#          0          1          0          2          2          2          2         19
+#          1          1          0          2          2          2          2          2
+#          0          1          0          2          2          2          2          2
+#          1          1          0          2          2          2          2          5
+#          0          1          0          2          2          2          2          5
+#          1          1          0          2          2          2          2         24
+#          0          1          0          2          2          2          2         24
+#          1          1          0          2          2          2          2         24
+#          0          1          0          2          2          2          2         24
+#          1          1          0          2          2          2          2         24
+#          0          1          1          2          2          2          2         24
+#          1          1          1          2          2          2          2         24
+#          0          1          1          2          2          2          2         24
+#          1          1          1          2          2          2          2         24
+#          0          1          1          2          2          2          2         24
+#          1          1          1          2          2          2          2          8
+#          0          1          1          2          2          2          2          8
+#          1          1          1          2          2          2          2          8
+#          0          1          1          2          2          2          2          8
+#          1          1          1          2          2          2          2          8
+#          0          1          0          1          1          1          1          8
+#          1          1          0          1          1          1          1          8
+#          0          1          0          1          1          1          1          8
+#          1          1          0          1          1          1          1          5
+#          0          1          0          1          1          1          1          5
+#          1          1          0          1          1          1          1          3
+#          0          1          0          1          1          1          1          3
+#          1          1          0          1          1          1          1          3
+#          0          1          0          1          1          1          1          3
+#          1          1          0          1          1          1          1          3
+#          0          1          0         26          1         15         19          3
+#          1          1          0         26          1         15         19          3
+#          0          1          0         26          1         15         19          3
+#          1          1          0         26          1         15         19         39
+# Break in Module ALT_MULTADD_TB at /home/abp250/Documents/EE465/Lab8/ALT_MULTADD_TB.v line 73

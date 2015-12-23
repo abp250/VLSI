@@ -1,0 +1,8 @@
+Total numbers of exceptions: 6
+
+/designs/triangle/timing/exceptions/path_groups/clk
+/designs/triangle/timing/exceptions/path_groups/design_mapped.sdc_line_16
+/designs/triangle/timing/exceptions/path_groups/C2C
+/designs/triangle/timing/exceptions/path_groups/C2O
+/designs/triangle/timing/exceptions/path_groups/I2C
+/designs/triangle/timing/exceptions/path_groups/I2O

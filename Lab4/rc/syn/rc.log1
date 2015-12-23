@@ -1,0 +1,498 @@
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/abp250/.cadence/rc.gui'.
+Finished loading tool scripts (6 seconds elapsed)
+
+                                        Cadence Encounter(R) RTL Compiler
+                                Version v12.10-s012_1 (64-bit), built Jan 26 2013
+
+
+Copyright notice: Copyright 1997-2012 Cadence Design Systems, Inc. All rights reserved worldwide. 
+
+WARNING: This version of RC is 986 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+=================================================================================================================
+                                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Notice: Upcoming end of support for Linux 32-bit.
+Support for Linux 32-bit will be discontinued starting with the RC 13.1 release.
+To ensure continued access to the forthcoming releases, RC 13.1 and up, you are
+advised to start the transitioning to Linux 64-bit.
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+            design  ovf_current_verification_directory
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_area_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  enable_parallel_iopt
+              root  exact_match_seqs_async_controls
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+
+Send us feedback at rc_feedback@cadence.com.
+=================================================================================================================
+
+GUI is already visible.
+rc:/> Sourcing '/home/abp250/Documents/EE465/Lab4/rc/syn/scripts/run_synth.tcl' (Fri Oct 09 15:10:35 -0500 2015)...
+  Setting attribute of root '/': 'lib_search_path' = ../libdir
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library tcbn65gpluswc.lib:
+  **********************************************
+  An unsupported construct was detected in this library. [LBR-40]: 4
+  Found 'statetable' group in cell. [LBR-83]: 20
+  Created nominal operating condition. [LBR-412]: 1
+ 
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+        : The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Fri Oct 09 15:10:36 -0500 2015)...
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'ALT_MULTADD' from file '../rtl/ALT_MULTADD.v'.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'iA0' in file '../rtl/ALT_MULTADD.v' on line 2.
+        : The type associated with the two declarations of a port should be identical.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'iA1' in file '../rtl/ALT_MULTADD.v' on line 2.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'iB0' in file '../rtl/ALT_MULTADD.v' on line 2.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'iB1' in file '../rtl/ALT_MULTADD.v' on line 2.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'oR' in file '../rtl/ALT_MULTADD.v' on line 3.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'ALT_MULTADD'.
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"               - successful      5 , failed      0 (runtime  0.00)
+ "set_input_delay"         - successful      4 , failed      0 (runtime  0.00)
+Total runtime 0
+  Setting attribute of root '/': 'lp_power_unit' = nW
+  Setting attribute of design 'ALT_MULTADD': 'max_leakage_power' = 10000.0
+  Setting attribute of root '/': 'power_optimization_effort' = low
+        Trying carrysave optimization (configuration 1 of 1) on module 'ALT_MULTADD_csa_cluster'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'ALT_MULTADD_csa_cluster'... Accepted.
+Mapping ALT_MULTADD to gates.
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Enable not found                      49		100%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        49		100%
+Total CG Modules                        0
+ 
+Global mapping target info
+==========================
+Cost Group 'iCLK' target slack:   299 ps
+Target path end-point (Pin: oR_reg[16]/d)
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted    Leakage 
+Operation                   Area   Slacks      Power  
+-------------------------------------------------------------------------------
+ global_map                 4198        0     43464 
+ 
+Global incremental target info
+==============================
+Cost Group 'iCLK' target slack:   199 ps
+Target path end-point (Pin: oR_reg[16]/D (DFQD1/D))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted    Leakage 
+Operation                   Area   Slacks      Power  
+-------------------------------------------------------------------------------
+ global_incr                4159        0     37922 
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+        : The use of 'Conformal LEC12.1-p100' or later builds is recommended to get better verification results.
+Generating a dofile for design 'ALT_MULTADD' in file 'fv/ALT_MULTADD/rtl_to_g1.do' ...
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+Generating a dofile for design 'ALT_MULTADD' in file 'fv/ALT_MULTADD/rtl_to_g1_withoutovf.do' ...
+  Decloning clock-gating logic from /designs/ALT_MULTADD
+Clock-gating declone status
+===========================
+Total number of clock-gating instances before: 0
+Total number of clock-gating instances after : 0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_iopt                  4159        0         0        0    37922 
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ simp_cc_inputs             4149        0         0        0    38214 
+ hi_fo_buf                  4149        0         0        0    38214 
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_delay                 4149        0         0        0    38214 
+ init_drc                   4149        0         0        0    38214 
+ init_area                  4149        0         0        0    38214 
+ gate_comp                  4144        0         0        0    38177 
+ gcomp_mog                  4122        0         0        0    38638 
+ rem_inv                    4120        0         0        0    38631 
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_power                 4120        0         0        0    38631 
+ io_phase                   4119        0         0        0    38648 
+ glob_power                 4118        0         0        0    34891 
+ power_down                 4118        0         0        0    34566 
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_delay                 4118        0         0        0    34566 
+ init_drc                   4118        0         0        0    34566 
+ init_area                  4118        0         0        0    34566 
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_power                 4118        0         0        0    34566 
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max    Leakage 
+Operation                   Area   Slacks     Trans      Cap     Power  
+-------------------------------------------------------------------------------
+ init_delay                 4118        0         0        0    34566 
+ init_drc                   4118        0         0        0    34566 
+
+  Done mapping ALT_MULTADD
+  Synthesis succeeded.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'ALT_MULTADD'.
+        : Use 'report timing -lint' for more information.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+GUI is already visible.
+report timing -lint
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v12.10-s012_1
+  Generated on:           Oct 09 2015  03:41:24 pm
+  Module:                 ALT_MULTADD
+  Technology library:     tcbn65gpluswc 121
+  Operating conditions:   WCCOM (balanced_tree)
+  Wireload mode:          segmented
+  Area mode:              timing library
+============================================================
+
+-------------------------------------------------------------------------------
+Inputs without clocked external delays
+
+The following primary inputs have no clocked external delays.  As a result the  
+timing paths leading from the ports have no timing constraints derived from     
+clock waveforms.  The'external_delay' command is used to create new external    
+delays.                                                                         
+
+/designs/ALT_MULTADD/ports_in/iRST_N
+/designs/ALT_MULTADD/ports_in/iSEL
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without clocked external delays
+
+The following primary outputs have no clocked external delays.  As a result the 
+timing paths leading to the ports have no timing constraints derived from clock 
+waveforms.  The'external_delay' command is used to create new external delays.  
+
+/designs/ALT_MULTADD/ports_out/oR[0]
+/designs/ALT_MULTADD/ports_out/oR[10]
+/designs/ALT_MULTADD/ports_out/oR[11]
+  ... 14 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Inputs without external driver/transition
+
+The following primary inputs have no external driver or input transition set.   
+As a result the transition on the ports will be assumed as zero. The            
+'external_driver' attribute is used to add and external driver or the           
+'fixed_slew' attribute to add an external transition.                           
+
+/designs/ALT_MULTADD/ports_in/iA0[0]
+/designs/ALT_MULTADD/ports_in/iA0[1]
+/designs/ALT_MULTADD/ports_in/iA0[2]
+  ... 31 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without external load
+
+The following primary outputs have no external load set. As a result the load   
+on the ports will be assumed as zero. The 'external_pin_cap' attribute is used  
+to add and external pin cap.                                                    
+
+/designs/ALT_MULTADD/ports_out/oR[0]
+/designs/ALT_MULTADD/ports_out/oR[10]
+/designs/ALT_MULTADD/ports_out/oR[11]
+  ... 14 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+Lint summary
+ Unconnected/logic driven clocks                                  0
+ Sequential data pins driven by a clock signal                    0
+ Sequential clock pins without clock waveform                     0
+ Sequential clock pins with multiple clock waveforms              0
+ Generated clocks without clock waveform                          0
+ Generated clocks with incompatible options                       0
+ Generated clocks with multi-master clock                         0
+ Paths constrained with different clocks                          0
+ Loop-breaking cells for combinational feedback                   0
+ Nets with multiple drivers                                       0
+ Timing exceptions with no effect                                 0
+ Suspicious multi_cycle exceptions                                0
+ Pins/ports with conflicting case constants                       0
+ Inputs without clocked external delays                           2
+ Outputs without clocked external delays                         17
+ Inputs without external driver/transition                       34
+ Outputs without external load                                   17
+ Exceptions with invalid timing start-/endpoints                  0
+
+                                                  Total:         70
+
+rc:/> report timing
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'ALT_MULTADD'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v12.10-s012_1
+  Generated on:           Oct 09 2015  03:41:43 pm
+  Module:                 ALT_MULTADD
+  Technology library:     tcbn65gpluswc 121
+  Operating conditions:   WCCOM (balanced_tree)
+  Wireload mode:          segmented
+  Area mode:              timing library
+============================================================
+
+      Pin               Type     Fanout Load Slew Delay Arrival   
+                                        (fF) (ps)  (ps)   (ps)    
+------------------------------------------------------------------
+(clock iCLK)           launch                                 0 R 
+A1_reg[2]/CP                                    0             0 R 
+A1_reg[2]/Q            DFQD1         16 11.5   70  +157     157 F 
+mul_25_35/B[2] 
+  g2956/A2                                           +0     157   
+  g2956/ZN             CKND2D0        2  1.6   58   +54     211 R 
+  g2922/A2                                           +0     211   
+  g2922/ZN             XNR2D0         2  1.6   46  +115     326 R 
+  g2913/A1                                           +0     326   
+  g2913/ZN             NR2D0          2  1.6   34   +30     356 F 
+  g2895/B                                            +0     356   
+  g2895/ZN             AOI21D0        1  2.2  121   +93     449 R 
+  g3007/D                                            +0     449   
+  g3007/CO             CMPE42D1       1  2.2   38  +162     611 R 
+  g3004/D                                            +0     611   
+  g3004/CO             CMPE42D1       1  2.2   38  +142     752 R 
+  g3002/D                                            +0     752   
+  g3002/CO             CMPE42D1       1  2.2   38  +142     894 R 
+  g2/D                                               +0     894   
+  g2/CO                CMPE42D1       3  2.5   41  +143    1037 R 
+  g2830/A1                                           +0    1037   
+  g2830/ZN             IAO21D0        3  2.4  112   +99    1136 R 
+  g2828/A1                                           +0    1136   
+  g2828/ZN             IAO21D0        1  2.2  106  +110    1246 R 
+  g3000/D                                            +0    1246   
+  g3000/CO             CMPE42D1       3  2.4   40  +159    1406 R 
+  g2824/A1                                           +0    1406   
+  g2824/Z              OA21D0         3  2.4   57   +78    1483 R 
+  g2822/A1                                           +0    1483   
+  g2822/ZN             IAO21D0        3  2.4  112  +103    1586 R 
+  g2820/A1                                           +0    1586   
+  g2820/ZN             IAO21D0        1  1.2   72   +91    1677 R 
+  g2819/CI                                           +0    1677   
+  g2819/S              FA1D0          1  0.7   33  +110    1788 R 
+  g2818/I                                            +0    1788   
+  g2818/ZN             CKND0          4  3.2   49   +40    1828 F 
+mul_25_35/Z[13] 
+csa_tree_mul_25_40_groupi/in_0[13] 
+  g3578/B1                                           +0    1828   
+  g3578/ZN             MAOI22D0       2  1.6  110   +95    1923 F 
+  g3555/B1                                           +0    1923   
+  g3555/ZN             OAI22D0        1  2.2  155  +119    2041 R 
+  cdnca_013_0/D                                      +0    2041   
+  cdnca_013_0/S   (p)  CMPE42D1       1  2.2   38  +228    2269 F 
+  cdnfadd_013_1/B                                    +0    2269   
+  cdnfadd_013_1/S      FA1D0          2  1.6   42  +160    2430 F 
+  g3460/A1                                           +0    2430   
+  g3460/ZN             CKND2D0        2  1.8   60   +46    2476 R 
+  g3454/A1                                           +0    2476   
+  g3454/ZN             INR2D0         2  1.6   86   +88    2564 R 
+  g3430/B1                                           +0    2564   
+  g3430/ZN             MOAI22D0       4  3.2  149  +109    2673 R 
+csa_tree_mul_25_40_groupi/out_0[13] 
+csa_tree_add_25_30_groupi/in_0[13] 
+  g3431/B1                                           +0    2673   
+  g3431/ZN             MOAI22D0       2  1.6  138  +108    2781 R 
+  g3404/B2                                           +0    2781   
+  g3404/Z              AO22D0         1  1.8   63  +114    2895 R 
+  cdnca_013_1/B                                      +0    2895   
+  cdnca_013_1/S   (p)  CMPE42D1       1  2.2   38  +311    3206 F 
+  cdnfadd_013_2/B                                    +0    3206   
+  cdnfadd_013_2/S      FA1D0          2  1.6   42  +160    3366 F 
+  g3334/A1                                           +0    3366   
+  g3334/ZN             NR2D0          2  1.5   82   +61    3426 R 
+  g3282/A2                                           +0    3426   
+  g3282/Z              OA21D0         3  2.4   57   +92    3518 R 
+  g3280/A2                                           +0    3518   
+  g3280/Z              OA21D0         3  2.5   58   +86    3605 R 
+  g3278/A1                                           +0    3605   
+  g3278/Z              OA21D0         2  1.7   47   +75    3680 R 
+  g3277/B2                                           +0    3680   
+  g3277/ZN             MOAI22D0       1  0.8   66   +79    3759 R 
+csa_tree_add_25_30_groupi/out_0[16] 
+g490/A1                                              +0    3759   
+g490/Z                 AO22D0         1  1.1   54   +81    3841 R 
+oR_reg[16]/D           DFQD1                         +0    3841   
+oR_reg[16]/CP          setup                    0   +37    3878 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock iCLK)           capture                            10000 R 
+------------------------------------------------------------------
+Cost Group   : 'iCLK' (path_group 'iCLK')
+Timing slack :    6122ps 
+Start-point  : A1_reg[2]/CP
+End-point    : oR_reg[16]/D
+
+(p) : Instance is preserved but may be resized
+
+rc:/> 

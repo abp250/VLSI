@@ -1,0 +1,44 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 10.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p011.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.12-s181_1 (64bit) 07/28/2011 22:52 (Linux 2.6)
+@(#)CDS: NanoRoute v10.12-s010 NR110720-1815/10_10_USR2-UB (database version 2.30, 124.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v10.12-s013_1 (64bit) 07/27/2011 04:14:35 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.12-s001 (64bit) 07/28/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.12-s010_1 (64bit) Jul 18 2011 22:58:43 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.12-s007
+--- Starting "Encounter v10.12-s181_1" on Fri Oct  9 16:05:57 2015 (mem=59.2M) ---
+--- Running on co2046-04.ece.iastate.edu (x86_64 w/Linux 2.6.32-573.3.1.el6.x86_64) ---
+This version was compiled on Thu Jul 28 22:52:33 PDT 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> win
+*** Memory pool thread-safe mode activated.
+
+*** Memory Usage v#8 (Current mem = 460.035M, initial mem = 59.188M) ***
+--- Ending "Encounter" (totcpu=0:00:06.5, real=0:01:03, mem=460.0M) ---

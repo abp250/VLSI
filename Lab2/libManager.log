@@ -1,0 +1,52 @@
+\o Program:		@(#)$CDS: libManager version 32.10 11/11/2011 13:43 (cat91amd) $
+\o Sub version:		sub-version  s008 
+\o Arguments:		-unmapped -mpssession virtuoso25542 -mpshost co2046-05.ece.iastate.edu 
+\o Working Directory:	co2046-05.ece.iastate.edu:/home/abp250/Documents/EE465/Lab2
+\o 64-bit offsets
+\o Qt version: 		4.5.3
+\o changeWorkingDir("/home/abp250/Documents/EE465/Lab2") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/home/abp250/Documents/EE465/Lab2/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 25 1276 944))
+\a cdsLibManager->libListBox->value = "lab2"
+\a cdsLibManager->cellListBox->value = "DFF"
+\a cdsLibManager->cellLineEdit->value = "DFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libLineEdit->value = "lab2"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "DFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a cdsLibManager->cellLineEdit->value = "DFF"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "basic"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "cdsDefTechLib"
+\a cdsLibManager->libListBox->value = "avTech"
+\a cdsLibManager->libListBox->value = "analogLib"
+\a cdsLibManager->libListBox->value = "cdsDefTechLib"
+\a cdsLibManager->libListBox->value = "lab2"
+\a cdsLibManager->cellListBox->value = "DFF"
+\a cdsLibManager->cellLineEdit->value = "DFF"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libLineEdit->value = "lab2"
+\a cdsLibManager->FileOpenButton->value = t
+\o MPS request: edit design
+\a nrResizeWindow(cdsLibManager list(-205 25 1276 944))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\o libManager is exiting.
+\a exit(0)

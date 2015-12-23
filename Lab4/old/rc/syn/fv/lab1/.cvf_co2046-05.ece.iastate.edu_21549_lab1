@@ -1,0 +1,10 @@
+#Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+
+ovf_setup -ungroup_separator { _ }
+
+ovf_seq_merge \
+-module { lab1 } \
+-from { { oRESULT_reg[0] P } { oRESULT_reg[1] P } { oRESULT_reg[2] P } { oRESULT_reg[3] P } { oRESULT_reg[4] P } { oRESULT_reg[5] P } { oRESULT_reg[6] P } { oRESULT_reg[7] P } { oRESULT_reg[8] P } { oRESULT_reg[9] P } { oRESULT_reg[10] P } { oRESULT_reg[11] P } { oRESULT_reg[12] P } { oRESULT_reg[13] P } { oRESULT_reg[14] P } { oRESULT_reg[15] P } { oRESULT_reg[16] P } } \
+-to { { oRESULT_reg[0] } }
+

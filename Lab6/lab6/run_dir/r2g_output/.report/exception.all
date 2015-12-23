@@ -1,0 +1,7 @@
+Total numbers of exceptions: 5
+
+/designs/ALT_MULTADD/timing/exceptions/path_groups/iCLK
+/designs/ALT_MULTADD/timing/exceptions/path_groups/C2C
+/designs/ALT_MULTADD/timing/exceptions/path_groups/C2O
+/designs/ALT_MULTADD/timing/exceptions/path_groups/I2C
+/designs/ALT_MULTADD/timing/exceptions/path_groups/I2O

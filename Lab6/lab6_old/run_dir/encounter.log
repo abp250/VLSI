@@ -1,0 +1,1998 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 10.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p011.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.12-s181_1 (64bit) 07/28/2011 22:52 (Linux 2.6)
+@(#)CDS: NanoRoute v10.12-s010 NR110720-1815/10_10_USR2-UB (database version 2.30, 124.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v10.12-s013_1 (64bit) 07/27/2011 04:14:35 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.12-s001 (64bit) 07/28/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.12-s010_1 (64bit) Jul 18 2011 22:58:43 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.12-s007
+--- Starting "Encounter v10.12-s181_1" on Wed Oct  7 15:07:36 2015 (mem=59.2M) ---
+--- Running on co2046-05.ece.iastate.edu (x86_64 w/Linux 2.6.32-573.3.1.el6.x86_64) ---
+This version was compiled on Thu Jul 28 22:52:33 PDT 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - lab6.enc.dat/lab1.conf
+**WARN: (ENCLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+**WARN: (ENCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.02min, mem=34.5M, fe_cpu=0.08min, fe_mem=506.4M) ***
+lab1
+Loading preference file lab6.enc.dat/enc.pref.tcl ...
+Loading mode file lab6.enc.dat/lab1.mode ...
+loading place ...
+loading route ...
+**WARN: (ENCSYT-709):	The next major release of EDI (11.1) will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run restoreDesign with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 538.2M, InitMEM = 538.2M)
+Start delay calculation (mem=538.199M)...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation.  You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound'.
+Delay calculation completed. (cpu=0:00:00.0 real=0:00:00.0 mem=542.590M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 542.5M) ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 132 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+*** Starting "NanoPlace(TM) placement v#18 (mem=543.2M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=563.3M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=582.4M) ***
+Options: timingDriven clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=3786 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=3880 #term=11358 #term/net=2.93, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=52
+stdCell: 3786 single + 0 double + 0 multi
+Total standard cell length = 6.0530 (mm), area = 0.0109 (mm^2)
+**WARN: (ENCSP-368):	Found 57  mis-aligned rows. May cause illegal placement.
+Average module density = 0.530.
+Density for the design = 0.530.
+       = stdcell_area 30265 (10895 um^2) / alloc_area 57130 (20567 um^2).
+Pin Density = 0.375.
+            = total # of pins 11358 / total Instance area 30265.
+Checking spec file integrity...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.395e+04 (8.23e+03 5.71e+03)
+              Est.  stn bbox = 1.395e+04 (8.23e+03 5.71e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.5M
+Iteration  2: Total net bbox = 1.395e+04 (8.23e+03 5.71e+03)
+              Est.  stn bbox = 1.395e+04 (8.23e+03 5.71e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.5M
+Iteration  3: Total net bbox = 1.403e+04 (8.27e+03 5.76e+03)
+              Est.  stn bbox = 1.403e+04 (8.27e+03 5.76e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.5M
+Iteration  4: Total net bbox = 3.926e+04 (2.24e+04 1.68e+04)
+              Est.  stn bbox = 3.926e+04 (2.24e+04 1.68e+04)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 586.6M
+Iteration  5: Total net bbox = 4.400e+04 (2.48e+04 1.92e+04)
+              Est.  stn bbox = 4.400e+04 (2.48e+04 1.92e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 586.6M
+Iteration  6: Total net bbox = 4.232e+04 (2.39e+04 1.84e+04)
+              Est.  stn bbox = 4.232e+04 (2.39e+04 1.84e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 586.6M
+Iteration  7: Total net bbox = 4.216e+04 (2.37e+04 1.84e+04)
+              Est.  stn bbox = 4.752e+04 (2.69e+04 2.06e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.6M
+Iteration  8: Total net bbox = 4.409e+04 (2.50e+04 1.90e+04)
+              Est.  stn bbox = 4.945e+04 (2.83e+04 2.12e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 586.6M
+Iteration  9: Total net bbox = 4.374e+04 (2.38e+04 2.00e+04)
+              Est.  stn bbox = 4.374e+04 (2.38e+04 2.00e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 587.6M
+Iteration 10: Total net bbox = 4.418e+04 (2.42e+04 1.99e+04)
+              Est.  stn bbox = 4.951e+04 (2.75e+04 2.21e+04)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 586.7M
+Iteration 11: Total net bbox = 4.418e+04 (2.42e+04 1.99e+04)
+              Est.  stn bbox = 4.951e+04 (2.75e+04 2.21e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.7M
+Iteration 12: Total net bbox = 4.853e+04 (2.72e+04 2.13e+04)
+              Est.  stn bbox = 5.396e+04 (3.05e+04 2.35e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 586.7M
+*** cost = 4.853e+04 (2.72e+04 2.13e+04) (cpu for global=0:00:01.3) real=0:00:02.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.9 real: 0:00:02.0
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:00.0
+move report: preRPlace moves 898 insts, mean move: 0.61 um, max move: 4.60 um
+	max move on inst (g123312): (140.40, 126.60) --> (137.60, 128.40)
+Placement tweakage begins.
+wire length = 4.871e+04 = 2.731e+04 H + 2.140e+04 V
+wire length = 4.513e+04 = 2.400e+04 H + 2.113e+04 V
+Placement tweakage ends.
+move report: tweak moves 1216 insts, mean move: 2.99 um, max move: 32.60 um
+	max move on inst (g118990): (188.80, 108.20) --> (163.60, 100.80)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 1772 insts, mean move: 2.23 um, max move: 32.60 um
+	max move on inst (g118990): (188.80, 108.20) --> (163.60, 100.80)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        32.60 um
+  inst (g118990) with max move: (188.8, 108.2) -> (163.6, 100.8)
+  mean    (X+Y) =         2.23 um
+Total instances flipped for WireLenOpt: 50
+Total instances flipped, including legalization: 1566
+Total instances moved : 1772
+*** cpu=0:00:00.2   mem=586.7M  mem(used)=0.0M***
+Total net length = 4.512e+04 (2.400e+04 2.112e+04) (ext = 2.672e+03)
+*** End of Placement (cpu=0:00:03.6, real=0:00:04.0, mem=586.7M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 66 )
+*** Free Virtual Timing Model ...(mem=543.4M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=543.8M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (514050 384800)
+coreBox:    (60000 60000) (454050 324800)
+Number of multi-gpin terms=1735, multi-gpins=3795, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 546.8M):
+Est net length = 4.846e+04um = 2.554e+04H + 2.291e+04V
+Usage: (5.9%H 5.3%V) = (2.962e+04um 4.498e+04um) = (29405 19969)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 549.3M):
+Usage: (5.9%H 5.3%V) = (2.955e+04um 4.498e+04um) = (29334 19969)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 549.3M):
+Usage: (5.9%H 5.3%V) = (2.952e+04um 4.497e+04um) = (29308 19968)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 549.3M):
+Usage: (5.9%H 5.3%V) = (2.952e+04um 4.497e+04um) = (29308 19968)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 550.0M):
+Usage: (5.9%H 5.3%V) = (2.952e+04um 4.497e+04um) = (29308 19968)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (5.9%H 5.3%V) = (2.952e+04um 4.497e+04um) = (29308 19968)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  6:	0	 0.00%	1	 0.00%
+  7:	0	 0.00%	3	 0.01%
+  8:	0	 0.00%	15	 0.07%
+  9:	2	 0.01%	26	 0.13%
+ 10:	14	 0.07%	98	 0.48%
+ 11:	57	 0.28%	281	 1.36%
+ 12:	102	 0.49%	708	 3.44%
+ 13:	191	 0.93%	1574	 7.64%
+ 14:	281	 1.36%	2417	11.73%
+ 15:	493	 2.39%	3078	14.93%
+ 16:	782	 3.79%	7199	34.93%
+ 17:	1005	 4.88%	2330	11.31%
+ 18:	1024	 4.97%	0	 0.00%
+ 19:	911	 4.42%	0	 0.00%
+ 20:	15748	76.41%	2880	13.97%
+
+Global route (cpu=0.0s real=0.0s 547.5M)
+Phase 1l route (0:00:00.1 546.5M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (6.0%H 5.3%V) = (2.969e+04um 4.525e+04um) = (29479 20087)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	0	 0.00%	2	 0.01%
+  6:	0	 0.00%	1	 0.00%
+  7:	0	 0.00%	5	 0.02%
+  8:	0	 0.00%	17	 0.08%
+  9:	2	 0.01%	36	 0.17%
+ 10:	17	 0.08%	105	 0.51%
+ 11:	57	 0.28%	274	 1.33%
+ 12:	107	 0.52%	713	 3.46%
+ 13:	193	 0.94%	1578	 7.66%
+ 14:	278	 1.35%	2392	11.61%
+ 15:	508	 2.46%	3080	14.94%
+ 16:	777	 3.77%	7197	34.92%
+ 17:	996	 4.83%	2330	11.31%
+ 18:	1020	 4.95%	0	 0.00%
+ 19:	916	 4.44%	0	 0.00%
+ 20:	15739	76.37%	2880	13.97%
+
+
+
+*** Completed Phase 1 route (0:00:00.1 544.6M) ***
+
+
+Total length: 5.001e+04um, number of vias: 21651
+M1(H) length: 8.149e+01um, number of vias: 11306
+M2(V) length: 2.188e+04um, number of vias: 9891
+M3(H) length: 2.480e+04um, number of vias: 397
+M4(V) length: 2.751e+03um, number of vias: 53
+M5(H) length: 4.964e+02um, number of vias: 4
+M6(V) length: 9.000e+00um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.1 544.3M) ***
+
+*** Finished all Phases (cpu=0:00:00.2 mem=544.3M) ***
+Peak Memory Usage was 555.5M 
+*** Finished trialRoute (cpu=0:00:00.2 mem=544.3M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.000000(H) 0.000000(V).
+Skipped repairing congestion.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 4, real = 0: 0: 4, mem = 544.3M **
+<CMD> setDrawView place
+<CMD> addRing -spacing_bottom 2 -width_left 9 -width_bottom 9 -width_top 9 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 9 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 2 -spacing_left 2 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -stacked_via_bottom_layer M1 -layer_left M2
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu=0:00:00.0, real=0:00:00.0, mem=550.5M) ***
+<CMD> saveDesign lab6_1.enc
+Writing Netlist "lab6_1.enc.dat/lab1.v.gz" ...
+Saving configuration ...
+Saving preference file lab6_1.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=553.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=553.9M) ***
+Writing DEF file 'lab6_1.enc.dat/lab1.def.gz', current time is Wed Oct  7 15:09:37 2015 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'lab6_1.enc.dat/lab1.def.gz' is written, current time is Wed Oct  7 15:09:37 2015 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -inPlaceOpt -prePlaceOpt
+**WARN: the option '-inPlaceOpt' will become obsolete in the next major release. Instead use the following mode  'setOptMode -allEndPoints true' and run regular placeDesign followed by optDesign -preCts. The obsolete option still works in this release, but to avoid this warning and to ensure the compatibility with future relases, update your script to use the recommended setting.
+*** Starting placeDesign concurrent flow ***
+*** Start deleteBufferTree ***
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Extraction called for design 'lab1' of instances=3786 and nets=3912 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design lab1.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 554.984M)
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 564.4M, InitMEM = 564.4M)
+Start delay calculation (mem=564.418M)...
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:00.0 mem=564.809M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 564.8M) ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.2) ***
+*** Starting "NanoPlace(TM) placement v#18 (mem=565.3M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=580.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=599.4M) ***
+Options: timingDriven clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=3786 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=3880 #term=11358 #term/net=2.93, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=52
+stdCell: 3786 single + 0 double + 0 multi
+Total standard cell length = 6.0530 (mm), area = 0.0109 (mm^2)
+Average module density = 0.530.
+Density for the design = 0.530.
+       = stdcell_area 30265 (10895 um^2) / alloc_area 57130 (20567 um^2).
+Pin Density = 0.375.
+            = total # of pins 11358 / total Instance area 30265.
+Checking spec file integrity...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.266e+04 (6.92e+03 5.74e+03)
+              Est.  stn bbox = 1.266e+04 (6.92e+03 5.74e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 602.4M
+Iteration  2: Total net bbox = 1.266e+04 (6.92e+03 5.74e+03)
+              Est.  stn bbox = 1.266e+04 (6.92e+03 5.74e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 602.4M
+Iteration  3: Total net bbox = 1.275e+04 (6.96e+03 5.79e+03)
+              Est.  stn bbox = 1.275e+04 (6.96e+03 5.79e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 602.4M
+Iteration  4: Total net bbox = 3.875e+04 (2.19e+04 1.69e+04)
+              Est.  stn bbox = 3.875e+04 (2.19e+04 1.69e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 602.5M
+Iteration  5: Total net bbox = 4.336e+04 (2.42e+04 1.92e+04)
+              Est.  stn bbox = 4.336e+04 (2.42e+04 1.92e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 602.5M
+Iteration  6: Total net bbox = 4.174e+04 (2.33e+04 1.84e+04)
+              Est.  stn bbox = 4.174e+04 (2.33e+04 1.84e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 602.5M
+Iteration  7: Total net bbox = 4.221e+04 (2.38e+04 1.84e+04)
+              Est.  stn bbox = 4.747e+04 (2.69e+04 2.06e+04)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 601.6M
+Iteration  8: Total net bbox = 4.390e+04 (2.50e+04 1.89e+04)
+              Est.  stn bbox = 4.917e+04 (2.81e+04 2.11e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 601.6M
+Iteration  9: Total net bbox = 4.389e+04 (2.39e+04 2.00e+04)
+              Est.  stn bbox = 4.389e+04 (2.39e+04 2.00e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 602.5M
+Iteration 10: Total net bbox = 4.439e+04 (2.45e+04 1.99e+04)
+              Est.  stn bbox = 4.968e+04 (2.76e+04 2.21e+04)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 602.6M
+Iteration 11: Total net bbox = 4.439e+04 (2.45e+04 1.99e+04)
+              Est.  stn bbox = 4.968e+04 (2.76e+04 2.21e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 602.6M
+Iteration 12: Total net bbox = 4.860e+04 (2.72e+04 2.14e+04)
+              Est.  stn bbox = 5.397e+04 (3.04e+04 2.36e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 602.6M
+*** cost = 4.860e+04 (2.72e+04 2.14e+04) (cpu for global=0:00:01.3) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:01.0 real: 0:00:00.0
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:01.0
+move report: preRPlace moves 835 insts, mean move: 0.55 um, max move: 3.80 um
+	max move on inst (g126945): (162.80, 82.40) --> (159.00, 82.40)
+Placement tweakage begins.
+wire length = 4.876e+04 = 2.734e+04 H + 2.141e+04 V
+wire length = 4.510e+04 = 2.399e+04 H + 2.111e+04 V
+Placement tweakage ends.
+move report: tweak moves 1233 insts, mean move: 2.94 um, max move: 33.20 um
+	max move on inst (g118990): (184.80, 110.00) --> (165.40, 96.20)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 1777 insts, mean move: 2.20 um, max move: 33.20 um
+	max move on inst (g118990): (184.80, 110.00) --> (165.40, 96.20)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        33.20 um
+  inst (g118990) with max move: (184.8, 110) -> (165.4, 96.2)
+  mean    (X+Y) =         2.20 um
+Total instances flipped for WireLenOpt: 45
+Total instances flipped, including legalization: 1541
+Total instances moved : 1777
+*** cpu=0:00:00.2   mem=602.6M  mem(used)=0.1M***
+Total net length = 4.510e+04 (2.399e+04 2.111e+04) (ext = 2.639e+03)
+*** End of Placement (cpu=0:00:03.6, real=0:00:04.0, mem=602.6M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 66 )
+*** Free Virtual Timing Model ...(mem=562.3M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+setAnalysisMode  -domain allClockDomain -checkType setup -skew true -usefulSkew false -log true -warn true -caseAnalysis true -sequentialConstProp false -moduleIOCstr true -clockPropagation forcedIdeal -clkSrcPath false -timingSelfLoopsNoSkew false -asyncChecks async -useOutputPinCap true -latch true -latchDelayCalIteration 2 -timeBorrowing true -latchFullDelayCal false -clockGatingCheck true -enableMultipleDriveNet true -analysisType single -cppr false -clkNetsMarking beforeConstProp -honorVirtualPartition false -honorClockDomains true
+Connected to co2046-05.ece.iastate.edu 42683 0
+*** Finished dispatch of slaves (cpu=0:00:00.1) (real=0:00:02.0) ***
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 573.8M **
+setTrialRouteMode -fixAirConnect true
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0.0; extra slack 0.1
+Hold Target Slack: user slack 0.0
+*info: Setting setup target slack to 0.100
+*info: Hold target slack is 0.000
+*** Starting trialRoute (mem=574.0M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (514050 384800)
+coreBox:    (60000 60000) (454050 324800)
+Number of multi-gpin terms=1767, multi-gpins=3844, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 577.0M):
+Est net length = 4.827e+04um = 2.553e+04H + 2.274e+04V
+Usage: (5.9%H 5.5%V) = (2.963e+04um 4.485e+04um) = (29419 19892)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 579.5M):
+Usage: (5.9%H 5.5%V) = (2.955e+04um 4.484e+04um) = (29336 19892)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 579.5M):
+Usage: (5.9%H 5.5%V) = (2.950e+04um 4.481e+04um) = (29288 19879)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 579.5M):
+Usage: (5.9%H 5.5%V) = (2.950e+04um 4.481e+04um) = (29288 19879)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 580.1M):
+Usage: (5.9%H 5.5%V) = (2.950e+04um 4.481e+04um) = (29288 19879)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (5.9%H 5.5%V) = (2.950e+04um 4.481e+04um) = (29288 19879)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  7:	0	 0.00%	4	 0.02%
+  8:	1	 0.00%	10	 0.05%
+  9:	4	 0.02%	16	 0.08%
+ 10:	13	 0.06%	93	 0.45%
+ 11:	20	 0.10%	298	 1.45%
+ 12:	50	 0.24%	875	 4.25%
+ 13:	137	 0.66%	1527	 7.41%
+ 14:	252	 1.22%	2529	12.27%
+ 15:	485	 2.35%	3151	15.29%
+ 16:	756	 3.67%	6992	33.93%
+ 17:	928	 4.50%	2235	10.84%
+ 18:	1039	 5.04%	0	 0.00%
+ 19:	1082	 5.25%	0	 0.00%
+ 20:	15843	76.87%	2880	13.97%
+
+Global route (cpu=0.0s real=0.0s 577.6M)
+Phase 1l route (0:00:00.1 576.7M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (5.9%H 5.6%V) = (2.965e+04um 4.505e+04um) = (29437 19980)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  6:	0	 0.00%	3	 0.01%
+  7:	0	 0.00%	5	 0.02%
+  8:	1	 0.00%	8	 0.04%
+  9:	5	 0.02%	27	 0.13%
+ 10:	14	 0.07%	110	 0.53%
+ 11:	22	 0.11%	290	 1.41%
+ 12:	51	 0.25%	866	 4.20%
+ 13:	138	 0.67%	1520	 7.38%
+ 14:	253	 1.23%	2531	12.28%
+ 15:	490	 2.38%	3142	15.25%
+ 16:	763	 3.70%	6993	33.93%
+ 17:	923	 4.48%	2235	10.84%
+ 18:	1033	 5.01%	0	 0.00%
+ 19:	1080	 5.24%	0	 0.00%
+ 20:	15837	76.84%	2880	13.97%
+
+
+
+*** Completed Phase 1 route (0:00:00.1 574.8M) ***
+
+
+Total length: 4.969e+04um, number of vias: 21617
+M1(H) length: 8.052e+01um, number of vias: 11306
+M2(V) length: 2.158e+04um, number of vias: 9906
+M3(H) length: 2.488e+04um, number of vias: 375
+M4(V) length: 2.794e+03um, number of vias: 30
+M5(H) length: 3.537e+02um, number of vias: 0
+M6(V) length: 0.000e+00um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.1 574.5M) ***
+
+*** Finished all Phases (cpu=0:00:00.2 mem=574.5M) ***
+Peak Memory Usage was 585.6M 
+*** Finished trialRoute (cpu=0:00:00.2 mem=574.5M) ***
+
+Extraction called for design 'lab1' of instances=3786 and nets=3912 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design lab1.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 574.480M)
+*** Starting optimizing excluded clock nets MEM= 574.5M) ***
+*info: No excluded clock nets to be optimized.
+*** Completed optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 583.9M) ***
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 584.0M, InitMEM = 584.0M)
+Start delay calculation (mem=584.039M)...
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:01.0 mem=584.430M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:01.0  mem= 584.4M) ***
+Info: 1 clock net  excluded from IPO operation.
+
+Netlist preparation processing... 
+Removed 0 instance
+*info: Marking 0 isolation instances dont touch
+*info: Marking 0 level shifter instances dont touch
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+*** Starting delays update (0:00:21.0 mem=585.4M) ***
+*** Finished delays update (0:00:21.2 mem=585.3M) ***
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 585.2M **
+*** Starting optFanout (585.3M)
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 20 no-driver nets excluded.
+*** Starting multi-driver net buffering ***
+*summary: 0 non-ignored multi-driver nets.
+*** Finished buffering multi-driver nets (CPU=0:00:00.0, MEM=585.3M) ***
+*info: There are 17 candidate Buffer cells
+*info: There are 16 candidate Inverter cells
+Initializing placement sections/sites ...
+Density before buffering = 0.529757
+Start fixing timing ... (0:00:00.1 585.6M)
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M3 M4 
+Est. Cap                : 0.142531(V=0.142531 H=0.142531) (ff/um) [7.12653e-05]
+Est. Res                : 1.4(V=1.4 H=1.4)(ohm/um) [0.0007]
+Est. Via Res            : 1.20536(ohm) [2.30357]
+Est. Via Cap            : 0.0790026(ff)
+M1(H) w=0.09(um) s=0.09(um) p=0.2(um) es=0.31(um) cap=0.13(ff/um) res=1.78(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.09821(ohm) viaCap=0.0801428(ff)
+M3(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0790026(ff)
+M4(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0790026(ff)
+M5(H) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.20536(ohm) viaCap=0.0790026(ff)
+M6(V) w=0.1(um) s=0.1(um) p=0.2(um) es=0.3(um) cap=0.143(ff/um) res=1.4(ohm/um) viaRes=1.14844(ohm) viaCap=0.0837367(ff)
+M7(H) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.183(ff/um) res=0.055(ohm/um) viaRes=0.169583(ohm) viaCap=0.26322(ff)
+M8(V) w=0.4(um) s=0.4(um) p=0.8(um) es=1.2(um) cap=0.157(ff/um) res=0.055(ohm/um) viaRes=0.176786(ohm) viaCap=0.284122(ff)
+
+*info: Buffered 0 large fanout net (> 100 terms)
+Done fixing timing (0:00:00.3 586.1M)
+
+Summary:
+4 buffers added on 2 nets (with 9 drivers resized)
+
+Density after buffering = 0.532505
+*** Completed optFanout (0:00:00.4 586.1M)
+
+Re-routed 0 nets
+Extraction called for design 'lab1' of instances=3790 and nets=3916 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design lab1.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 585.852M)
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 585.0M, InitMEM = 585.0M)
+Start delay calculation (mem=584.953M)...
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:00.0 mem=585.344M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 585.3M) ***
+**optDesign ... cpu = 0:00:01, real = 0:00:02, mem = 585.9M **
+*** Timing NOT met, worst failing slack is -1.313
+*** Check timing (0:00:00.0)
+************ Started Recovering Area and Global Resizing for Timing Improvement ***************
+Info: 1 clock net  excluded from IPO operation.
+** Density before transform = 53.250% **
+
+*** starting 1-st resizing pass: 3800 instances 
+*** starting 2-nd resizing pass: 3775 instances 
+*** starting 3-rd resizing pass: 3306 instances 
+*** starting 4-th resizing pass: 2590 instances 
+*** starting 5-th resizing pass: 1148 instances 
+*** starting 6-th resizing pass: 256 instances 
+*** starting 7-th resizing pass: 16 instances 
+
+
+** Summary: Buffer Deletion = 2 Declone = 1 Downsize = 569 Upsize = 1277 **
+** Density Change = 0.376% **
+** Density after transform = 52.874% **
+*** Finish transform (0:00:02.8) ***
+*** Starting sequential cell resizing ***
+density before resizing = 52.874%
+*summary:     10 instances changed cell type
+density after resizing = 52.927%
+*** Finish sequential cell resizing (cpu=0:00:00.1 mem=586.2M) ***
+density before resizing = 52.927%
+density after resizing = 52.927%
+************ Finished Recovering Area and Global Resizing for Timing Improvement ***************
+*** Starting trialRoute (mem=586.2M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (514050 384800)
+coreBox:    (60000 60000) (454050 324800)
+Number of multi-gpin terms=1628, multi-gpins=3550, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 588.7M):
+Est net length = 4.861e+04um = 2.585e+04H + 2.277e+04V
+Usage: (6.0%H 5.6%V) = (3.001e+04um 4.511e+04um) = (29801 20018)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 591.2M):
+Usage: (6.0%H 5.6%V) = (2.992e+04um 4.510e+04um) = (29713 20018)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 591.2M):
+Usage: (6.0%H 5.6%V) = (2.988e+04um 4.508e+04um) = (29673 20007)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 591.2M):
+Usage: (6.0%H 5.6%V) = (2.988e+04um 4.508e+04um) = (29673 20007)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 591.7M):
+Usage: (6.0%H 5.6%V) = (2.988e+04um 4.508e+04um) = (29673 20007)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (6.0%H 5.6%V) = (2.988e+04um 4.508e+04um) = (29673 20007)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  6:	0	 0.00%	1	 0.00%
+  7:	0	 0.00%	3	 0.01%
+  8:	2	 0.01%	8	 0.04%
+  9:	4	 0.02%	24	 0.12%
+ 10:	13	 0.06%	88	 0.43%
+ 11:	38	 0.18%	303	 1.47%
+ 12:	63	 0.31%	906	 4.40%
+ 13:	134	 0.65%	1569	 7.61%
+ 14:	255	 1.24%	2499	12.13%
+ 15:	469	 2.28%	3067	14.88%
+ 16:	775	 3.76%	7013	34.03%
+ 17:	927	 4.50%	2249	10.91%
+ 18:	1056	 5.12%	0	 0.00%
+ 19:	1056	 5.12%	0	 0.00%
+ 20:	15818	76.75%	2880	13.97%
+
+Global route (cpu=0.0s real=0.0s 589.2M)
+Phase 1l route (0:00:00.1 588.2M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (6.0%H 5.6%V) = (3.004e+04um 4.529e+04um) = (29828 20095)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  4:	0	 0.00%	1	 0.00%
+  5:	0	 0.00%	3	 0.01%
+  6:	0	 0.00%	1	 0.00%
+  8:	3	 0.01%	8	 0.04%
+  9:	5	 0.02%	32	 0.16%
+ 10:	13	 0.06%	110	 0.53%
+ 11:	41	 0.20%	295	 1.43%
+ 12:	61	 0.30%	899	 4.36%
+ 13:	138	 0.67%	1558	 7.56%
+ 14:	260	 1.26%	2490	12.08%
+ 15:	470	 2.28%	3067	14.88%
+ 16:	777	 3.77%	7017	34.05%
+ 17:	927	 4.50%	2249	10.91%
+ 18:	1048	 5.08%	0	 0.00%
+ 19:	1056	 5.12%	0	 0.00%
+ 20:	15811	76.72%	2880	13.97%
+
+
+
+*** Completed Phase 1 route (0:00:00.1 586.5M) ***
+
+
+Total length: 5.008e+04um, number of vias: 21789
+M1(H) length: 8.531e+01um, number of vias: 11308
+M2(V) length: 2.163e+04um, number of vias: 10059
+M3(H) length: 2.508e+04um, number of vias: 374
+M4(V) length: 2.752e+03um, number of vias: 44
+M5(H) length: 5.179e+02um, number of vias: 4
+M6(V) length: 1.180e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.1 586.2M) ***
+
+*** Finished all Phases (cpu=0:00:00.2 mem=586.2M) ***
+Peak Memory Usage was 597.2M 
+*** Finished trialRoute (cpu=0:00:00.2 mem=586.2M) ***
+
+Extraction called for design 'lab1' of instances=3787 and nets=3913 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design lab1.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 586.152M)
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 585.3M, InitMEM = 585.3M)
+Start delay calculation (mem=585.254M)...
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:00.0 mem=585.645M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 585.6M) ***
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 586.2M **
+*** Timing NOT met, worst failing slack is -1.202
+*** Check timing (0:00:00.0)
+Started binary server on port 42677
+*** Starting optCritPath ***
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 20 no-driver nets excluded.
+Density : 0.5293
+Max route overflow : 0.0000
+Current slack : -1.202 ns, density : 0.5293  End_Point: oR_reg[16]/D
+Current slack : -1.202 ns, density : 0.5293  Worst_View: default_view_setup  End_Point: oR_reg[16]/D
+Current slack : -1.202 ns, density : 0.5293  End_Point: oR_reg[16]/D
+Current slack : -1.202 ns, density : 0.5293  Worst_View: default_view_setup  End_Point: oR_reg[16]/D
+Current slack : -1.199 ns, density : 0.5293  Worst_View: default_view_setup  End_Point: oR_reg[16]/D
+Current slack : -1.199 ns, density : 0.5289  Worst_View: default_view_setup  End_Point: oR_reg[16]/D
+Current slack : -1.199 ns, density : 0.5289  Worst_View: default_view_setup  End_Point: oR_reg[16]/D
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 2 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** Starting "NanoPlace(TM) placement v#18 (mem=600.8M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.7 mem=618.9M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:01.9 mem=637.9M) ***
+Options: timingDriven clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgListMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgSecHeadMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgSecMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgRegBoxMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgSPListMPool>.
+**DIAG[dbLock.c:81:dbLock]: **: Trying to lock "dbcNetPExtra" at [spUtil.c:6705]
+Lock "dbcNetPExtra" was locked at [spUtil.c:6705]
+**DIAG[dbLock.c:81:dbLock]: **: Trying to lock "dbcInstPExtra" at [spUtil.c:6706]
+Lock "dbcInstPExtra" was locked at [spUtil.c:6706]
+**DIAG[dbLock.c:81:dbLock]: **: Trying to lock "dbcCellExtra" at [spUtil.c:6711]
+Lock "dbcCellExtra" was locked at [spUtil.c:6711]
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgExtCellMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgExtMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgExtInstMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgExtNetMPool>.
+**ERROR: (ENCSP-100):	Initialize non-Free memory pool <spgInstArrMPool>.
+#std cell=3790 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=3884 #term=11369 #term/net=2.93, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=52
+stdCell: 3790 single + 0 double + 0 multi
+Total standard cell length = 6.0788 (mm), area = 0.0109 (mm^2)
+**DIAG[spSite.c:2617:spiSetGlobsForInitSiteArr]: Assert "!spiSiteArrMPool"
+Average module density = 0.532.
+Density for the design = 0.532.
+       = stdcell_area 30394 (10942 um^2) / alloc_area 57130 (20567 um^2).
+Pin Density = 0.374.
+            = total # of pins 11369 / total Instance area 30394.
+Checking spec file integrity...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.243e+04 (6.71e+03 5.72e+03)
+              Est.  stn bbox = 1.243e+04 (6.71e+03 5.72e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.9M
+Iteration  2: Total net bbox = 1.243e+04 (6.71e+03 5.72e+03)
+              Est.  stn bbox = 1.243e+04 (6.71e+03 5.72e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.9M
+Iteration  3: Total net bbox = 1.252e+04 (6.76e+03 5.77e+03)
+              Est.  stn bbox = 1.252e+04 (6.76e+03 5.77e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.9M
+Iteration  4: Total net bbox = 3.934e+04 (2.26e+04 1.67e+04)
+              Est.  stn bbox = 3.934e+04 (2.26e+04 1.67e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 640.9M
+Iteration  5: Total net bbox = 4.363e+04 (2.45e+04 1.92e+04)
+              Est.  stn bbox = 4.363e+04 (2.45e+04 1.92e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 640.9M
+Iteration  6: Total net bbox = 4.192e+04 (2.34e+04 1.85e+04)
+              Est.  stn bbox = 4.192e+04 (2.34e+04 1.85e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 640.9M
+**DIAG[dbLock.c:81:dbLock]: **: Trying to lock "dbcIsCellMarked2" at [trSUtil.c:4660]
+Lock "dbcIsCellMarked2" was locked at [opResizeUtil.c:1279]
+Iteration  7: Total net bbox = 4.252e+04 (2.40e+04 1.85e+04)
+              Est.  stn bbox = 4.781e+04 (2.71e+04 2.07e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.0M
+Iteration  8: Total net bbox = 4.546e+04 (2.59e+04 1.96e+04)
+              Est.  stn bbox = 5.085e+04 (2.91e+04 2.18e+04)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 640.0M
+Iteration  9: Total net bbox = 4.376e+04 (2.39e+04 1.99e+04)
+              Est.  stn bbox = 4.376e+04 (2.39e+04 1.99e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 640.9M
+Iteration 10: Total net bbox = 4.428e+04 (2.44e+04 1.99e+04)
+              Est.  stn bbox = 4.967e+04 (2.76e+04 2.21e+04)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 640.0M
+Iteration 11: Total net bbox = 4.428e+04 (2.44e+04 1.99e+04)
+              Est.  stn bbox = 4.967e+04 (2.76e+04 2.21e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.0M
+Iteration 12: Total net bbox = 4.880e+04 (2.75e+04 2.13e+04)
+              Est.  stn bbox = 5.424e+04 (3.07e+04 2.35e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 640.0M
+*** cost = 4.880e+04 (2.75e+04 2.13e+04) (cpu for global=0:00:01.3) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:01.0 real: 0:00:01.0
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(syStackTrace+0x12f)[0x79856c9]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x14a768a]
+/lib64/libpthread.so.0[0x346de0f790]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z8spRPlaceP7dbsHeadP6sysBoxcc+0x254)[0x397df14]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z6spMainP7dbsHead+0x1d86)[0x39405d6]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x15e175c]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x902e238]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9033d76]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalTokensStandard+0x2c3)[0x902f813]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x13f)[0x902f9cf]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0x902fddd]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z10qtfTclEvalPc+0x93)[0x58d5003]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x4e6)[0x5878376]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x134)[0x5926324]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectiiPPv+0x25c)[0x7f0af9aa5b6c]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x37)[0x7f0afa609827]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x3b)[0x7f0afa36e0cb]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x8b)[0x7f0afa36fcdb]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x85)[0x7f0afa36ff25]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0x8b0)[0x7f0afa061340]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xac)[0x7f0afa0126fc]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0x7d1)[0x7f0afa019e61]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x8c)[0x7f0af9a90a6c]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_E+0x110)[0x7f0afa019120]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x597)[0x7f0afa07ec37]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x82e)[0x7f0afa07d84e]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2ab)[0x7f0afa0a490b]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x5e)[0x7f0af81f8d5a]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7f0af9a919ff]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(+0x1cce9)[0x7f0af81f8ce9]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_DoOneEvent+0x178)[0x9073108]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0xb6)[0x7f0af81f8db2]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x32)[0x7f0af9a8f392]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xd4)[0x7f0af9a8f764]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z19uiAppStartEventLoopv+0x5b)[0x6578f0b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x657931e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x118)[0x891eab8]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0xc2)[0x89155d2]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x902e238]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_UplevelObjCmd+0xa3)[0x907a2e3]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN15edpParallelBase11execCommandEP10Tcl_InterpPc+0x30)[0x1d3a0e0]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN17edpParallelMaster16waitForOneResultEv+0x11f)[0x1d3c42f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN19dosFGParallelMaster13updateResultsEv+0x7a)[0x2aedc5a]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN17dosFGMasterLoopCL11sendMsgTaskER11dosFGTaskCLb+0x89)[0x2af0c19]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN26lsFGRunMasterThreadProcess18runActionsOnThreadER12ddPtrListTPLIN19dosFGMasterThreadCL23dosFGMasterThreadFuncCLEES4_+0xe7)[0x2528be7]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN26lsFGRunMasterThreadProcess30execOneMandatoryActionOnThreadER25lsFGOCPMasterThreadFuncCL+0x1cf)[0x2528fdf]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN19lsFGOCPBaseTransfCL19runThreadExtractionER25lsFGOCPMasterThreadFuncCLi+0x6c)[0x25292cc]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x234956d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x234a136]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z33lsGenericFrameWorkClusterOptForDPP7dbsCellP10tasClusterPidS3_S3_S3_cP18lssTransformStatusR6lssCmdc+0x17a)[0x234a5aa]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x2370e82]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z23lsTimeClusterBooleanMapP7dbsCellP10tasClusteriidcPcP18lssTransformStatus+0x8d)[0x237117d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN25lsDpBooleanMapTransformCL7executeEP7dbsCellP10tasClusterP12lsDpStatusCLPi+0x85)[0x243b6c5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN15lsDpTransformCL3runEP7dbsCellP10tasClusterP12lsDpStatusCL+0x74)[0x245c914]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN12lsDpTacticCL13runAllClusterEP15lsDpTransformCLP12lsDpStatusCLbbb+0x2f0)[0x244c700]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN18lsDpStateMachineCL13executeTacticEi+0xeb)[0x242a32b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN18lsDpStateMachineCL3runEv+0x2b5)[0x242a735]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z19lsDpLaunchAutomatonPKcP7dbsCellPcS3_+0x5e6)[0x2434886]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN23lsOCPAutomatonManagerCL15runNewAutomatonERcS0_+0x5ee)[0x237b62e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN23lsOCPAutomatonManagerCL3runERcS0_+0xe7)[0x23a3d87]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z16lsOptCritPathCmdP7dbsCelliPPc+0x530)[0x23a4cb0]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x158ec70]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x902e238]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0x902fddd]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN9OptDesign17OptDesignMainStepEPc+0x8f)[0x2ce9e4f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x2cecc02]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x902e238]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ExprObj+0x1d6)[0x90501a6]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ExprBooleanObj+0x23)[0x9030693]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0x171)[0x90368b1]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ForObjCmd+0xa6)[0x9035716]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ForObjCmd+0xa6)[0x9035716]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9033d76]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ExprObj+0x1d6)[0x90501a6]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_ExprBooleanObj+0x23)[0x9030693]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0x171)[0x90368b1]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0x902fddd]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZNK14rdaOptDesignCL3runEv+0x42)[0x1586ad2]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x15d2b90]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x118)[0x891eab8]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0xc2)[0x89155d2]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclInvokeStringCommand+0x58)[0x902e238]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_IfObjCmd+0xf5)[0x9036835]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x65)[0x902fec5]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjCmd+0x3f)[0x90342af]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclObjInterpProc+0x2b8)[0x907a808]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x905115d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclCompEvalObj+0x9b)[0x905056b]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalObjEx+0x1df)[0x903003f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_CatchObjCmd+0x46)[0x9033d76]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(TclEvalObjvInternal+0x13d)[0x902f03d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x19e)[0x902fa2e]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalTokensStandard+0x2c3)[0x902f813]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_EvalEx+0x13f)[0x902f9cf]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0x902fddd]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z10qtfTclEvalPc+0x93)[0x58d5003]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x4e6)[0x5878376]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x134)[0x5926324]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectiiPPv+0x25c)[0x7f0af9aa5b6c]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x37)[0x7f0afa609827]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x3b)[0x7f0afa36e0cb]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x8b)[0x7f0afa36fcdb]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x85)[0x7f0afa36ff25]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0x8b0)[0x7f0afa061340]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xac)[0x7f0afa0126fc]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0x7d1)[0x7f0afa019e61]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x8c)[0x7f0af9a90a6c]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_E+0x110)[0x7f0afa019120]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x597)[0x7f0afa07ec37]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x82e)[0x7f0afa07d84e]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2ab)[0x7f0afa0a490b]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x5e)[0x7f0af81f8d5a]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7f0af9a919ff]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(+0x1cce9)[0x7f0af81f8ce9]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(Tcl_DoOneEvent+0x178)[0x9073108]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0xb6)[0x7f0af81f8db2]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x32)[0x7f0af9a8f392]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xd4)[0x7f0af9a8f764]
+/usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication4execEv+0xb9)[0x7f0af9a91899]
+/usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0x2c1)[0x7f0af81fb36f]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(_Z7fe_mainiPPc+0x307)[0x1438a57]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter(main+0x60)[0x1438b20]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x346d61ed5d]
+/usr/local/cadence/EDI101/tools.lnx86/fe/bin/64bit/encounter[0x14385aa]
+========================================
+               pstack
+========================================
+Thread 7 (Thread 0x7f0af5721700 (LWP 29996)):
+#0  0x000000346de0efbd in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000001e06fac in rdaiLicRecheck(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x7f0af4815700 (LWP 29997)):
+#0  0x000000346d6acaed in nanosleep () from /lib64/libc.so.6
+#1  0x000000346d6ac960 in sleep () from /lib64/libc.so.6
+#2  0x00000000079986f1 in syiPeakMem(void*) ()
+#3  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#4  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7f0af3c10700 (LWP 29998)):
+#0  0x000000346d6e1423 in select () from /lib64/libc.so.6
+#1  0x0000000009090e8d in NotifierThreadProc ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7f0af320f700 (LWP 29999)):
+#0  0x000000346de0f535 in sigwait () from /lib64/libpthread.so.0
+#1  0x00000000014a7b03 in ctrlCHandle(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7f0ae7c2b700 (LWP 30299)):
+#0  0x000000346de0ba0e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000090900fe in Tcl_ConditionWait ()
+#2  0x0000000009090c01 in Tcl_WaitForEvent ()
+#3  0x000000000907307e in Tcl_DoOneEvent ()
+#4  0x000000000904fb5a in Tcl_VwaitObjCmd ()
+#5  0x000000000902f03d in TclEvalObjvInternal ()
+#6  0x000000000902fa2e in Tcl_EvalEx ()
+#7  0x0000000001d3d7c7 in edpParallelMaster::heartbeatMonitor(void*) ()
+#8  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#9  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7f0ad6b26700 (LWP 30409)):
+#0  0x000000346de0b63c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000002aef157 in dosFGMasterThreadCL::idleThreadLoop(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7f0af6e289e0 (LWP 29941)):
+#0  0x000000346d6ac70d in waitpid () from /lib64/libc.so.6
+#1  0x000000346d63e609 in do_system () from /lib64/libc.so.6
+#2  0x000000346d63e940 in system () from /lib64/libc.so.6
+#3  0x0000000007985721 in syStackTrace ()
+#4  0x00000000014a768a in rdaiErrorHandler(int, siginfo*, void*) ()
+#5  <signal handler called>
+#6  0x000000000397df14 in spRPlace(dbsHead*, sysBox*, char, char) ()
+#7  0x00000000039405d6 in spMain(dbsHead*) ()
+#8  0x00000000015e175c in rdaiPlaceCmd ()
+#9  0x000000000902e238 in TclInvokeStringCommand ()
+#10 0x000000000902f03d in TclEvalObjvInternal ()
+#11 0x000000000905115d in TclExecuteByteCode ()
+#12 0x000000000905056b in TclCompEvalObj ()
+#13 0x000000000907a808 in TclObjInterpProc ()
+#14 0x000000000902f03d in TclEvalObjvInternal ()
+#15 0x000000000905115d in TclExecuteByteCode ()
+#16 0x000000000905056b in TclCompEvalObj ()
+#17 0x000000000903003f in Tcl_EvalObjEx ()
+#18 0x0000000009036835 in Tcl_IfObjCmd ()
+#19 0x000000000902f03d in TclEvalObjvInternal ()
+#20 0x000000000905115d in TclExecuteByteCode ()
+#21 0x000000000905056b in TclCompEvalObj ()
+#22 0x000000000903003f in Tcl_EvalObjEx ()
+#23 0x0000000009036835 in Tcl_IfObjCmd ()
+#24 0x000000000902f03d in TclEvalObjvInternal ()
+#25 0x000000000905115d in TclExecuteByteCode ()
+#26 0x000000000905056b in TclCompEvalObj ()
+#27 0x000000000907a808 in TclObjInterpProc ()
+#28 0x000000000902f03d in TclEvalObjvInternal ()
+#29 0x000000000902fa2e in Tcl_EvalEx ()
+#30 0x000000000902fec5 in Tcl_EvalObjEx ()
+#31 0x00000000090342af in Tcl_EvalObjCmd ()
+#32 0x000000000902f03d in TclEvalObjvInternal ()
+#33 0x000000000905115d in TclExecuteByteCode ()
+#34 0x000000000905056b in TclCompEvalObj ()
+#35 0x000000000907a808 in TclObjInterpProc ()
+#36 0x000000000902f03d in TclEvalObjvInternal ()
+#37 0x000000000902fa2e in Tcl_EvalEx ()
+#38 0x000000000902fec5 in Tcl_EvalObjEx ()
+#39 0x00000000090342af in Tcl_EvalObjCmd ()
+#40 0x000000000902f03d in TclEvalObjvInternal ()
+#41 0x000000000905115d in TclExecuteByteCode ()
+#42 0x000000000905056b in TclCompEvalObj ()
+#43 0x000000000907a808 in TclObjInterpProc ()
+#44 0x000000000902f03d in TclEvalObjvInternal ()
+#45 0x000000000905115d in TclExecuteByteCode ()
+#46 0x000000000905056b in TclCompEvalObj ()
+#47 0x000000000903003f in Tcl_EvalObjEx ()
+#48 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#49 0x000000000902f03d in TclEvalObjvInternal ()
+#50 0x000000000902fa2e in Tcl_EvalEx ()
+#51 0x000000000902f813 in Tcl_EvalTokensStandard ()
+#52 0x000000000902f9cf in Tcl_EvalEx ()
+#53 0x000000000902fddd in Tcl_Eval ()
+#54 0x00000000058d5003 in qtfTclEval(char*) ()
+#55 0x0000000005878376 in qtfsItem::fUpdateVar() ()
+#56 0x0000000005926324 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#57 0x00007f0af9aa5b6c in QMetaObject::activate(QObject*, int, int, void**) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#58 0x00007f0afa609827 in QAbstractButton::clicked(bool) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#59 0x00007f0afa36e0cb in QAbstractButtonPrivate::emitClicked() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#60 0x00007f0afa36fcdb in QAbstractButtonPrivate::click() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#61 0x00007f0afa36ff25 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#62 0x00007f0afa061340 in QWidget::event(QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#63 0x00007f0afa0126fc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#64 0x00007f0afa019e61 in QApplication::notify(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#65 0x00007f0af9a90a6c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#66 0x00007f0afa019120 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#67 0x00007f0afa07ec37 in QETWidget::translateMouseEvent(_XEvent const*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#68 0x00007f0afa07d84e in QApplication::x11ProcessEvent(_XEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#69 0x00007f0afa0a490b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#70 0x00007f0af81f8d5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#71 0x00007f0af9a919ff in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#72 0x00007f0af81f8ce9 in tcl_dispatch_qt () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#73 0x0000000009073108 in Tcl_DoOneEvent ()
+#74 0x00007f0af81f8db2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#75 0x00007f0af9a8f392 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#76 0x00007f0af9a8f764 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#77 0x0000000006578f0b in uiAppStartEventLoop() ()
+#78 0x000000000657931e in uiiAppStartEventLoopCmd(void*, Tcl_Interp*, int, char**) ()
+#79 0x000000000891eab8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#80 0x00000000089155d2 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#81 0x000000000902e238 in TclInvokeStringCommand ()
+#82 0x000000000902f03d in TclEvalObjvInternal ()
+#83 0x000000000905115d in TclExecuteByteCode ()
+#84 0x000000000905056b in TclCompEvalObj ()
+#85 0x000000000907a808 in TclObjInterpProc ()
+#86 0x000000000902f03d in TclEvalObjvInternal ()
+#87 0x000000000902fa2e in Tcl_EvalEx ()
+#88 0x000000000902fec5 in Tcl_EvalObjEx ()
+#89 0x000000000907a2e3 in Tcl_UplevelObjCmd ()
+#90 0x000000000902f03d in TclEvalObjvInternal ()
+#91 0x000000000905115d in TclExecuteByteCode ()
+#92 0x000000000905056b in TclCompEvalObj ()
+#93 0x000000000907a808 in TclObjInterpProc ()
+#94 0x000000000902f03d in TclEvalObjvInternal ()
+#95 0x000000000902fa2e in Tcl_EvalEx ()
+#96 0x0000000001d3a0e0 in edpParallelBase::execCommand(Tcl_Interp*, char*) ()
+#97 0x0000000001d3c42f in edpParallelMaster::waitForOneResult() ()
+#98 0x0000000002aedc5a in dosFGParallelMaster::updateResults() ()
+#99 0x0000000002af0c19 in dosFGMasterLoopCL::sendMsgTask(dosFGTaskCL&, bool) ()
+#100 0x0000000002528be7 in lsFGRunMasterThreadProcess::runActionsOnThread(ddPtrListTPL<dosFGMasterThreadCL::dosFGMasterThreadFuncCL>&, ddPtrListTPL<dosFGMasterThreadCL::dosFGMasterThreadFuncCL>&) ()
+#101 0x0000000002528fdf in lsFGRunMasterThreadProcess::execOneMandatoryActionOnThread(lsFGOCPMasterThreadFuncCL&) ()
+#102 0x00000000025292cc in lsFGOCPBaseTransfCL::runThreadExtraction(lsFGOCPMasterThreadFuncCL&, int) ()
+#103 0x000000000234956d in lsiGenericFrameWorkClusterOptForLvl(dbsCell*, dbsList*&, int&, tosCellLevelNodeArrayClass*&, lsFollowSlackData*, char, lssTransformStatus*, char, int, int&, double, dbsList**, int*, int*, int*, char*, lsFGOCPRestructTransfCL&) ()
+#104 0x000000000234a136 in lsGenericFrameWorkClusterOpt ()
+#105 0x000000000234a5aa in lsGenericFrameWorkClusterOptForDP(dbsCell*, tasCluster*, int*, double, int*, int*, int*, char, lssTransformStatus*, lssCmd&, char) ()
+#106 0x0000000002370e82 in lsiTimeClusterIPORestructInst ()
+#107 0x000000000237117d in lsTimeClusterBooleanMap(dbsCell*, tasCluster*, int, int, double, char, char*, lssTransformStatus*) ()
+#108 0x000000000243b6c5 in lsDpBooleanMapTransformCL::execute(dbsCell*, tasCluster*, lsDpStatusCL*, int*) ()
+#109 0x000000000245c914 in lsDpTransformCL::run(dbsCell*, tasCluster*, lsDpStatusCL*) ()
+#110 0x000000000244c700 in lsDpTacticCL::runAllCluster(lsDpTransformCL*, lsDpStatusCL*, bool, bool, bool) ()
+#111 0x000000000242a32b in lsDpStateMachineCL::executeTactic(int) ()
+#112 0x000000000242a735 in lsDpStateMachineCL::run() ()
+#113 0x0000000002434886 in lsDpLaunchAutomaton(char const*, dbsCell*, char*, char*) ()
+#114 0x000000000237b62e in lsOCPAutomatonManagerCL::runNewAutomaton(char&, char&) ()
+#115 0x00000000023a3d87 in lsOCPAutomatonManagerCL::run(char&, char&) ()
+#116 0x00000000023a4cb0 in lsOptCritPathCmd(dbsCell*, int, char**) ()
+#117 0x000000000158ec70 in rdaiOptCritPathCmd(void*, Tcl_Interp*, int, char**) ()
+#118 0x000000000902e238 in TclInvokeStringCommand ()
+#119 0x000000000902f03d in TclEvalObjvInternal ()
+#120 0x000000000902fa2e in Tcl_EvalEx ()
+#121 0x000000000902fddd in Tcl_Eval ()
+#122 0x0000000002ce9e4f in OptDesign::OptDesignMainStep(char*) ()
+#123 0x0000000002cecc02 in rdaiPerformOptTransform ()
+#124 0x000000000902e238 in TclInvokeStringCommand ()
+#125 0x000000000902f03d in TclEvalObjvInternal ()
+#126 0x000000000905115d in TclExecuteByteCode ()
+#127 0x000000000905056b in TclCompEvalObj ()
+#128 0x000000000903003f in Tcl_EvalObjEx ()
+#129 0x0000000009036835 in Tcl_IfObjCmd ()
+#130 0x000000000902f03d in TclEvalObjvInternal ()
+#131 0x000000000905115d in TclExecuteByteCode ()
+#132 0x000000000905056b in TclCompEvalObj ()
+#133 0x000000000907a808 in TclObjInterpProc ()
+#134 0x000000000902f03d in TclEvalObjvInternal ()
+#135 0x000000000905115d in TclExecuteByteCode ()
+#136 0x00000000090501a6 in Tcl_ExprObj ()
+#137 0x0000000009030693 in Tcl_ExprBooleanObj ()
+#138 0x00000000090368b1 in Tcl_IfObjCmd ()
+#139 0x000000000902f03d in TclEvalObjvInternal ()
+#140 0x000000000905115d in TclExecuteByteCode ()
+#141 0x000000000905056b in TclCompEvalObj ()
+#142 0x000000000903003f in Tcl_EvalObjEx ()
+#143 0x0000000009036835 in Tcl_IfObjCmd ()
+#144 0x000000000902f03d in TclEvalObjvInternal ()
+#145 0x000000000905115d in TclExecuteByteCode ()
+#146 0x000000000905056b in TclCompEvalObj ()
+#147 0x000000000903003f in Tcl_EvalObjEx ()
+#148 0x0000000009036835 in Tcl_IfObjCmd ()
+#149 0x000000000902f03d in TclEvalObjvInternal ()
+#150 0x000000000905115d in TclExecuteByteCode ()
+#151 0x000000000905056b in TclCompEvalObj ()
+#152 0x000000000903003f in Tcl_EvalObjEx ()
+#153 0x0000000009036835 in Tcl_IfObjCmd ()
+#154 0x000000000902f03d in TclEvalObjvInternal ()
+#155 0x000000000905115d in TclExecuteByteCode ()
+#156 0x000000000905056b in TclCompEvalObj ()
+#157 0x000000000907a808 in TclObjInterpProc ()
+#158 0x000000000902f03d in TclEvalObjvInternal ()
+#159 0x000000000902fa2e in Tcl_EvalEx ()
+#160 0x000000000902fec5 in Tcl_EvalObjEx ()
+#161 0x00000000090342af in Tcl_EvalObjCmd ()
+#162 0x000000000902f03d in TclEvalObjvInternal ()
+#163 0x000000000905115d in TclExecuteByteCode ()
+#164 0x000000000905056b in TclCompEvalObj ()
+#165 0x000000000903003f in Tcl_EvalObjEx ()
+#166 0x0000000009035716 in Tcl_ForObjCmd ()
+#167 0x000000000902f03d in TclEvalObjvInternal ()
+#168 0x000000000905115d in TclExecuteByteCode ()
+#169 0x000000000905056b in TclCompEvalObj ()
+#170 0x000000000907a808 in TclObjInterpProc ()
+#171 0x000000000902f03d in TclEvalObjvInternal ()
+#172 0x000000000905115d in TclExecuteByteCode ()
+#173 0x000000000905056b in TclCompEvalObj ()
+#174 0x000000000903003f in Tcl_EvalObjEx ()
+#175 0x0000000009035716 in Tcl_ForObjCmd ()
+#176 0x000000000902f03d in TclEvalObjvInternal ()
+#177 0x000000000905115d in TclExecuteByteCode ()
+#178 0x000000000905056b in TclCompEvalObj ()
+#179 0x000000000907a808 in TclObjInterpProc ()
+#180 0x000000000902f03d in TclEvalObjvInternal ()
+#181 0x000000000905115d in TclExecuteByteCode ()
+#182 0x000000000905056b in TclCompEvalObj ()
+#183 0x000000000903003f in Tcl_EvalObjEx ()
+#184 0x0000000009036835 in Tcl_IfObjCmd ()
+#185 0x000000000902f03d in TclEvalObjvInternal ()
+#186 0x000000000905115d in TclExecuteByteCode ()
+#187 0x000000000905056b in TclCompEvalObj ()
+#188 0x000000000903003f in Tcl_EvalObjEx ()
+#189 0x0000000009036835 in Tcl_IfObjCmd ()
+#190 0x000000000902f03d in TclEvalObjvInternal ()
+#191 0x000000000905115d in TclExecuteByteCode ()
+#192 0x000000000905056b in TclCompEvalObj ()
+#193 0x000000000907a808 in TclObjInterpProc ()
+#194 0x000000000902f03d in TclEvalObjvInternal ()
+#195 0x000000000905115d in TclExecuteByteCode ()
+#196 0x000000000905056b in TclCompEvalObj ()
+#197 0x000000000903003f in Tcl_EvalObjEx ()
+#198 0x0000000009036835 in Tcl_IfObjCmd ()
+#199 0x000000000902f03d in TclEvalObjvInternal ()
+#200 0x000000000905115d in TclExecuteByteCode ()
+#201 0x000000000905056b in TclCompEvalObj ()
+#202 0x000000000907a808 in TclObjInterpProc ()
+#203 0x000000000902f03d in TclEvalObjvInternal ()
+#204 0x000000000905115d in TclExecuteByteCode ()
+#205 0x000000000905056b in TclCompEvalObj ()
+#206 0x000000000903003f in Tcl_EvalObjEx ()
+#207 0x0000000009036835 in Tcl_IfObjCmd ()
+#208 0x000000000902f03d in TclEvalObjvInternal ()
+#209 0x000000000905115d in TclExecuteByteCode ()
+#210 0x000000000905056b in TclCompEvalObj ()
+#211 0x000000000907a808 in TclObjInterpProc ()
+#212 0x000000000902f03d in TclEvalObjvInternal ()
+#213 0x000000000905115d in TclExecuteByteCode ()
+#214 0x000000000905056b in TclCompEvalObj ()
+#215 0x000000000903003f in Tcl_EvalObjEx ()
+#216 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#217 0x000000000902f03d in TclEvalObjvInternal ()
+#218 0x000000000905115d in TclExecuteByteCode ()
+#219 0x00000000090501a6 in Tcl_ExprObj ()
+#220 0x0000000009030693 in Tcl_ExprBooleanObj ()
+#221 0x00000000090368b1 in Tcl_IfObjCmd ()
+#222 0x000000000902f03d in TclEvalObjvInternal ()
+#223 0x000000000905115d in TclExecuteByteCode ()
+#224 0x000000000905056b in TclCompEvalObj ()
+#225 0x000000000907a808 in TclObjInterpProc ()
+#226 0x000000000902f03d in TclEvalObjvInternal ()
+#227 0x000000000902fa2e in Tcl_EvalEx ()
+#228 0x000000000902fddd in Tcl_Eval ()
+#229 0x0000000001586ad2 in rdaOptDesignCL::run() const ()
+#230 0x00000000015d2b90 in rdaiOptDesign(void*, Tcl_Interp*, int, char**) ()
+#231 0x000000000891eab8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#232 0x00000000089155d2 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#233 0x000000000902e238 in TclInvokeStringCommand ()
+#234 0x000000000902f03d in TclEvalObjvInternal ()
+#235 0x000000000902fa2e in Tcl_EvalEx ()
+#236 0x000000000902fec5 in Tcl_EvalObjEx ()
+#237 0x00000000090342af in Tcl_EvalObjCmd ()
+#238 0x000000000902f03d in TclEvalObjvInternal ()
+#239 0x000000000905115d in TclExecuteByteCode ()
+#240 0x000000000905056b in TclCompEvalObj ()
+#241 0x000000000907a808 in TclObjInterpProc ()
+#242 0x000000000902f03d in TclEvalObjvInternal ()
+#243 0x000000000905115d in TclExecuteByteCode ()
+#244 0x000000000905056b in TclCompEvalObj ()
+#245 0x000000000903003f in Tcl_EvalObjEx ()
+#246 0x0000000009036835 in Tcl_IfObjCmd ()
+#247 0x000000000902f03d in TclEvalObjvInternal ()
+#248 0x000000000905115d in TclExecuteByteCode ()
+#249 0x000000000905056b in TclCompEvalObj ()
+#250 0x000000000903003f in Tcl_EvalObjEx ()
+#251 0x0000000009036835 in Tcl_IfObjCmd ()
+#252 0x000000000902f03d in TclEvalObjvInternal ()
+#253 0x000000000905115d in TclExecuteByteCode ()
+#254 0x000000000905056b in TclCompEvalObj ()
+#255 0x000000000903003f in Tcl_EvalObjEx ()
+#256 0x0000000009036835 in Tcl_IfObjCmd ()
+#257 0x000000000902f03d in TclEvalObjvInternal ()
+#258 0x000000000905115d in TclExecuteByteCode ()
+#259 0x000000000905056b in TclCompEvalObj ()
+#260 0x000000000903003f in Tcl_EvalObjEx ()
+#261 0x0000000009036835 in Tcl_IfObjCmd ()
+#262 0x000000000902f03d in TclEvalObjvInternal ()
+#263 0x000000000905115d in TclExecuteByteCode ()
+#264 0x000000000905056b in TclCompEvalObj ()
+#265 0x000000000907a808 in TclObjInterpProc ()
+#266 0x000000000902f03d in TclEvalObjvInternal ()
+#267 0x000000000902fa2e in Tcl_EvalEx ()
+#268 0x000000000902fec5 in Tcl_EvalObjEx ()
+#269 0x00000000090342af in Tcl_EvalObjCmd ()
+#270 0x000000000902f03d in TclEvalObjvInternal ()
+#271 0x000000000905115d in TclExecuteByteCode ()
+#272 0x000000000905056b in TclCompEvalObj ()
+#273 0x000000000907a808 in TclObjInterpProc ()
+#274 0x000000000902f03d in TclEvalObjvInternal ()
+#275 0x000000000902fa2e in Tcl_EvalEx ()
+#276 0x000000000902fec5 in Tcl_EvalObjEx ()
+#277 0x00000000090342af in Tcl_EvalObjCmd ()
+#278 0x000000000902f03d in TclEvalObjvInternal ()
+#279 0x000000000905115d in TclExecuteByteCode ()
+#280 0x000000000905056b in TclCompEvalObj ()
+#281 0x000000000907a808 in TclObjInterpProc ()
+#282 0x000000000902f03d in TclEvalObjvInternal ()
+#283 0x000000000905115d in TclExecuteByteCode ()
+#284 0x000000000905056b in TclCompEvalObj ()
+#285 0x000000000903003f in Tcl_EvalObjEx ()
+#286 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#287 0x000000000902f03d in TclEvalObjvInternal ()
+#288 0x000000000902fa2e in Tcl_EvalEx ()
+#289 0x000000000902f813 in Tcl_EvalTokensStandard ()
+#290 0x000000000902f9cf in Tcl_EvalEx ()
+#291 0x000000000902fddd in Tcl_Eval ()
+#292 0x00000000058d5003 in qtfTclEval(char*) ()
+#293 0x0000000005878376 in qtfsItem::fUpdateVar() ()
+#294 0x0000000005926324 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#295 0x00007f0af9aa5b6c in QMetaObject::activate(QObject*, int, int, void**) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#296 0x00007f0afa609827 in QAbstractButton::clicked(bool) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#297 0x00007f0afa36e0cb in QAbstractButtonPrivate::emitClicked() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#298 0x00007f0afa36fcdb in QAbstractButtonPrivate::click() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#299 0x00007f0afa36ff25 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#300 0x00007f0afa061340 in QWidget::event(QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#301 0x00007f0afa0126fc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#302 0x00007f0afa019e61 in QApplication::notify(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#303 0x00007f0af9a90a6c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#304 0x00007f0afa019120 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#305 0x00007f0afa07ec37 in QETWidget::translateMouseEvent(_XEvent const*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#306 0x00007f0afa07d84e in QApplication::x11ProcessEvent(_XEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#307 0x00007f0afa0a490b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#308 0x00007f0af81f8d5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#309 0x00007f0af9a919ff in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#310 0x00007f0af81f8ce9 in tcl_dispatch_qt () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#311 0x0000000009073108 in Tcl_DoOneEvent ()
+#312 0x00007f0af81f8db2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#313 0x00007f0af9a8f392 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#314 0x00007f0af9a8f764 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#315 0x00007f0af9a91899 in QCoreApplication::exec() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#316 0x00007f0af81fb36f in TqApplication::exec() () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#317 0x0000000001438a57 in fe_main(int, char**) ()
+#318 0x0000000001438b20 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 30409]
+[New LWP 30299]
+[New LWP 29999]
+[New LWP 29998]
+[New LWP 29997]
+[New LWP 29996]
+[Thread debugging using libthread_db enabled]
+0x000000346d6ac70d in waitpid () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f0af5721700 (LWP 29996)):
+#0  0x000000346de0efbd in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000001e06fac in rdaiLicRecheck(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f0af4815700 (LWP 29997)):
+#0  0x000000346d6acaed in nanosleep () from /lib64/libc.so.6
+#1  0x000000346d6ac960 in sleep () from /lib64/libc.so.6
+#2  0x00000000079986f1 in syiPeakMem(void*) ()
+#3  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#4  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f0af3c10700 (LWP 29998)):
+#0  0x000000346d6e1423 in select () from /lib64/libc.so.6
+#1  0x0000000009090e8d in NotifierThreadProc ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f0af320f700 (LWP 29999)):
+#0  0x000000346de0f535 in sigwait () from /lib64/libpthread.so.0
+#1  0x00000000014a7b03 in ctrlCHandle(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f0ae7c2b700 (LWP 30299)):
+#0  0x000000346de0ba0e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000090900fe in Tcl_ConditionWait ()
+#2  0x0000000009090c01 in Tcl_WaitForEvent ()
+#3  0x000000000907307e in Tcl_DoOneEvent ()
+#4  0x000000000904fb5a in Tcl_VwaitObjCmd ()
+#5  0x000000000902f03d in TclEvalObjvInternal ()
+#6  0x000000000902fa2e in Tcl_EvalEx ()
+#7  0x0000000001d3d7c7 in edpParallelMaster::heartbeatMonitor(void*) ()
+#8  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#9  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f0ad6b26700 (LWP 30409)):
+#0  0x000000346de0b63c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000002aef157 in dosFGMasterThreadCL::idleThreadLoop(void*) ()
+#2  0x000000346de07a51 in start_thread () from /lib64/libpthread.so.0
+#3  0x000000346d6e89ad in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f0af6e289e0 (LWP 29941)):
+#0  0x000000346d6ac70d in waitpid () from /lib64/libc.so.6
+#1  0x000000346d63e609 in do_system () from /lib64/libc.so.6
+#2  0x000000346d63e940 in system () from /lib64/libc.so.6
+#3  0x0000000007985721 in syStackTrace ()
+#4  0x00000000014a768a in rdaiErrorHandler(int, siginfo*, void*) ()
+#5  <signal handler called>
+#6  0x000000000397df14 in spRPlace(dbsHead*, sysBox*, char, char) ()
+#7  0x00000000039405d6 in spMain(dbsHead*) ()
+#8  0x00000000015e175c in rdaiPlaceCmd ()
+#9  0x000000000902e238 in TclInvokeStringCommand ()
+#10 0x000000000902f03d in TclEvalObjvInternal ()
+#11 0x000000000905115d in TclExecuteByteCode ()
+#12 0x000000000905056b in TclCompEvalObj ()
+#13 0x000000000907a808 in TclObjInterpProc ()
+#14 0x000000000902f03d in TclEvalObjvInternal ()
+#15 0x000000000905115d in TclExecuteByteCode ()
+#16 0x000000000905056b in TclCompEvalObj ()
+#17 0x000000000903003f in Tcl_EvalObjEx ()
+#18 0x0000000009036835 in Tcl_IfObjCmd ()
+#19 0x000000000902f03d in TclEvalObjvInternal ()
+#20 0x000000000905115d in TclExecuteByteCode ()
+#21 0x000000000905056b in TclCompEvalObj ()
+#22 0x000000000903003f in Tcl_EvalObjEx ()
+#23 0x0000000009036835 in Tcl_IfObjCmd ()
+#24 0x000000000902f03d in TclEvalObjvInternal ()
+#25 0x000000000905115d in TclExecuteByteCode ()
+#26 0x000000000905056b in TclCompEvalObj ()
+#27 0x000000000907a808 in TclObjInterpProc ()
+#28 0x000000000902f03d in TclEvalObjvInternal ()
+#29 0x000000000902fa2e in Tcl_EvalEx ()
+#30 0x000000000902fec5 in Tcl_EvalObjEx ()
+#31 0x00000000090342af in Tcl_EvalObjCmd ()
+#32 0x000000000902f03d in TclEvalObjvInternal ()
+#33 0x000000000905115d in TclExecuteByteCode ()
+#34 0x000000000905056b in TclCompEvalObj ()
+#35 0x000000000907a808 in TclObjInterpProc ()
+#36 0x000000000902f03d in TclEvalObjvInternal ()
+#37 0x000000000902fa2e in Tcl_EvalEx ()
+#38 0x000000000902fec5 in Tcl_EvalObjEx ()
+#39 0x00000000090342af in Tcl_EvalObjCmd ()
+#40 0x000000000902f03d in TclEvalObjvInternal ()
+#41 0x000000000905115d in TclExecuteByteCode ()
+#42 0x000000000905056b in TclCompEvalObj ()
+#43 0x000000000907a808 in TclObjInterpProc ()
+#44 0x000000000902f03d in TclEvalObjvInternal ()
+#45 0x000000000905115d in TclExecuteByteCode ()
+#46 0x000000000905056b in TclCompEvalObj ()
+#47 0x000000000903003f in Tcl_EvalObjEx ()
+#48 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#49 0x000000000902f03d in TclEvalObjvInternal ()
+#50 0x000000000902fa2e in Tcl_EvalEx ()
+#51 0x000000000902f813 in Tcl_EvalTokensStandard ()
+#52 0x000000000902f9cf in Tcl_EvalEx ()
+#53 0x000000000902fddd in Tcl_Eval ()
+#54 0x00000000058d5003 in qtfTclEval(char*) ()
+#55 0x0000000005878376 in qtfsItem::fUpdateVar() ()
+#56 0x0000000005926324 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#57 0x00007f0af9aa5b6c in QMetaObject::activate(QObject*, int, int, void**) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#58 0x00007f0afa609827 in QAbstractButton::clicked(bool) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#59 0x00007f0afa36e0cb in QAbstractButtonPrivate::emitClicked() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#60 0x00007f0afa36fcdb in QAbstractButtonPrivate::click() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#61 0x00007f0afa36ff25 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#62 0x00007f0afa061340 in QWidget::event(QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#63 0x00007f0afa0126fc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#64 0x00007f0afa019e61 in QApplication::notify(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#65 0x00007f0af9a90a6c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#66 0x00007f0afa019120 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#67 0x00007f0afa07ec37 in QETWidget::translateMouseEvent(_XEvent const*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#68 0x00007f0afa07d84e in QApplication::x11ProcessEvent(_XEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#69 0x00007f0afa0a490b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#70 0x00007f0af81f8d5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#71 0x00007f0af9a919ff in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#72 0x00007f0af81f8ce9 in tcl_dispatch_qt () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#73 0x0000000009073108 in Tcl_DoOneEvent ()
+#74 0x00007f0af81f8db2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#75 0x00007f0af9a8f392 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#76 0x00007f0af9a8f764 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#77 0x0000000006578f0b in uiAppStartEventLoop() ()
+#78 0x000000000657931e in uiiAppStartEventLoopCmd(void*, Tcl_Interp*, int, char**) ()
+#79 0x000000000891eab8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#80 0x00000000089155d2 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#81 0x000000000902e238 in TclInvokeStringCommand ()
+#82 0x000000000902f03d in TclEvalObjvInternal ()
+#83 0x000000000905115d in TclExecuteByteCode ()
+#84 0x000000000905056b in TclCompEvalObj ()
+#85 0x000000000907a808 in TclObjInterpProc ()
+#86 0x000000000902f03d in TclEvalObjvInternal ()
+#87 0x000000000902fa2e in Tcl_EvalEx ()
+#88 0x000000000902fec5 in Tcl_EvalObjEx ()
+#89 0x000000000907a2e3 in Tcl_UplevelObjCmd ()
+#90 0x000000000902f03d in TclEvalObjvInternal ()
+#91 0x000000000905115d in TclExecuteByteCode ()
+#92 0x000000000905056b in TclCompEvalObj ()
+#93 0x000000000907a808 in TclObjInterpProc ()
+#94 0x000000000902f03d in TclEvalObjvInternal ()
+#95 0x000000000902fa2e in Tcl_EvalEx ()
+#96 0x0000000001d3a0e0 in edpParallelBase::execCommand(Tcl_Interp*, char*) ()
+#97 0x0000000001d3c42f in edpParallelMaster::waitForOneResult() ()
+#98 0x0000000002aedc5a in dosFGParallelMaster::updateResults() ()
+#99 0x0000000002af0c19 in dosFGMasterLoopCL::sendMsgTask(dosFGTaskCL&, bool) ()
+#100 0x0000000002528be7 in lsFGRunMasterThreadProcess::runActionsOnThread(ddPtrListTPL<dosFGMasterThreadCL::dosFGMasterThreadFuncCL>&, ddPtrListTPL<dosFGMasterThreadCL::dosFGMasterThreadFuncCL>&) ()
+#101 0x0000000002528fdf in lsFGRunMasterThreadProcess::execOneMandatoryActionOnThread(lsFGOCPMasterThreadFuncCL&) ()
+#102 0x00000000025292cc in lsFGOCPBaseTransfCL::runThreadExtraction(lsFGOCPMasterThreadFuncCL&, int) ()
+#103 0x000000000234956d in lsiGenericFrameWorkClusterOptForLvl(dbsCell*, dbsList*&, int&, tosCellLevelNodeArrayClass*&, lsFollowSlackData*, char, lssTransformStatus*, char, int, int&, double, dbsList**, int*, int*, int*, char*, lsFGOCPRestructTransfCL&) ()
+#104 0x000000000234a136 in lsGenericFrameWorkClusterOpt ()
+#105 0x000000000234a5aa in lsGenericFrameWorkClusterOptForDP(dbsCell*, tasCluster*, int*, double, int*, int*, int*, char, lssTransformStatus*, lssCmd&, char) ()
+#106 0x0000000002370e82 in lsiTimeClusterIPORestructInst ()
+#107 0x000000000237117d in lsTimeClusterBooleanMap(dbsCell*, tasCluster*, int, int, double, char, char*, lssTransformStatus*) ()
+#108 0x000000000243b6c5 in lsDpBooleanMapTransformCL::execute(dbsCell*, tasCluster*, lsDpStatusCL*, int*) ()
+#109 0x000000000245c914 in lsDpTransformCL::run(dbsCell*, tasCluster*, lsDpStatusCL*) ()
+#110 0x000000000244c700 in lsDpTacticCL::runAllCluster(lsDpTransformCL*, lsDpStatusCL*, bool, bool, bool) ()
+#111 0x000000000242a32b in lsDpStateMachineCL::executeTactic(int) ()
+#112 0x000000000242a735 in lsDpStateMachineCL::run() ()
+#113 0x0000000002434886 in lsDpLaunchAutomaton(char const*, dbsCell*, char*, char*) ()
+#114 0x000000000237b62e in lsOCPAutomatonManagerCL::runNewAutomaton(char&, char&) ()
+#115 0x00000000023a3d87 in lsOCPAutomatonManagerCL::run(char&, char&) ()
+#116 0x00000000023a4cb0 in lsOptCritPathCmd(dbsCell*, int, char**) ()
+#117 0x000000000158ec70 in rdaiOptCritPathCmd(void*, Tcl_Interp*, int, char**) ()
+#118 0x000000000902e238 in TclInvokeStringCommand ()
+#119 0x000000000902f03d in TclEvalObjvInternal ()
+#120 0x000000000902fa2e in Tcl_EvalEx ()
+#121 0x000000000902fddd in Tcl_Eval ()
+#122 0x0000000002ce9e4f in OptDesign::OptDesignMainStep(char*) ()
+#123 0x0000000002cecc02 in rdaiPerformOptTransform ()
+#124 0x000000000902e238 in TclInvokeStringCommand ()
+#125 0x000000000902f03d in TclEvalObjvInternal ()
+#126 0x000000000905115d in TclExecuteByteCode ()
+#127 0x000000000905056b in TclCompEvalObj ()
+#128 0x000000000903003f in Tcl_EvalObjEx ()
+#129 0x0000000009036835 in Tcl_IfObjCmd ()
+#130 0x000000000902f03d in TclEvalObjvInternal ()
+#131 0x000000000905115d in TclExecuteByteCode ()
+#132 0x000000000905056b in TclCompEvalObj ()
+#133 0x000000000907a808 in TclObjInterpProc ()
+#134 0x000000000902f03d in TclEvalObjvInternal ()
+#135 0x000000000905115d in TclExecuteByteCode ()
+#136 0x00000000090501a6 in Tcl_ExprObj ()
+#137 0x0000000009030693 in Tcl_ExprBooleanObj ()
+#138 0x00000000090368b1 in Tcl_IfObjCmd ()
+#139 0x000000000902f03d in TclEvalObjvInternal ()
+#140 0x000000000905115d in TclExecuteByteCode ()
+#141 0x000000000905056b in TclCompEvalObj ()
+#142 0x000000000903003f in Tcl_EvalObjEx ()
+#143 0x0000000009036835 in Tcl_IfObjCmd ()
+#144 0x000000000902f03d in TclEvalObjvInternal ()
+#145 0x000000000905115d in TclExecuteByteCode ()
+#146 0x000000000905056b in TclCompEvalObj ()
+#147 0x000000000903003f in Tcl_EvalObjEx ()
+#148 0x0000000009036835 in Tcl_IfObjCmd ()
+#149 0x000000000902f03d in TclEvalObjvInternal ()
+#150 0x000000000905115d in TclExecuteByteCode ()
+#151 0x000000000905056b in TclCompEvalObj ()
+#152 0x000000000903003f in Tcl_EvalObjEx ()
+#153 0x0000000009036835 in Tcl_IfObjCmd ()
+#154 0x000000000902f03d in TclEvalObjvInternal ()
+#155 0x000000000905115d in TclExecuteByteCode ()
+#156 0x000000000905056b in TclCompEvalObj ()
+#157 0x000000000907a808 in TclObjInterpProc ()
+#158 0x000000000902f03d in TclEvalObjvInternal ()
+#159 0x000000000902fa2e in Tcl_EvalEx ()
+#160 0x000000000902fec5 in Tcl_EvalObjEx ()
+#161 0x00000000090342af in Tcl_EvalObjCmd ()
+#162 0x000000000902f03d in TclEvalObjvInternal ()
+#163 0x000000000905115d in TclExecuteByteCode ()
+#164 0x000000000905056b in TclCompEvalObj ()
+#165 0x000000000903003f in Tcl_EvalObjEx ()
+#166 0x0000000009035716 in Tcl_ForObjCmd ()
+#167 0x000000000902f03d in TclEvalObjvInternal ()
+#168 0x000000000905115d in TclExecuteByteCode ()
+#169 0x000000000905056b in TclCompEvalObj ()
+#170 0x000000000907a808 in TclObjInterpProc ()
+#171 0x000000000902f03d in TclEvalObjvInternal ()
+#172 0x000000000905115d in TclExecuteByteCode ()
+#173 0x000000000905056b in TclCompEvalObj ()
+#174 0x000000000903003f in Tcl_EvalObjEx ()
+#175 0x0000000009035716 in Tcl_ForObjCmd ()
+#176 0x000000000902f03d in TclEvalObjvInternal ()
+#177 0x000000000905115d in TclExecuteByteCode ()
+#178 0x000000000905056b in TclCompEvalObj ()
+#179 0x000000000907a808 in TclObjInterpProc ()
+#180 0x000000000902f03d in TclEvalObjvInternal ()
+#181 0x000000000905115d in TclExecuteByteCode ()
+#182 0x000000000905056b in TclCompEvalObj ()
+#183 0x000000000903003f in Tcl_EvalObjEx ()
+#184 0x0000000009036835 in Tcl_IfObjCmd ()
+#185 0x000000000902f03d in TclEvalObjvInternal ()
+#186 0x000000000905115d in TclExecuteByteCode ()
+#187 0x000000000905056b in TclCompEvalObj ()
+#188 0x000000000903003f in Tcl_EvalObjEx ()
+#189 0x0000000009036835 in Tcl_IfObjCmd ()
+#190 0x000000000902f03d in TclEvalObjvInternal ()
+#191 0x000000000905115d in TclExecuteByteCode ()
+#192 0x000000000905056b in TclCompEvalObj ()
+#193 0x000000000907a808 in TclObjInterpProc ()
+#194 0x000000000902f03d in TclEvalObjvInternal ()
+#195 0x000000000905115d in TclExecuteByteCode ()
+#196 0x000000000905056b in TclCompEvalObj ()
+#197 0x000000000903003f in Tcl_EvalObjEx ()
+#198 0x0000000009036835 in Tcl_IfObjCmd ()
+#199 0x000000000902f03d in TclEvalObjvInternal ()
+#200 0x000000000905115d in TclExecuteByteCode ()
+#201 0x000000000905056b in TclCompEvalObj ()
+#202 0x000000000907a808 in TclObjInterpProc ()
+#203 0x000000000902f03d in TclEvalObjvInternal ()
+#204 0x000000000905115d in TclExecuteByteCode ()
+#205 0x000000000905056b in TclCompEvalObj ()
+#206 0x000000000903003f in Tcl_EvalObjEx ()
+#207 0x0000000009036835 in Tcl_IfObjCmd ()
+#208 0x000000000902f03d in TclEvalObjvInternal ()
+#209 0x000000000905115d in TclExecuteByteCode ()
+#210 0x000000000905056b in TclCompEvalObj ()
+#211 0x000000000907a808 in TclObjInterpProc ()
+#212 0x000000000902f03d in TclEvalObjvInternal ()
+#213 0x000000000905115d in TclExecuteByteCode ()
+#214 0x000000000905056b in TclCompEvalObj ()
+#215 0x000000000903003f in Tcl_EvalObjEx ()
+#216 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#217 0x000000000902f03d in TclEvalObjvInternal ()
+#218 0x000000000905115d in TclExecuteByteCode ()
+#219 0x00000000090501a6 in Tcl_ExprObj ()
+#220 0x0000000009030693 in Tcl_ExprBooleanObj ()
+#221 0x00000000090368b1 in Tcl_IfObjCmd ()
+#222 0x000000000902f03d in TclEvalObjvInternal ()
+#223 0x000000000905115d in TclExecuteByteCode ()
+#224 0x000000000905056b in TclCompEvalObj ()
+#225 0x000000000907a808 in TclObjInterpProc ()
+#226 0x000000000902f03d in TclEvalObjvInternal ()
+#227 0x000000000902fa2e in Tcl_EvalEx ()
+#228 0x000000000902fddd in Tcl_Eval ()
+#229 0x0000000001586ad2 in rdaOptDesignCL::run() const ()
+#230 0x00000000015d2b90 in rdaiOptDesign(void*, Tcl_Interp*, int, char**) ()
+#231 0x000000000891eab8 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#232 0x00000000089155d2 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#233 0x000000000902e238 in TclInvokeStringCommand ()
+#234 0x000000000902f03d in TclEvalObjvInternal ()
+#235 0x000000000902fa2e in Tcl_EvalEx ()
+#236 0x000000000902fec5 in Tcl_EvalObjEx ()
+#237 0x00000000090342af in Tcl_EvalObjCmd ()
+#238 0x000000000902f03d in TclEvalObjvInternal ()
+#239 0x000000000905115d in TclExecuteByteCode ()
+#240 0x000000000905056b in TclCompEvalObj ()
+#241 0x000000000907a808 in TclObjInterpProc ()
+#242 0x000000000902f03d in TclEvalObjvInternal ()
+#243 0x000000000905115d in TclExecuteByteCode ()
+#244 0x000000000905056b in TclCompEvalObj ()
+#245 0x000000000903003f in Tcl_EvalObjEx ()
+#246 0x0000000009036835 in Tcl_IfObjCmd ()
+#247 0x000000000902f03d in TclEvalObjvInternal ()
+#248 0x000000000905115d in TclExecuteByteCode ()
+#249 0x000000000905056b in TclCompEvalObj ()
+#250 0x000000000903003f in Tcl_EvalObjEx ()
+#251 0x0000000009036835 in Tcl_IfObjCmd ()
+#252 0x000000000902f03d in TclEvalObjvInternal ()
+#253 0x000000000905115d in TclExecuteByteCode ()
+#254 0x000000000905056b in TclCompEvalObj ()
+#255 0x000000000903003f in Tcl_EvalObjEx ()
+#256 0x0000000009036835 in Tcl_IfObjCmd ()
+#257 0x000000000902f03d in TclEvalObjvInternal ()
+#258 0x000000000905115d in TclExecuteByteCode ()
+#259 0x000000000905056b in TclCompEvalObj ()
+#260 0x000000000903003f in Tcl_EvalObjEx ()
+#261 0x0000000009036835 in Tcl_IfObjCmd ()
+#262 0x000000000902f03d in TclEvalObjvInternal ()
+#263 0x000000000905115d in TclExecuteByteCode ()
+#264 0x000000000905056b in TclCompEvalObj ()
+#265 0x000000000907a808 in TclObjInterpProc ()
+#266 0x000000000902f03d in TclEvalObjvInternal ()
+#267 0x000000000902fa2e in Tcl_EvalEx ()
+#268 0x000000000902fec5 in Tcl_EvalObjEx ()
+#269 0x00000000090342af in Tcl_EvalObjCmd ()
+#270 0x000000000902f03d in TclEvalObjvInternal ()
+#271 0x000000000905115d in TclExecuteByteCode ()
+#272 0x000000000905056b in TclCompEvalObj ()
+#273 0x000000000907a808 in TclObjInterpProc ()
+#274 0x000000000902f03d in TclEvalObjvInternal ()
+#275 0x000000000902fa2e in Tcl_EvalEx ()
+#276 0x000000000902fec5 in Tcl_EvalObjEx ()
+#277 0x00000000090342af in Tcl_EvalObjCmd ()
+#278 0x000000000902f03d in TclEvalObjvInternal ()
+#279 0x000000000905115d in TclExecuteByteCode ()
+#280 0x000000000905056b in TclCompEvalObj ()
+#281 0x000000000907a808 in TclObjInterpProc ()
+#282 0x000000000902f03d in TclEvalObjvInternal ()
+#283 0x000000000905115d in TclExecuteByteCode ()
+#284 0x000000000905056b in TclCompEvalObj ()
+#285 0x000000000903003f in Tcl_EvalObjEx ()
+#286 0x0000000009033d76 in Tcl_CatchObjCmd ()
+#287 0x000000000902f03d in TclEvalObjvInternal ()
+#288 0x000000000902fa2e in Tcl_EvalEx ()
+#289 0x000000000902f813 in Tcl_EvalTokensStandard ()
+#290 0x000000000902f9cf in Tcl_EvalEx ()
+#291 0x000000000902fddd in Tcl_Eval ()
+#292 0x00000000058d5003 in qtfTclEval(char*) ()
+#293 0x0000000005878376 in qtfsItem::fUpdateVar() ()
+#294 0x0000000005926324 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#295 0x00007f0af9aa5b6c in QMetaObject::activate(QObject*, int, int, void**) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#296 0x00007f0afa609827 in QAbstractButton::clicked(bool) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#297 0x00007f0afa36e0cb in QAbstractButtonPrivate::emitClicked() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#298 0x00007f0afa36fcdb in QAbstractButtonPrivate::click() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#299 0x00007f0afa36ff25 in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#300 0x00007f0afa061340 in QWidget::event(QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#301 0x00007f0afa0126fc in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#302 0x00007f0afa019e61 in QApplication::notify(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#303 0x00007f0af9a90a6c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#304 0x00007f0afa019120 in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#305 0x00007f0afa07ec37 in QETWidget::translateMouseEvent(_XEvent const*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#306 0x00007f0afa07d84e in QApplication::x11ProcessEvent(_XEvent*) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#307 0x00007f0afa0a490b in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtGui.so.4
+#308 0x00007f0af81f8d5a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#309 0x00007f0af9a919ff in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#310 0x00007f0af81f8ce9 in tcl_dispatch_qt () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#311 0x0000000009073108 in Tcl_DoOneEvent ()
+#312 0x00007f0af81f8db2 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#313 0x00007f0af9a8f392 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#314 0x00007f0af9a8f764 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#315 0x00007f0af9a91899 in QCoreApplication::exec() () from /usr/local/cadence/EDI101/tools.lnx86/Qt/64bit/lib/libQtCore.so.4
+#316 0x00007f0af81fb36f in TqApplication::exec() () from /usr/local/cadence/EDI101/tools.lnx86/lib/64bit/libtq.so
+#317 0x0000000001438a57 in fe_main(int, char**) ()
+#318 0x0000000001438b20 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 29941] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
+*** INTERRUPTED *** [signal 1]
+29941: No such process

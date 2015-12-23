@@ -1,0 +1,58 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Fri Oct  9 15:54:11 2015                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v10.12-s181_1 (64bit) 07/28/2011 22:52 (Linux 2.6)
+#@(#)CDS: NanoRoute v10.12-s010 NR110720-1815/10_10_USR2-UB (database version 2.30, 124.2.1) {superthreading v1.15}
+#@(#)CDS: CeltIC v10.12-s013_1 (64bit) 07/27/2011 04:14:35 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 10.12-s001 (64bit) 07/28/2011 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 10.12-s010_1 (64bit) Jul 18 2011 22:58:43 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v10.12-s007
+
+win
+setDrawView fplan
+setDrawView place
+setDrawView fplan
+compileDesign
+compileDesign
+placeDesign -noPrePlaceOpt
+setDrawView place
+getIoFlowFlag
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -layer_top M1 -threshold 0.1 -spacing_right 2 -spacing_left 2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+fit
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.957871396896 0.700002 0.0 0.0 0.0 0.0
+uiSetTool select
+getIoFlowFlag
+fit
+fit
+fit
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r .6 .7 30 30 30 30
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -layer_top M1 -threshold 0.1 -spacing_right 2 -spacing_left 2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+setDrawView fplan
+setDrawView place
+fit
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -center 1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -layer_top M1 -threshold 0.1 -spacing_right 2 -spacing_left 2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -center 1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -layer_top M1 -threshold 0.1 -spacing_right 2 -spacing_left 2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -center 1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -layer_top M1 -threshold 0.1 -spacing_right 2 -spacing_left 2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+windowSelect 152.192 115.735 151.891 106.383
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView fplan
+setDrawView place
+uiSetTool ruler
+uiSetTool select
+addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -offset_bottom .2 -layer_top M1 -threshold 0.1 -offset_left .2 -spacing_right 2 -spacing_left 2 -offset_right .2 -offset_top .2 -layer_right M2 -nets {VDD VSS} -stacked_via_bottom_layer M1 -layer_left M2
+setDrawView fplan
+setDrawView place
+windowSelect 143.701 119.015 139.308 114.160
+windowSelect 116.651 102.601 137.112 100.983

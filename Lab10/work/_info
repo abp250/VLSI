@@ -1,0 +1,57 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/abp250/Documents/EE465/Lab9
+T_opt
+V;X_m`Zg0lh9OTd2Xf4B250
+04 11 4 work elevator_tb fast 0
+=1--56479cfc-4e333-681d
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;6.5c;42
+velevator
+Vh5bQ5b>z2L`Zl4Dd`H0CJ3
+r1
+!s85 0
+31
+I^2jL05OIIn464XT7T<`kY2
+Z1 d/home/abp250/Documents/EE465/Lab10
+w1447451633
+8/home/abp250/Documents/EE465/Lab10/elevator.v
+F/home/abp250/Documents/EE465/Lab10/elevator.v
+L0 2
+Z2 OL;L;6.5c;42
+Z3 !s102 -nocovercells
+Z4 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+!s100 2gY:SiQ_@Ng16@cjV4=H@1
+velevator_tb
+VcTB>4jUBBLXUF@HM3bYPX2
+r1
+31
+I@fDCKDOF0mdnl<=ZF2_ZT1
+R1
+w1447450871
+8/home/abp250/Documents/EE465/Lab10/elevator_tb.v
+F/home/abp250/Documents/EE465/Lab10/elevator_tb.v
+L0 2
+R2
+R3
+R4
+!s85 0
+!s100 <MHe6nmeZLW47b3UQW2AS2
+vmain
+IGXib_OTzO=`[0CN_3W24j0
+VELR9hn[RO^BbA8ZWGSM@]2
+R1
+w1447276961
+8/home/abp250/Documents/EE465/Lab10/main.v
+F/home/abp250/Documents/EE465/Lab10/main.v
+L0 2
+R2
+r1
+31
+R4
+R3
+!s100 FFUQ?OTOa`eKOKST:9=M@1
+!s85 0

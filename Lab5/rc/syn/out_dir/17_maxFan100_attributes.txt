@@ -1,0 +1,440 @@
+/designs:
+Total: 2 items
+./                          
+ALT_MULTADD/                 (design)
+    Attributes:
+      arch_filename = ../rtl/ALT_MULTADD.v
+      cell_delay_multiplier = 1.0
+      cell_min_delay_multiplier = 1.0
+      entity_filename = ../rtl/ALT_MULTADD.v
+      hdl_all_filelist = {default -v2001 {SYNTHESIS} {../rtl/ALT_MULTADD.v}}
+      hdl_filelist = {default -v2001 {SYNTHESIS} {../rtl/ALT_MULTADD.v}}
+      hdl_user_name = ALT_MULTADD
+      max_fanout = 100.000
+      sdp_files = 
+      state = mapped
+
+/dex:
+Total: 5 items
+./                                
+queues/                           
+runs/                             
+thread_parameters/                
+thread_results/                   
+
+/hdl_libraries:
+Total: 20 items
+./                 
+AMBIT/              (hdl_lib)
+CADENCE/            (hdl_lib)
+CW/                 (hdl_lib)
+DP/                 (hdl_lib)
+DW01/               (hdl_lib)
+DW02/               (hdl_lib)
+DW03/               (hdl_lib)
+DW04/               (hdl_lib)
+DW05/               (hdl_lib)
+DW06/               (hdl_lib)
+DWARE/              (hdl_lib)
+GB/                 (hdl_lib)
+GTECH/              (hdl_lib)
+IEEE/               (hdl_lib)
+IEEE_SYNERGY/       (hdl_lib)
+STD/                (hdl_lib)
+SYNERGY/            (hdl_lib)
+SYNOPSYS/           (hdl_lib)
+synthetic/          (hdl_lib)
+
+/libraries:
+Total: 2 items
+./                            
+tcbn65gpluswc/                 (library)
+    Attributes:
+      cap_scale_in_fF = 1000.0
+      files = /home/abp250/Documents/EE465/Lab5/rc/syn/../libdir/tcbn65gpluswc.lib
+      input_threshold_pct_fall = 50.0
+      input_threshold_pct_rise = 50.0
+      leakage_power_scale_in_nW = 1.000000
+      liberty_attributes = comment {Copyright TSMC} current_unit 1mA date {Mon Aug 28 22:18:53 CST 2006 } default_cell_leakage_power 0 default_fanout_load 1 default_inout_pin_cap 0.0012 default_input_pin_cap 0.0012 default_leak... <705 more characters>
+      output_threshold_pct_fall = 50.0
+      output_threshold_pct_rise = 50.0
+      slew_derate_from_library = 0.5
+      slew_lower_threshold_pct_fall = 30.0
+      slew_lower_threshold_pct_rise = 30.0
+      slew_upper_threshold_pct_fall = 70.0
+      slew_upper_threshold_pct_rise = 70.0
+      time_scale_in_ps = 1000
+      usable_comb_cells = 432
+      usable_seq_cells = 280
+      usable_timing_models = 36
+      version = 121
+
+/messages:
+Total: 102 items
+./                     
+1801/                   (message_group)
+ATTR/                   (message_group)
+CDFG/                   (message_group)
+CDFG2G/                 (message_group)
+CG/                     (message_group)
+    Attributes:
+      is_user = true
+CG_CLONE/               (message_group)
+    Attributes:
+      is_user = true
+CHECK_CWD/              (message_group)
+    Attributes:
+      is_user = true
+CHIPWARE/               (message_group)
+    Attributes:
+      is_user = true
+CHKLIB/                 (message_group)
+    Attributes:
+      is_user = true
+CHLNK/                  (message_group)
+    Attributes:
+      is_user = true
+CHNM/                   (message_group)
+    Attributes:
+      is_user = true
+CPF/                    (message_group)
+    Attributes:
+      is_user = true
+CPF_ISO/                (message_group)
+    Attributes:
+      is_user = true
+CPF_LS/                 (message_group)
+    Attributes:
+      is_user = true
+CPF_SYNTH/              (message_group)
+    Attributes:
+      is_user = true
+CT/                     (message_group)
+    Attributes:
+      is_user = true
+CTP/                    (message_group)
+CTSTCH/                 (message_group)
+    Attributes:
+      is_user = true
+CWD/                    (message_group)
+CWD_INSTALL/            (message_group)
+    Attributes:
+      is_user = true
+DATABASE/               (message_group)
+DEX/                    (message_group)
+    Attributes:
+      is_user = true
+DFM/                    (message_group)
+    Attributes:
+      is_user = true
+DFT/                    (message_group)
+DFT_GL/                 (message_group)
+    Attributes:
+      is_user = true
+DFT_GUIDELINE/          (message_group)
+    Attributes:
+      is_user = true
+ECCD/                   (message_group)
+    Attributes:
+      is_user = true
+ECO/                    (message_group)
+    Attributes:
+      is_user = true
+ECO_MANIPULATION/       (message_group)
+    Attributes:
+      is_user = true
+ELAB/                   (message_group)
+ELABUTL/                (message_group)
+ENC/                    (message_group)
+    Attributes:
+      is_user = true
+ENCRYPT/                (message_group)
+    Attributes:
+      is_user = true
+ENC_MSV/                (message_group)
+    Attributes:
+      is_user = true
+ENV_PA/                 (message_group)
+FILE/                   (message_group)
+GB/                     (message_group)
+GG_CLONE/               (message_group)
+    Attributes:
+      is_user = true
+GLO/                    (message_group)
+GSC/                    (message_group)
+    Attributes:
+      is_user = true
+GUI/                    (message_group)
+    Attributes:
+      is_user = true
+HDL/                    (message_group)
+HF/                     (message_group)
+    Attributes:
+      is_user = true
+HPT/                    (message_group)
+INCRSYN/                (message_group)
+ISO/                    (message_group)
+    Attributes:
+      is_user = true
+LBR/                    (message_group)
+LEX/                    (message_group)
+LIC/                    (message_group)
+LS/                     (message_group)
+    Attributes:
+      is_user = true
+MAP/                    (message_group)
+MBIST/                  (message_group)
+MESG/                   (message_group)
+MM_FE/                  (message_group)
+    Attributes:
+      is_user = true
+MSV_FE/                 (message_group)
+    Attributes:
+      is_user = true
+MTDCL/                  (message_group)
+    Attributes:
+      is_user = true
+NAME_SCOPE/             (message_group)
+OVF/                    (message_group)
+PA/                     (message_group)
+PD/                     (message_group)
+    Attributes:
+      is_user = true
+PHYS/                   (message_group)
+PI/                     (message_group)
+PLC/                    (message_group)
+PMBIST/                 (message_group)
+POPT/                   (message_group)
+PROTO_FT/               (message_group)
+PROTO_HDL/              (message_group)
+PTAM/                   (message_group)
+    Attributes:
+      is_user = true
+RCLP/                   (message_group)
+    Attributes:
+      is_user = true
+RETIME/                 (message_group)
+RMSENA/                 (message_group)
+    Attributes:
+      is_user = true
+RPT/                    (message_group)
+    Attributes:
+      is_user = true
+RPT_CG/                 (message_group)
+    Attributes:
+      is_user = true
+RPT_CWD/                (message_group)
+    Attributes:
+      is_user = true
+RPT_DP/                 (message_group)
+    Attributes:
+      is_user = true
+RTLOPT/                 (message_group)
+SAIF/                   (message_group)
+    Attributes:
+      is_user = true
+SDC/                    (message_group)
+    Attributes:
+      is_user = true
+SDP/                    (message_group)
+SRPG/                   (message_group)
+    Attributes:
+      is_user = true
+ST/                     (message_group)
+    Attributes:
+      is_user = true
+STAT/                   (message_group)
+    Attributes:
+      is_user = true
+STRUCT/                 (message_group)
+TCF/                    (message_group)
+    Attributes:
+      is_user = true
+TIM/                    (message_group)
+TSY/                    (message_group)
+    Attributes:
+      is_user = true
+TUI/                    (message_group)
+UTUI/                   (message_group)
+    Attributes:
+      is_user = true
+VCD/                    (message_group)
+    Attributes:
+      is_user = true
+VHDL/                   (message_group)
+VHDLPT/                 (message_group)
+VLOGPT/                 (message_group)
+VRO/                    (message_group)
+VTIM/                   (message_group)
+    Attributes:
+      is_user = true
+WDO/                    (message_group)
+    Attributes:
+      is_user = true
+WETT/                   (message_group)
+    Attributes:
+      is_user = true
+WF/                     (message_group)
+    Attributes:
+      is_user = true
+WMT/                    (message_group)
+    Attributes:
+      is_user = true
+WRTV/                   (message_group)
+    Attributes:
+      is_user = true
+WSDF/                   (message_group)
+    Attributes:
+      is_user = true
+WT/                     (message_group)
+    Attributes:
+      is_user = true
+
+/models:
+Total: 1 item
+./                
+
+/object_types:
+Total: 142 items
+./                                      
+actual_scan_chain/                       (object_type)
+actual_scan_segment/                     (object_type)
+attribute/                               (object_type)
+bin/                                     (object_type)
+blackbox/                                (object_type)
+blockage/                                (object_type)
+boundary_scan_segment/                   (object_type)
+bump/                                    (object_type)
+cell/                                    (object_type)
+clock/                                   (object_type)
+cluster/                                 (object_type)
+constant/                                (object_type)
+cost_group/                              (object_type)
+cpf_command/                             (object_type)
+cpf_command_id/                          (object_type)
+ctp_enable/                              (object_type)
+ctp_source/                              (object_type)
+ctp_timed_object/                        (object_type)
+def_pin/                                 (object_type)
+design/                                  (object_type)
+dft_configuration_mode/                  (object_type)
+direct_access_function/                  (object_type)
+domain_macro_parameter/                  (object_type)
+exception/                               (object_type)
+exploration_power_domain/                (object_type)
+exported_variable/                       (object_type)
+external_delay/                          (object_type)
+fill/                                    (object_type)
+formal_verification_constraint/          (object_type)
+gcell/                                   (object_type)
+group/                                   (object_type)
+hdl_arch/                                (object_type)
+hdl_bind/                                (object_type)
+hdl_block/                               (object_type)
+hdl_comp/                                (object_type)
+hdl_config/                              (object_type)
+hdl_impl/                                (object_type)
+hdl_inst/                                (object_type)
+hdl_label/                               (object_type)
+hdl_lib/                                 (object_type)
+hdl_oper/                                (object_type)
+hdl_pack/                                (object_type)
+hdl_param/                               (object_type)
+hdl_pin/                                 (object_type)
+hdl_proc/                                (object_type)
+hdl_subp/                                (object_type)
+instance/                                (object_type)
+isolation_rule/                          (object_type)
+job/                                     (object_type)
+jtag_instruction/                        (object_type)
+jtag_instruction_register/               (object_type)
+jtag_macro/                              (object_type)
+jtag_port/                               (object_type)
+layer/                                   (object_type)
+level_shifter_group/                     (object_type)
+level_shifter_rule/                      (object_type)
+libarc/                                  (object_type)
+libcell/                                 (object_type)
+libpin/                                  (object_type)
+library/                                 (object_type)
+library_domain/                          (object_type)
+macro_isolation_rule/                    (object_type)
+macro_model/                             (object_type)
+macro_power_domain/                      (object_type)
+mbist_clock/                             (object_type)
+memory_bank_structure/                   (object_type)
+memory_data_bit_structure/               (object_type)
+memory_libcell/                          (object_type)
+memory_libpin_action/                    (object_type)
+memory_libpin_alias/                     (object_type)
+memory_library_domain/                   (object_type)
+memory_spare_column/                     (object_type)
+memory_spare_column_map_address/         (object_type)
+memory_spare_column_map_data/            (object_type)
+memory_spare_row/                        (object_type)
+memory_spare_row_map_address/            (object_type)
+message/                                 (object_type)
+message_group/                           (object_type)
+mode/                                    (object_type)
+modules/                                 (object_type)
+net/                                     (object_type)
+nominal_condition/                       (object_type)
+nondefaultrule/                          (object_type)
+object_type/                             (object_type)
+opcg_domain/                             (object_type)
+opcg_mode/                               (object_type)
+opcg_trigger/                            (object_type)
+operating_condition/                     (object_type)
+osc_source/                              (object_type)
+osc_source_reference/                    (object_type)
+pcell/                                   (object_type)
+pdomain/                                 (object_type)
+pgpin/                                   (object_type)
+pin/                                     (object_type)
+pin_bus/                                 (object_type)
+pinstance/                               (object_type)
+pnet/                                    (object_type)
+port/                                    (object_type)
+port_bus/                                (object_type)
+power_domain/                            (object_type)
+power_intent_command/                    (object_type)
+power_intent_command_id/                 (object_type)
+power_mode/                              (object_type)
+power_scope/                             (object_type)
+queue/                                   (object_type)
+region/                                  (object_type)
+root/                                    (object_type)
+row/                                     (object_type)
+run/                                     (object_type)
+run_parameter/                           (object_type)
+scan_chain/                              (object_type)
+scan_segment/                            (object_type)
+scenario/                                (object_type)
+sdp_column/                              (object_type)
+sdp_group/                               (object_type)
+sdp_instance/                            (object_type)
+sdp_row/                                 (object_type)
+seq_function/                            (object_type)
+site/                                    (object_type)
+slot/                                    (object_type)
+specialnet/                              (object_type)
+state_retention_rule/                    (object_type)
+style/                                   (object_type)
+subdesign/                               (object_type)
+subport/                                 (object_type)
+subport_bus/                             (object_type)
+subscenario/                             (object_type)
+tap_port/                                (object_type)
+test_clock/                              (object_type)
+test_clock_domain/                       (object_type)
+test_signal/                             (object_type)
+thread/                                  (object_type)
+thread_parameter/                        (object_type)
+thread_result/                           (object_type)
+timing_path/                             (object_type)
+track/                                   (object_type)
+via/                                     (object_type)
+violation/                               (object_type)
+wireload/                                (object_type)
+wireload_selection/                      (object_type)
+write_mask_bit/                          (object_type)

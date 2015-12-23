@@ -1,0 +1,18 @@
+隊號(Team number): 
+
+使用之HDL名稱(Verilog or VHDL):
+------------------------RTL Simulation Level------------------------------
+RTL檔案名稱(RTL Netlist file name):
+
+RTL simulation, 所使用最小的 CYCLE  = (              ) ns
+
+--------------------------Synthesis Level---------------------------------
+Gate-Level檔案名稱(Gate-Level Netlist file name): 
+Gate-Level simulation SDF檔案名稱(sdf file name): 
+Design Compiler Datebase檔案名稱(.db): 
+
+GATE LEVEL simulation, 所使用最小的 CYCLE  = (                ) ns
+
+--------------------------------------------------------------------------
+其他說明事項(Any other information you want to specify:(如設計特點 ...)
+

@@ -17,6 +17,18 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+# Custom
+*.mti
+*.bak
+*.wlf
+*~
+*.mpf
+*\work\*
+
+
+
+
 # =========================
 # Operating System Files
 # =========================

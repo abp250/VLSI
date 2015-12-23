@@ -1,0 +1,8 @@
+setAnalysisMode -analysisType single -clkSrcPath true -clockPropagation sdcControl -virtualIPO false
+setTrialRouteMode -fixAirConnect true
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default
+setCTSMode -moveGateLimit 25
+setPlaceMode -congRepairForceTrialRoute false -fp false -ignoreScan true -relaxSoftBlockageMode 2 -timingDriven true
+setIlmMode -highFanoutPort true -loopBack false 
+setImportMode -config true -keepEmptyModule true -treatUndefinedCellAsBbox false

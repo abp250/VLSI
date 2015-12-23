@@ -1,0 +1,98 @@
+
+
+
+
+
+Tracing Clock iCLK
+
+****** Clock Tree (iCLK) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 49
+Nr.          Rising  Sync Pins : 49
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFKCND2 (CP)                            1
+DFQD4 (CP)                              23
+DFQD1 (CP)                              3
+DFD4 (CP)                               9
+DFKCND1 (CP)                            13
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (iCLK) Cell: (EMPTY) Net: (iCLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 49
+          Nr. of     Rising  Sync Pins  : 49
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock iCLK
+*DEPTH 0: iCLK
+ (Sync)oR_reg[16]/CP
+ (Sync)oR_reg[15]/CP
+ (Sync)oR_reg[14]/CP
+ (Sync)oR_reg[13]/CP
+ (Sync)oR_reg[12]/CP
+ (Sync)oR_reg[11]/CP
+ (Sync)oR_reg[9]/CP
+ (Sync)oR_reg[8]/CP
+ (Sync)oR_reg[7]/CP
+ (Sync)oR_reg[6]/CP
+ (Sync)oR_reg[5]/CP
+ (Sync)oR_reg[4]/CP
+ (Sync)oR_reg[3]/CP
+ (Sync)oR_reg[2]/CP
+ (Sync)oR_reg[1]/CP
+ (Sync)oR_reg[0]/CP
+ (Sync)A0_reg[4]/CP
+ (Sync)A0_reg[6]/CP
+ (Sync)A1_reg[4]/CP
+ (Sync)B0_reg[0]/CP
+ (Sync)A1_reg[5]/CP
+ (Sync)A0_reg[2]/CP
+ (Sync)B1_reg[4]/CP
+ (Sync)A1_reg[1]/CP
+ (Sync)A1_reg[2]/CP
+ (Sync)B1_reg[6]/CP
+ (Sync)B0_reg[1]/CP
+ (Sync)A0_reg[1]/CP
+ (Sync)A0_reg[5]/CP
+ (Sync)A0_reg[3]/CP
+ (Sync)A0_reg[7]/CP
+ (Sync)A1_reg[0]/CP
+ (Sync)B1_reg[2]/CP
+ (Sync)A0_reg[0]/CP
+ (Sync)B0_reg[4]/CP
+ (Sync)A1_reg[7]/CP
+ (Sync)B1_reg[7]/CP
+ (Sync)A1_reg[3]/CP
+ (Sync)A1_reg[6]/CP
+ (Sync)B0_reg[7]/CP
+ (Sync)B1_reg[3]/CP
+ (Sync)B1_reg[5]/CP
+ (Sync)B0_reg[6]/CP
+ (Sync)oR_reg[10]/CP
+ (Sync)B1_reg[1]/CP
+ (Sync)B0_reg[2]/CP
+ (Sync)B0_reg[3]/CP
+ (Sync)B0_reg[5]/CP
+ (Sync)B1_reg[0]/CP

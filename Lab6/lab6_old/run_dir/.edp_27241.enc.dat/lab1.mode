@@ -1,0 +1,8 @@
+setAnalysisMode -analysisType single -clkSrcPath false -clockPropagation forcedIdeal -virtualIPO false
+setTrialRouteMode -fixAirConnect true
+setOptMode -considerViaResInStnLayerAssignment true -expNetBasedRCScalesMode 7 -maxLocalDensity 3 -rPlace false
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default
+setCTSMode -moveGateLimit 25
+setPlaceMode -congRepairForceTrialRoute false -fp false -ignoreScan true -relaxSoftBlockageMode 2 -timingDriven true
+setIlmMode -highFanoutPort true -loopBack false 

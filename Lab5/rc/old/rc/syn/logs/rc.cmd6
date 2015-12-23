@@ -1,0 +1,6 @@
+# Cadence Encounter(R) RTL Compiler
+#   version v10.10-s209_1 (64-bit) built Feb  3 2011
+#
+
+
+set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ports_in/*

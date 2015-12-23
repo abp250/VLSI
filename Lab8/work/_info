@@ -1,0 +1,60 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/abp250/Documents/EE465/Lab7
+T_opt
+VQFK0AD9KdMHHZZ5K_aQK62
+04 14 4 work ALT_MULTADD_TB fast 0
+=1--562e6bd2-71044-289e
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;6.5c;42
+vALT_MULTADD
+IO;W2z>3h23Gk_^RZ]bP=51
+Vl64GLz^ki3inEW`a[MK9A1
+Z1 d/home/abp250/Documents/EE465/Lab8
+w1444855340
+Z2 8/home/abp250/Documents/EE465/Lab8/ALT_MULTADD.v
+Z3 F/home/abp250/Documents/EE465/Lab8/ALT_MULTADD.v
+L0 1
+Z4 OL;L;6.5c;42
+r1
+31
+Z5 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+n@a@l@t_@m@u@l@t@a@d@d
+Z6 !s102 -nocovercells
+!s100 5H<Mbo[>=o49k8IACdlQD3
+!s85 0
+vALT_MULTADD_re
+I3DIQldhECIi^B=QB0:Zb32
+VXP5B1mEV6KoGf75]87mbm3
+R1
+w1446060742
+R2
+R3
+L0 1
+R4
+r1
+31
+R6
+R5
+n@a@l@t_@m@u@l@t@a@d@d_re
+!s100 26[_X;AM4cR[k<nkVFDV02
+!s85 0
+vALT_MULTADD_TB
+VZP<LY8nCY8NJf<i]`1Fln1
+r1
+31
+IPXWCFlz=zQYjiWOH9dmT?1
+R1
+w1445465251
+8/home/abp250/Documents/EE465/Lab8/ALT_MULTADD_TB.v
+F/home/abp250/Documents/EE465/Lab8/ALT_MULTADD_TB.v
+L0 2
+R4
+R6
+R5
+n@a@l@t_@m@u@l@t@a@d@d_@t@b
+!s100 b@CRDX36]0dh`C?zDmP7;0
+!s85 0

@@ -1,0 +1,94 @@
+# PPCMD 1 
+# addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 2 -spacing_left 2 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -stacked_via_bottom_layer M1 -layer_left M2
+# 4 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 20000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 205600 25800 39035 321800 95760 321800 129615 321800 192320 321800 234250 321800 283800 321800 299785 321800 352075 321800 
+# END_RING_PT_INFO_LIST 
+# VSS 20000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 25800 173800 385400 173800 
+# END_RING_PT_INFO_LIST 
+# VDD 20000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 205600 49800 48685 297800 93490 297800 105700 297800 167300 297800 223840 297800 239885 297800 284855 297800 308530 297800 349595 297800 
+# END_RING_PT_INFO_LIST 
+# VDD 20000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 49800 173800 361400 173800 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 2 -spacing_left 2 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -stacked_via_bottom_layer M1 -layer_left M2
+# 3 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# SELECTED_OBJECTS 
+# selectWire 7.9000 172.7000 185.3000 182.7000 1 {VSS}
+# END_SELECTED_OBJECTS 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 2 -spacing_left 2 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -stacked_via_bottom_layer M1 -layer_left M2
+# 2 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# SELECTED_OBJECTS 
+# selectWire 7.9000 172.7000 185.3000 182.7000 1 {VSS}
+# END_SELECTED_OBJECTS 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addRing -spacing_bottom 2 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 2 -layer_bottom M1 -stacked_via_top_layer M8 -width_right 10 -around core -jog_distance 0.1 -offset_bottom 0.1 -layer_top M1 -threshold 0.1 -offset_left 0.1 -spacing_right 2 -spacing_left 2 -offset_right 0.1 -offset_top 0.1 -layer_right M2 -stacked_via_bottom_layer M1 -layer_left M2
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 20000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 193200 25800 193200 355400 
+# END_RING_PT_INFO_LIST 
+# VSS 20000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 25800 190600 360600 190600 
+# END_RING_PT_INFO_LIST 
+# VDD 20000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 193200 49800 193200 331400 
+# END_RING_PT_INFO_LIST 
+# VDD 20000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 49800 190600 336600 190600 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+

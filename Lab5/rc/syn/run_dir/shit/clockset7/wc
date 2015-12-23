@@ -1,0 +1,26 @@
+total 520
+-rw-r--r-- 1 abp250 Domain Users    701 Oct  1 15:19 area.rpt
+-rw-r--r-- 1 abp250 Domain Users   6802 Oct  1 15:19 gates.rpt
+-rw-r--r-- 1 abp250 Domain Users  10134 Oct  1 15:19 jpeg_mapped.g
+-rw-r--r-- 1 abp250 Domain Users  13044 Oct  1 15:19 jpeg_mapped.sdc
+-rw-r--r-- 1 abp250 Domain Users 466072 Oct  1 15:19 jpeg_mapped.v
+-rw-r--r-- 1 abp250 Domain Users   1754 Oct  1 15:19 lint.rpt
+-rw-r--r-- 1 abp250 Domain Users      0 Oct  1 15:30 ls
+-rw-r--r-- 1 abp250 Domain Users      0 Oct  1 15:30  ls
+-rw-r--r-- 1 abp250 Domain Users    652 Oct  1 15:19 power.rpt
+-rw-r--r-- 1 abp250 Domain Users   1199 Oct  1 15:19 summary.rpt
+-rw-r--r-- 1 abp250 Domain Users  10459 Oct  1 15:19 timing.rpt
+-rw-r--r-- 1 abp250 Domain Users      0 Oct  1 15:31 wc
+total 524
+-rw-r--r-- 1 abp250 Domain Users    701 Oct  1 15:19 area.rpt
+-rw-r--r-- 1 abp250 Domain Users   6802 Oct  1 15:19 gates.rpt
+-rw-r--r-- 1 abp250 Domain Users  10134 Oct  1 15:19 jpeg_mapped.g
+-rw-r--r-- 1 abp250 Domain Users  13044 Oct  1 15:19 jpeg_mapped.sdc
+-rw-r--r-- 1 abp250 Domain Users 466072 Oct  1 15:19 jpeg_mapped.v
+-rw-r--r-- 1 abp250 Domain Users   1754 Oct  1 15:19 lint.rpt
+-rw-r--r-- 1 abp250 Domain Users      0 Oct  1 15:30 ls
+-rw-r--r-- 1 abp250 Domain Users      0 Oct  1 15:30  ls
+-rw-r--r-- 1 abp250 Domain Users    652 Oct  1 15:19 power.rpt
+-rw-r--r-- 1 abp250 Domain Users   1199 Oct  1 15:19 summary.rpt
+-rw-r--r-- 1 abp250 Domain Users  10459 Oct  1 15:19 timing.rpt
+-rw-r--r-- 1 abp250 Domain Users    761 Oct  1 15:31 wc
