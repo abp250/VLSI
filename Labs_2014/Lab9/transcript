@@ -1,0 +1,32 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/Lab9/Lab9
+# Loading project Lab9
+# after#206
+# Compile of ALT_MULTADD.v was successful.
+# Compile of ALT_MULTADD_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -novopt work.ALT_MULTADD_tb
+# vsim -novopt work.ALT_MULTADD_tb 
+# Refreshing /home/anhho7/Desktop/EE465/Lab9/work.ALT_MULTADD_tb
+# Loading work.ALT_MULTADD_tb
+# Refreshing /home/anhho7/Desktop/EE465/Lab9/work.ALT_MULTADD
+# Loading work.ALT_MULTADD
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALT_MULTADD' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ALT_MULTADD_tb/test
+run
+run
+run
+run
+run
+run
+run
+run

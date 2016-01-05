@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      abp250
+HostName                       co2046-03.ece.iastate.edu
+ProcessIdentifier              17233
+ProcessCreationTime_UTC        1410877895
+ProcessCreationTime_Readable   Tue Sep 16 09:31:35 2014 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/abp250/Documents/EE465/labLib/DFF/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Tue Sep 16 09:31:54 2014 CDT

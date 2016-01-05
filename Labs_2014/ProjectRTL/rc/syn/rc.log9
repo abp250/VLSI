@@ -1,0 +1,2414 @@
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anhho7/.cadence/rc.gui'.
+Finished loading tool scripts (6 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v12.10-s012_1 (64-bit), built Jan 26 2013
+
+
+Copyright notice: Copyright 1997-2012 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 690 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Notice: Upcoming end of support for Linux 32-bit.
+Support for Linux 32-bit will be discontinued starting with the RC 13.1 release.
+To ensure continued access to the forthcoming releases, RC 13.1 and up, you are
+advised to start the transitioning to Linux 64-bit.
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+            design  ovf_current_verification_directory
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_area_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  enable_parallel_iopt
+              root  exact_match_seqs_async_controls
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+GUI is already visible.
+rc:/> Sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl' (Wed Dec 17 11:17:20 -0600 2014)...
+  Setting attribute of root '/': 'lib_search_path' = ../libdir
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library tcbn65gpluswc.lib:
+  **********************************************
+  An unsupported construct was detected in this library. [LBR-40]: 4
+  Found 'statetable' group in cell. [LBR-83]: 20
+  Created nominal operating condition. [LBR-412]: 1
+ 
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+        : The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Wed Dec 17 11:17:21 -0600 2014)...
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'GCC' from file '../rtl/GCC.v'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'j' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'i' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'READY' in module 'GCC' in file '../rtl/GCC.v' on line 9, column 13.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'GCC'.
+Checking out license 'RTL_Compiler_Adv_Phys_Option'... (0 seconds elapsed)
+  Setting attribute of design 'GCC': 'retime' = true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"               - successful      4 , failed      0 (runtime  0.00)
+ "set_input_delay"         - successful      3 , failed      0 (runtime  0.00)
+Total runtime 0
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 710, Cells unusable for mapping: 101.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 428 usable logic and 280 usable sequential lib-cells.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 19 hierarchical instances.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'auto_ungroup_ok', object type: 'subdesign'
+        : Kindly use the new attribute 'ungroup_ok' which works across the flow.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_212'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_212'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_210'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_210'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_214'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_214'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_213'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_213'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_211'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'GCC_csa_cluster_211'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_211'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'GCC_csa_cluster_211'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_215'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_215'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_215'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_215'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_216'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_216'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_216'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_216'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_217'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_217'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_217'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_217'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_218'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_218'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_218'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_218'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_219'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_219'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_219'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_219'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_220'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_220'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_220'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_220'... Accepted.
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'lt_44_15' and 'gt_40_15' in subdesign 'Comparator'.
+	: RTL resource sharing move has been accepted
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_16_10' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_24_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_32_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_20_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_28_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_36_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP953' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP958' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP963' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP968' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP973' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP978' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP983' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP988' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP993' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP998' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1003' to slow architecture.
+Mapping GCC to gates.
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        : Latches cannot be handled by retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+  Constraining GCC for retiming
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+  Done constraining GCC for retiming
+Mapping GCC to gates.
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            139		100%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        139		100%
+Total CG Modules                        0
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare23/max_reg[1]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare23/max_reg[2]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare45/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare45/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare0123/max_reg[2]'.
+ 
+Global mapping target info
+==========================
+Cost Group 'CLK' target slack: -1281 ps
+Target path end-point (Pin: Xcc_reg[0]/Xcc_reg[0]/d)
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                36821    -1573 
+            Worst cost_group: CLK, WNS: -1573.9
+            Path: w_reg[5][1]/w_reg[5][1]/CP --> Xcc_reg[0]/Xcc_reg[0]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'CLK' target slack: -1574 ps
+Target path end-point (Pin: Xcc_reg[0]/Xcc_reg[0]/D (DFQD1/D))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               29814    -1582 
+            Worst cost_group: CLK, WNS: -1582.8
+            Path: w_reg[5][3]/w_reg[5][3]/CP --> Ycc_reg[7]/Ycc_reg[7]/D
+Info    : Using '3' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '11' more seconds during global map.
+Info    : Using '4' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '45' more seconds during global map.
+
+  Done mapping GCC
+  Incrementally optimizing GCC
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 29814    -1582         0        0
+            Worst cost_group: CLK, WNS: -1582.8
+            Path: w_reg[5][3]/w_reg[5][3]/CP --> Ycc_reg[7]/Ycc_reg[7]/D
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ simp_cc_inputs            29440    -1576         0        0
+            Worst cost_group: CLK, WNS: -1576.1
+            Path: w_reg[5][2]/w_reg[5][2]/CP --> Xcc_reg[0]/Xcc_reg[0]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                29440    -1576         0        0
+            Worst cost_group: CLK, WNS: -1576.1
+            Path: w_reg[5][2]/w_reg[5][2]/CP --> Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                29987    -1498         0        0
+            Worst cost_group: CLK, WNS: -1498.2
+            Path: w_reg[2][1]/w_reg[2][1]/CP --> Xcc_reg[2]/Xcc_reg[2]/D
+ incr_delay                30357    -1478         0        0
+            Worst cost_group: CLK, WNS: -1478.5
+            Path: w_reg[0][1]/w_reg[0][1]/CP --> Xcc_reg[6]/Xcc_reg[6]/D
+ incr_delay                30472    -1464         0        0
+            Worst cost_group: CLK, WNS: -1464.4
+            Path: w_reg[1][0]/w_reg[1][0]/CP --> Xcc_reg[4]/Xcc_reg[4]/D
+ incr_delay                30583    -1455         0        0
+            Worst cost_group: CLK, WNS: -1455.7
+            Path: w_reg[5][3]/w_reg[5][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30759    -1445         0        0
+            Worst cost_group: CLK, WNS: -1445.9
+            Path: w_reg[5][2]/w_reg[5][2]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30833    -1443         0        0
+            Worst cost_group: CLK, WNS: -1443.2
+            Path: w_reg[2][3]/w_reg[2][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30863    -1441         0        0
+            Worst cost_group: CLK, WNS: -1441.3
+            Path: w_reg[4][1]/w_reg[4][1]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30943    -1438         0        0
+            Worst cost_group: CLK, WNS: -1438.8
+            Path: w_reg[2][1]/w_reg[2][1]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30978    -1437         0        0
+            Worst cost_group: CLK, WNS: -1437.3
+            Path: w_reg[4][2]/w_reg[4][2]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31016    -1435         0        0
+            Worst cost_group: CLK, WNS: -1435.1
+            Path: w_reg[0][2]/w_reg[0][2]/CP --> Xcc_reg[4]/Xcc_reg[4]/D
+ incr_delay                31060    -1432         0        0
+            Worst cost_group: CLK, WNS: -1432.4
+            Path: w_reg[4][2]/w_reg[4][2]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31105    -1430         0        0
+            Worst cost_group: CLK, WNS: -1430.9
+            Path: w_reg[5][3]/w_reg[5][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31170    -1427         0        0
+            Worst cost_group: CLK, WNS: -1427.7
+            Path: w_reg[2][1]/w_reg[2][1]/CP --> Ycc_reg[4]/Ycc_reg[4]/D
+ incr_delay                31181    -1426         0        0
+            Worst cost_group: CLK, WNS: -1426.4
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31194    -1424         0        0
+            Worst cost_group: CLK, WNS: -1424.4
+            Path: w_reg[5][1]/w_reg[5][1]/CP --> Xcc_reg[4]/Xcc_reg[4]/D
+ incr_delay                31227    -1422         0        0
+            Worst cost_group: CLK, WNS: -1422.7
+            Path: w_reg[0][1]/w_reg[0][1]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ incr_delay                31242    -1422         0        0
+            Worst cost_group: CLK, WNS: -1422.0
+            Path: w_reg[5][1]/w_reg[5][1]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31257    -1421         0        0
+            Worst cost_group: CLK, WNS: -1421.4
+            Path: w_reg[0][2]/w_reg[0][2]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31289    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.6
+            Path: w_reg[1][0]/w_reg[1][0]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ incr_delay                31306    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.2
+            Path: w_reg[5][1]/w_reg[5][1]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                31314    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ init_drc                  31314    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ init_area                 31314    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ undup                     31300    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ rem_buf                   31177    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ rem_inv                   30927    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[2][1]/w_reg[2][1]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ merge_bi                  30802    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[3][1]/w_reg[3][1]/CP --> Xcc_reg[7]/Xcc_reg[7]/D
+ io_phase                  30731    -1420         0        0
+            Worst cost_group: CLK, WNS: -1420.0
+            Path: w_reg[1][2]/w_reg[1][2]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ gate_comp                 30568    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.9
+            Path: w_reg[4][2]/w_reg[4][2]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ gcomp_mog                 30568    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.9
+            Path: w_reg[4][2]/w_reg[4][2]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ glob_area                 30255    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[3][0]/w_reg[3][0]/CP --> Xcc_reg[6]/Xcc_reg[6]/D
+ area_down                 30002    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Xcc_reg[7]/Xcc_reg[7]/D
+ rem_buf                   29984    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Xcc_reg[7]/Xcc_reg[7]/D
+ rem_inv                   29947    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+ merge_bi                  29934    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Xcc_reg[7]/Xcc_reg[7]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                29934    -1419         0        0
+            Worst cost_group: CLK, WNS: -1419.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Xcc_reg[7]/Xcc_reg[7]/D
+ incr_delay                29983    -1418         0        0
+            Worst cost_group: CLK, WNS: -1418.0
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30020    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.6
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ incr_delay                30025    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ init_drc                  30025    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ init_area                 30025    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ undup                     30024    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ rem_buf                   30018    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ rem_inv                   29993    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ merge_bi                  29983    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ io_phase                  29966    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ gate_comp                 29928    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ glob_area                 29838    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[4][3]/w_reg[4][3]/CP --> Ycc_reg[3]/Ycc_reg[3]/D
+ area_down                 29766    -1415         0        0
+            Worst cost_group: CLK, WNS: -1415.5
+            Path: w_reg[5][1]/w_reg[5][1]/CP --> Xcc_reg[3]/Xcc_reg[3]/D
+
+  Done mapping GCC
+   
+  Pre-retime summary
+  ===========================
+  Slack               : -1464 ps
+  Number of registers : 139
+   
+  Retiming GCC
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+   
+  Post-retime summary
+  ===========================
+  Slack               : -1461 ps
+  Number of registers : 326
+   
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        265		 81%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            45		 14%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Enable not found                      16		  5%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        326		100%
+Total CG Modules                        20
+ 
+Global mapping target info
+==========================
+Cost Group 'CLK' target slack: -1180 ps
+Target path end-point (Pin: Xcc_reg[1]/d)
+
+Cost Group 'cg_enable_group_CLK' target slack:    58 ps
+Target path end-point (Pin: RC_CG_HIER_INST4/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                38646    -1480 
+            Worst cost_group: CLK, WNS: -1480.9
+            Path: retime_s1_35_reg/CP --> Xcc_reg[7]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'CLK' target slack: -1481 ps
+Target path end-point (Pin: Xcc_reg[7]/D (DFQD1/D))
+
+Cost Group 'cg_enable_group_CLK' target slack:    32 ps
+Target path end-point (Pin: RC_CG_HIER_INST1/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               30581    -1498 
+            Worst cost_group: CLK, WNS: -1498.6
+            Path: retime_s1_168_reg/CP --> Ycc_reg[2]/D
+Info    : Using '3' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '43' more seconds during global map.
+Info    : Using '4' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '86' more seconds during global map.
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+        : The use of 'Conformal LEC12.1-p100' or later builds is recommended to get better verification results.
+Generating a dofile for design 'GCC' in file 'fv/GCC/rtl_to_g1.do' ...
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+Generating a dofile for design 'GCC' in file 'fv/GCC/rtl_to_g1_withoutovf.do' ...
+  Decloning clock-gating logic from /designs/GCC
+Clock-gating declone status
+===========================
+Total number of clock-gating instances before: 20
+Total number of clock-gating instances after : 7
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 30497    -1498         0        0
+            Worst cost_group: CLK, WNS: -1498.6
+            Path: retime_s1_168_reg/CP --> Ycc_reg[2]/D
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ simp_cc_inputs            30002    -1498         0        0
+            Worst cost_group: CLK, WNS: -1498.2
+            Path: retime_s1_168_reg/CP --> Xcc_reg[7]/D
+ hi_fo_buf                 30002    -1498         0        0
+            Worst cost_group: CLK, WNS: -1498.2
+            Path: retime_s1_168_reg/CP --> Xcc_reg[7]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                30002    -1498         0        0
+            Worst cost_group: CLK, WNS: -1498.2
+            Path: retime_s1_168_reg/CP --> Xcc_reg[7]/D
+ incr_delay                31269    -1375         0        0
+            Worst cost_group: CLK, WNS: -1375.3
+            Path: csa_tree_add_35_74_groupi_retime_s1_171_reg/CP -->
+                    Ycc_reg[2]/D
+ incr_delay                31544    -1357         0        0
+            Worst cost_group: CLK, WNS: -1357.5
+            Path: retime_s1_37_reg/CP --> Xcc_reg[7]/D
+ incr_delay                31764    -1347         0        0
+            Worst cost_group: CLK, WNS: -1347.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                31882    -1337         0        0
+            Worst cost_group: CLK, WNS: -1337.6
+            Path: csa_tree_add_34_74_groupi_retime_s1_244_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                31987    -1333         0        0
+            Worst cost_group: CLK, WNS: -1333.7
+            Path: retime_s1_35_reg/CP --> Ycc_reg[2]/D
+ incr_delay                32156    -1326         0        0
+            Worst cost_group: CLK, WNS: -1326.7
+            Path: retime_s1_35_reg/CP --> Ycc_reg[2]/D
+ incr_delay                32236    -1321         0        0
+            Worst cost_group: CLK, WNS: -1321.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32291    -1319         0        0
+            Worst cost_group: CLK, WNS: -1319.2
+            Path: retime_s1_275_reg/CP --> Ycc_reg[2]/D
+ incr_delay                32388    -1312         0        0
+            Worst cost_group: CLK, WNS: -1312.5
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[3]/D
+ incr_delay                32404    -1311         0        0
+            Worst cost_group: CLK, WNS: -1311.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32409    -1311         0        0
+            Worst cost_group: CLK, WNS: -1311.2
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32409    -1308         0        0
+            Worst cost_group: CLK, WNS: -1308.2
+            Path: retime_s1_168_reg/CP --> Ycc_reg[2]/D
+ incr_delay                32612    -1294         0        0
+            Worst cost_group: CLK, WNS: -1294.9
+            Path: csa_tree_add_34_74_groupi_retime_s1_294_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32735    -1281         0        0
+            Worst cost_group: CLK, WNS: -1281.5
+            Path: retime_s1_36_reg/CP --> Xcc_reg[0]/D
+ incr_delay                32759    -1276         0        0
+            Worst cost_group: CLK, WNS: -1276.9
+            Path: retime_s1_274_reg/CP --> Xcc_reg[0]/D
+ incr_delay                32737    -1267         0        0
+            Worst cost_group: CLK, WNS: -1267.4
+            Path: retime_s1_42_reg/CP --> Xcc_reg[0]/D
+ incr_delay                32861    -1256         0        0
+            Worst cost_group: CLK, WNS: -1256.9
+            Path: retime_s1_40_reg/CP --> Xcc_reg[0]/D
+ incr_delay                32927    -1251         0        0
+            Worst cost_group: CLK, WNS: -1251.3
+            Path: retime_s1_35_reg/CP --> Ycc_reg[2]/D
+ incr_delay                33026    -1242         0        0
+            Worst cost_group: CLK, WNS: -1242.6
+            Path: retime_s1_168_reg/CP --> Ycc_reg[0]/D
+ incr_delay                33137    -1231         0        0
+            Worst cost_group: CLK, WNS: -1231.4
+            Path: retime_s1_37_reg/CP --> Ycc_reg[2]/D
+ incr_delay                33100    -1226         0        0
+            Worst cost_group: CLK, WNS: -1226.0
+            Path: csa_tree_add_35_74_groupi_retime_s1_39_reg/CP -->
+                    Ycc_reg[6]/D
+ incr_delay                33320    -1207         0        0
+            Worst cost_group: CLK, WNS: -1207.9
+            Path: retime_s1_274_reg/CP --> Ycc_reg[6]/D
+ incr_delay                33323    -1207         0        0
+            Worst cost_group: CLK, WNS: -1207.7
+            Path: retime_s1_274_reg/CP --> Ycc_reg[6]/D
+ incr_delay                33342    -1204         0        0
+            Worst cost_group: CLK, WNS: -1204.7
+            Path: retime_s1_234_reg/CP --> Xcc_reg[0]/D
+ incr_delay                33368    -1204         0        0
+            Worst cost_group: CLK, WNS: -1204.2
+            Path: retime_s1_42_reg/CP --> Xcc_reg[0]/D
+ incr_delay                33518    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.9
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ incr_delay                33579    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: retime_s1_275_reg/CP --> Ycc_reg[7]/D
+ init_drc                  33579    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: retime_s1_275_reg/CP --> Ycc_reg[7]/D
+ init_area                 33579    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: retime_s1_275_reg/CP --> Ycc_reg[7]/D
+ undup                     33576    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: retime_s1_275_reg/CP --> Ycc_reg[7]/D
+ rem_buf                   33378    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ rem_inv                   33162    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ merge_bi                  33002    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ rem_inv_qb                32971    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ seq_res_area              32966    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_232_reg/CP -->
+                    Xcc_reg[2]/D
+ io_phase                  32827    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.0
+            Path: retime_s1_37_reg/CP --> Xcc_reg[1]/D
+ gate_comp                 32545    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.9
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ gcomp_mog                 32545    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.9
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ glob_area                 32163    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ area_down                 31917    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ rem_buf                   31891    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ rem_inv                   31869    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_275_reg/CP --> Xcc_reg[3]/D
+ merge_bi                  31857    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                31857    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.8
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ incr_delay                31852    -1193         0        0
+            Worst cost_group: CLK, WNS: -1193.6
+            Path: retime_s1_40_reg/CP --> Xcc_reg[1]/D
+ incr_delay                32014    -1189         0        0
+            Worst cost_group: CLK, WNS: -1189.9
+            Path: retime_s1_40_reg/CP --> Xcc_reg[1]/D
+ incr_delay                32090    -1188         0        0
+            Worst cost_group: CLK, WNS: -1188.3
+            Path: retime_s1_35_reg/CP --> Xcc_reg[1]/D
+ incr_delay                32098    -1188         0        0
+            Worst cost_group: CLK, WNS: -1188.2
+            Path: retime_s1_168_reg/CP --> Ycc_reg[6]/D
+ incr_delay                32147    -1185         0        0
+            Worst cost_group: CLK, WNS: -1185.2
+            Path: csa_tree_add_35_74_groupi_retime_s1_278_reg/CP -->
+                    Ycc_reg[6]/D
+ incr_delay                32184    -1182         0        0
+            Worst cost_group: CLK, WNS: -1182.0
+            Path: retime_s1_168_reg/CP --> Ycc_reg[6]/D
+ incr_delay                32245    -1178         0        0
+            Worst cost_group: CLK, WNS: -1178.2
+            Path: csa_tree_add_34_74_groupi_retime_s1_163_reg/CP -->
+                    Xcc_reg[1]/D
+ incr_delay                32355    -1174         0        0
+            Worst cost_group: CLK, WNS: -1174.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[1]/D
+ incr_delay                32414    -1172         0        0
+            Worst cost_group: CLK, WNS: -1172.2
+            Path: retime_s1_275_reg/CP --> Ycc_reg[5]/D
+ incr_delay                32411    -1172         0        0
+            Worst cost_group: CLK, WNS: -1172.0
+            Path: csa_tree_add_35_74_groupi_retime_s1_111_reg/CP -->
+                    Ycc_reg[5]/D
+ incr_delay                32520    -1167         0        0
+            Worst cost_group: CLK, WNS: -1167.2
+            Path: csa_tree_add_35_74_groupi_retime_s1_115_reg/CP -->
+                    Ycc_reg[6]/D
+ incr_delay                32541    -1166         0        0
+            Worst cost_group: CLK, WNS: -1166.5
+            Path: csa_tree_add_34_74_groupi_retime_s1_166_reg/CP -->
+                    Xcc_reg[2]/D
+ incr_delay                32554    -1165         0        0
+            Worst cost_group: CLK, WNS: -1165.8
+            Path: retime_s1_40_reg/CP --> Ycc_reg[6]/D
+ incr_delay                32552    -1165         0        0
+            Worst cost_group: CLK, WNS: -1165.7
+            Path: retime_s1_168_reg/CP --> Xcc_reg[2]/D
+ incr_delay                32555    -1165         0        0
+            Worst cost_group: CLK, WNS: -1165.7
+            Path: retime_s1_42_reg/CP --> Xcc_reg[2]/D
+ incr_delay                32560    -1165         0        0
+            Worst cost_group: CLK, WNS: -1165.6
+            Path: csa_tree_add_35_74_groupi_retime_s1_258_reg/CP -->
+                    Ycc_reg[6]/D
+ incr_delay                32593    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[2]/D
+ init_drc                  32593    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[2]/D
+ init_area                 32593    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[2]/D
+ undup                     32579    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[2]/D
+ rem_buf                   32519    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: retime_s1_37_reg/CP --> Ycc_reg[4]/D
+ rem_inv                   32469    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[0]/D
+ merge_bi                  32419    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_85_reg/CP -->
+                    Xcc_reg[0]/D
+ rem_inv_qb                32415    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_85_reg/CP -->
+                    Xcc_reg[0]/D
+ io_phase                  32350    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+                    Xcc_reg[0]/D
+ gate_comp                 32280    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_309_reg/CP -->
+                    Xcc_reg[0]/D
+ glob_area                 32133    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_309_reg/CP -->
+                    Xcc_reg[0]/D
+ area_down                 32047    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_309_reg/CP -->
+                    Xcc_reg[0]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                32047    -1163         0        0
+            Worst cost_group: CLK, WNS: -1163.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_309_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32120    -1162         0        0
+            Worst cost_group: CLK, WNS: -1162.1
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32148    -1161         0        0
+            Worst cost_group: CLK, WNS: -1161.6
+            Path: retime_s1_40_reg/CP --> Ycc_reg[6]/D
+ incr_delay                32162    -1161         0        0
+            Worst cost_group: CLK, WNS: -1161.3
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32172    -1161         0        0
+            Worst cost_group: CLK, WNS: -1161.1
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32177    -1161         0        0
+            Worst cost_group: CLK, WNS: -1161.0
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[2]/D
+ incr_delay                32183    -1160         0        0
+            Worst cost_group: CLK, WNS: -1160.6
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32185    -1160         0        0
+            Worst cost_group: CLK, WNS: -1160.4
+            Path: retime_s1_42_reg/CP --> Xcc_reg[0]/D
+ incr_delay                32190    -1159         0        0
+            Worst cost_group: CLK, WNS: -1159.9
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[0]/D
+ incr_delay                32192    -1159         0        0
+            Worst cost_group: CLK, WNS: -1159.6
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[2]/D
+ init_drc                  32192    -1159         0        0
+            Worst cost_group: CLK, WNS: -1159.6
+            Path: csa_tree_add_34_74_groupi_retime_s1_146_reg/CP -->
+                    Xcc_reg[2]/D
+
+  Done mapping GCC
+  Synthesis succeeded.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'GCC'.
+        : Use 'report timing -lint' for more information.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/read_rtl.tcl' (Wed Dec 17 11:38:35 -0600 2014)...
+GUI is already visible.
+Sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl' (Wed Dec 17 11:38:35 -0600 2014)...
+  Setting attribute of root '/': 'lib_search_path' = ../libdir
+Freeing libraries in memory (tcbn65gpluswc.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc.lib'.
+
+  Message Summary for Library tcbn65gpluswc.lib:
+  **********************************************
+  An unsupported construct was detected in this library. [LBR-40]: 4
+  Found 'statetable' group in cell. [LBR-83]: 20
+  Created nominal operating condition. [LBR-412]: 1
+ 
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Wed Dec 17 11:38:37 -0600 2014)...
+module GCC (CLK,RESET,X, Y, W, READY, Xc, Yc);
+         |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'GCC' with Verilog module in file '../rtl/GCC.v' on line 2, column 10.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'GCC' in library 'default' with newly read Verilog module 'GCC' in the same library in file '../rtl/GCC.v' on line 2.
+        : A newly read VHDL entity replaces any previously read Verilog module or VHDL entity in the same library if its name matches (case-insensitively) the existing module or entity.
+    For instance:
+        VHDL 'foo'                  replaces  VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        VHDL 'foo' (in any library) replaces  Verilog {'FOO' or 'foo' or 'Foo' or ...} in the same library
+ 
+A newly read Verilog module replaces any previously read Verilog module if its name matches (case-sensitively) that module.  Further, it replaces any previously read VHDL entity in the same library if its name matches (case -insensitively) that entity.
+    For instance:
+        Verilog 'foo' replaces    VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        Verilog 'foo' replaces    Verilog 'foo' only
+    In addition:
+        Verilog 'foo' does not replace Verilog 'FOO' and the two remain as distinct modules.
+module Center(sum, sumw, C);
+            |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'Center' with Verilog module in file '../rtl/Center.v' on line 3, column 13.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'Center' in library 'default' with newly read Verilog module 'Center' in the same library in file '../rtl/Center.v' on line 3.
+module Comparator(x0, y0, w0, d0, i, x1, y1, w1, d1, j, max); 
+                |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'Comparator' with Verilog module in file '../rtl/Comparator.v' on line 3, column 17.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'Comparator' in library 'default' with newly read Verilog module 'Comparator' in the same library in file '../rtl/Comparator.v' on line 3.
+module Distance (X, Y, Xc, Yc, D);
+              |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'Distance' with Verilog module in file '../rtl/Distance.v' on line 2, column 15.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'Distance' in library 'default' with newly read Verilog module 'Distance' in the same library in file '../rtl/Distance.v' on line 2.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'GCC' from file '../rtl/GCC.v'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'j' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'i' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'READY' in module 'GCC' in file '../rtl/GCC.v' on line 9, column 13.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'GCC'.
+Warning : Failed to generate G0 netlist because there are multiple top designs. [OVF-301]
+        : Can not create one G0 netlist with multiple top designs.
+        : G0 netlist can only be generated if there is exactly one top design.
+  Setting attribute of design 'GCC': 'retime' = true
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [::dc::get_ports]
+        : There is no unique design here.
+        : Specify a design by using the cd command to change to that design's directory or specify the design as an argument for the command.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin' named 'Failed' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+
+Usage: create_clock  [-add] [-name <string>] [-comment <string>]
+           [-domain <string>] -period <float> [-waveform <float>+]
+           [-apply_inverted <port|pin>+] [<port|pin>+]
+
+    [-add]:
+        should the sources add or overwrite 
+    [-name <string>]:
+        name of the clock 
+    [-comment <string>]:
+        comment to be tagged with this command 
+    [-domain <string>]:
+        name of the clock domain for the clock 
+    -period <float>:
+        clock period 
+    [-waveform <float>+]:
+        waveform string 
+    [-apply_inverted <port|pin>+]:
+        sources of the clock that are inverted 
+    [<port|pin>+]:
+        sources that are not inverted 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '3' of the SDC file './scripts/design.sdc': create_clock -period 3.0 -waveform {0 1.5 } [get_ports {CLK}].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [::dc::get_ports]
+        : There is no unique design here.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|port_bus' named 'Failed' could not be found.
+
+Usage: set_input_delay  [-clock <clock>] [-clock_rise] [-clock_fall]
+           [-level_sensitive] [-network_latency_included]
+           [-source_latency_included] [-max] [-min] [-rise] [-fall] [-add_delay]
+           [-name <string>] <float> <port|pin|port_bus>+
+
+    [-clock <clock>]:
+        the clock waveform 
+    [-clock_rise]:
+        rise clock edge 
+    [-clock_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        clocked obj is a latch 
+    [-network_latency_included]:
+        value includes clock latency 
+    [-source_latency_included]:
+        value includes clock latency 
+    [-max]:
+        maximum delays 
+    [-min]:
+        minimum delays 
+    [-rise]:
+        rise delays 
+    [-fall]:
+        fall delays 
+    [-add_delay]:
+        don't remove existing delays 
+    [-name <string>]:
+        a name for the external delay object 
+    <float>:
+        delay value 
+    <port|pin|port_bus>+:
+        ports to receive the external delay 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '4' of the SDC file './scripts/design.sdc': set_input_delay 0.001 -max -clock 'CLK' [get_ports {X}].
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [::dc::get_ports]
+        : There is no unique design here.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|port_bus' named 'Failed' could not be found.
+
+Usage: set_input_delay  [-clock <clock>] [-clock_rise] [-clock_fall]
+           [-level_sensitive] [-network_latency_included]
+           [-source_latency_included] [-max] [-min] [-rise] [-fall] [-add_delay]
+           [-name <string>] <float> <port|pin|port_bus>+
+
+    [-clock <clock>]:
+        the clock waveform 
+    [-clock_rise]:
+        rise clock edge 
+    [-clock_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        clocked obj is a latch 
+    [-network_latency_included]:
+        value includes clock latency 
+    [-source_latency_included]:
+        value includes clock latency 
+    [-max]:
+        maximum delays 
+    [-min]:
+        minimum delays 
+    [-rise]:
+        rise delays 
+    [-fall]:
+        fall delays 
+    [-add_delay]:
+        don't remove existing delays 
+    [-name <string>]:
+        a name for the external delay object 
+    <float>:
+        delay value 
+    <port|pin|port_bus>+:
+        ports to receive the external delay 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '5' of the SDC file './scripts/design.sdc': set_input_delay 0.001 -max -clock 'CLK' [get_ports {Y}].
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [::dc::get_ports]
+        : There is no unique design here.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|port_bus' named 'Failed' could not be found.
+
+Usage: set_input_delay  [-clock <clock>] [-clock_rise] [-clock_fall]
+           [-level_sensitive] [-network_latency_included]
+           [-source_latency_included] [-max] [-min] [-rise] [-fall] [-add_delay]
+           [-name <string>] <float> <port|pin|port_bus>+
+
+    [-clock <clock>]:
+        the clock waveform 
+    [-clock_rise]:
+        rise clock edge 
+    [-clock_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        clocked obj is a latch 
+    [-network_latency_included]:
+        value includes clock latency 
+    [-source_latency_included]:
+        value includes clock latency 
+    [-max]:
+        maximum delays 
+    [-min]:
+        minimum delays 
+    [-rise]:
+        rise delays 
+    [-fall]:
+        fall delays 
+    [-add_delay]:
+        don't remove existing delays 
+    [-name <string>]:
+        a name for the external delay object 
+    <float>:
+        delay value 
+    <port|pin|port_bus>+:
+        ports to receive the external delay 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '6' of the SDC file './scripts/design.sdc': set_input_delay 0.001 -max -clock 'CLK' [get_ports {W}].
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      0 , failed      1 (runtime  0.00)
+ "get_ports"               - successful      0 , failed      4 (runtime  0.00)
+ "set_input_delay"         - successful      0 , failed      3 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 8
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 710, Cells unusable for mapping: 101.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 428 usable logic and 280 usable sequential lib-cells.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 19 hierarchical instances.
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'centery_rem_18_19' and 'centery_div_17_16' in design 'GCC_98'.
+	: RTL resource sharing move has been accepted
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'centerx_rem_18_19' and 'centerx_div_17_16' in design 'GCC_98'.
+	: RTL resource sharing move has been accepted
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_98_csa_cluster_213'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_98_csa_cluster_213'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_98_csa_cluster'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_98_csa_cluster'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_98_csa_cluster_211'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_98_csa_cluster_211'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_98_csa_cluster_212'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 4 CSA groups in module 'GCC_98_csa_cluster_212'... Rejected.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_98_csa_cluster_212'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 2 CSA groups in module 'GCC_98_csa_cluster_212'... Accepted.
+        Trying carrysave optimization (configuration 1 of 2) on module 'GCC_98_csa_cluster_214'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 8 CSA groups in module 'GCC_98_csa_cluster_214'... Accepted.
+        Trying carrysave optimization (configuration 2 of 2) on module 'GCC_98_csa_cluster_214'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 20 CSA groups in module 'GCC_98_csa_cluster_214'... Rejected.
+        Trying carrysave optimization (configuration 1 of 2) on module 'GCC_98_csa_cluster_214'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 8 CSA groups in module 'GCC_98_csa_cluster_214'... Accepted.
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'lt_44_15' and 'gt_40_15' in subdesign 'Comparator'.
+	: RTL resource sharing move has been accepted
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_16_10' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_24_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_32_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_20_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_28_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_36_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'final_adder_add_36_1010' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'inc_add_se_0_2' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP998' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1003' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP993' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP988' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP983' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP978' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP973' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP968' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP963' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP958' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP953' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'inc_ADD_UNS_OP_5' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'inc_ADD_UNS_OP1004_6' to slow architecture.
+Mapping GCC_98 to gates.
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        123		 88%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Enable not found                      16		 12%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        139		100%
+Total CG Modules                        7
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare23/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare23/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare45/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare45/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare0123/max_reg[2]'.
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack: Unconstrained
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                14408        0 
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack: Unconstrained
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               14376        0 
+Info    : Using '3' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '46' more seconds during global map.
+Info    : Using '4' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '89' more seconds during global map.
+  Decloning clock-gating logic from /designs/GCC_98
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 14376        0         0        0
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ simp_cc_inputs            14270        0         0        0
+ hi_fo_buf                 14270        0         0        0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                14270        0         0        0
+ init_drc                  14270        0         0        0
+ init_area                 14270        0         0        0
+ undup                     14256        0         0        0
+ merge_bi                  14230        0         0        0
+ rem_inv_qb                14201        0         0        0
+ gate_comp                 14179        0         0        0
+ gcomp_mog                 14179        0         0        0
+ glob_area                 14169        0         0        0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                14169        0         0        0
+ init_drc                  14169        0         0        0
+ init_area                 14169        0         0        0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                14169        0         0        0
+ init_drc                  14169        0         0        0
+
+  Done mapping GCC_98
+Mapping GCC to gates.
+Warning : The design contains sequential timing models. [RETIME-305]
+        : The following sequential timing models will be excluded from retiming.
+        : Sequential timing models cannot be handled by retiming.
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340741/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340740/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340739/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340738/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340737/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_HIER_INST6/instances_seq/RC_CGIC_INST
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+Warning : The design contains scan flops that cannot be unmapped. [RETIME-315]
+        : The following scan flops will be excluded from retiming.
+        : Set unmap_scan_flops attribute to true to allow unmapping scan flops.
+        /designs/GCC/instances_seq/csa_tree_add_34_74_groupi_retime_s1_307_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_126_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_164_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_39_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_70_reg
+  Constraining GCC for retiming
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]/pins_in/EN'.
+Warning : The design contains sequential timing models. [RETIME-305]
+        : The following sequential timing models will be excluded from retiming.
+        /designs/GCC/instances_hier/RC_CG_HIER_INST6/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340741/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340740/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340739/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340738/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340737/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST/instances_seq/RC_CGIC_INST
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+Warning : The design contains scan flops that cannot be unmapped. [RETIME-315]
+        : The following scan flops will be excluded from retiming.
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_70_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_39_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_164_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_126_reg
+        /designs/GCC/instances_seq/csa_tree_add_34_74_groupi_retime_s1_307_reg
+Warning : The design contains scan flops that cannot be unmapped. [RETIME-315]
+        : The following scan flops will be excluded from retiming.
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_70_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_39_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_164_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_126_reg
+        /designs/GCC/instances_seq/csa_tree_add_34_74_groupi_retime_s1_307_reg
+  Done constraining GCC for retiming
+Mapping GCC to gates.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]/pins_in/EN'.
+ 
+Global mapping target info
+==========================
+Cost Group 'CLK' target slack: -1005 ps
+Target path end-point (Pin: Ycc_reg[7]/Ycc_reg[7]/d)
+
+Cost Group 'cg_enable_group_CLK' target slack:    58 ps
+Target path end-point (Pin: RC_CG_DECLONE_HIER_INST/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                30831    -1359 
+            Worst cost_group: CLK, WNS: -1359.6
+            Path: retime_s1_275_reg/retime_s1_275_reg/CP -->
+                    Ycc_reg[2]/Ycc_reg[2]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'CLK' target slack: -1360 ps
+Target path end-point (Pin: Ycc_reg[2]/Ycc_reg[2]/D (DFQD1/D))
+
+Cost Group 'cg_enable_group_CLK' target slack:    32 ps
+Target path end-point (Pin: RC_CG_DECLONE_HIER_INST340738/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               24108    -1368 
+            Worst cost_group: CLK, WNS: -1368.6
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_180_reg/csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+  Xcc_reg[1]/Xcc_reg[1]/D
+Info    : Using '4' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '91' more seconds during global map.
+
+  Done mapping GCC
+  Incrementally optimizing GCC
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 24108    -1368         0        0
+            Worst cost_group: CLK, WNS: -1368.6
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_180_reg/csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+  Xcc_reg[1]/Xcc_reg[1]/D
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ simp_cc_inputs            23689    -1366         0        0
+            Worst cost_group: CLK, WNS: -1366.5
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_180_reg/csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+  Xcc_reg[1]/Xcc_reg[1]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                23689    -1366         0        0
+            Worst cost_group: CLK, WNS: -1366.5
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_180_reg/csa_tree_add_34_74_groupi_retime_s1_180_reg/CP -->
+  Xcc_reg[1]/Xcc_reg[1]/D
+ incr_delay                24468    -1287         0        0
+            Worst cost_group: CLK, WNS: -1287.1
+            Path: retime_s1_275_reg/retime_s1_275_reg/CP -->
+                    Ycc_reg[2]/Ycc_reg[2]/D
+ incr_delay                24787    -1262         0        0
+            Worst cost_group: CLK, WNS: -1262.4
+            Path: retime_s1_35_reg/retime_s1_35_reg/CP -->
+                    Ycc_reg[2]/Ycc_reg[2]/D
+ incr_delay                24962    -1244         0        0
+            Worst cost_group: CLK, WNS: -1244.3
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Ycc_reg[2]/Ycc_reg[2]/D
+ incr_delay                25075    -1230         0        0
+            Worst cost_group: CLK, WNS: -1230.0
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_300_reg/csa_tree_add_35_74_groupi_retime_s1_300_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25122    -1228         0        0
+            Worst cost_group: CLK, WNS: -1228.0
+            Path: retime_s1_275_reg/retime_s1_275_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25241    -1220         0        0
+            Worst cost_group: CLK, WNS: -1220.8
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_172_reg/csa_tree_add_35_74_groupi_retime_s1_172_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25296    -1216         0        0
+            Worst cost_group: CLK, WNS: -1216.4
+            Path: retime_s1_36_reg/retime_s1_36_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25318    -1214         0        0
+            Worst cost_group: CLK, WNS: -1214.9
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_167_reg/csa_tree_add_34_74_groupi_retime_s1_167_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25348    -1212         0        0
+            Worst cost_group: CLK, WNS: -1212.3
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25356    -1210         0        0
+            Worst cost_group: CLK, WNS: -1210.8
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_94_reg/csa_tree_add_35_74_groupi_retime_s1_94_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25366    -1208         0        0
+            Worst cost_group: CLK, WNS: -1208.4
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_172_reg/csa_tree_add_35_74_groupi_retime_s1_172_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25444    -1206         0        0
+            Worst cost_group: CLK, WNS: -1206.0
+            Path: retime_s1_10_reg/retime_s1_10_reg/CP -->
+                    Ycc_reg[2]/Ycc_reg[2]/D
+ incr_delay                25456    -1203         0        0
+            Worst cost_group: CLK, WNS: -1203.0
+            Path: retime_s1_168_reg/retime_s1_168_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25503    -1198         0        0
+            Worst cost_group: CLK, WNS: -1198.6
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25527    -1197         0        0
+            Worst cost_group: CLK, WNS: -1197.6
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                25528    -1197         0        0
+            Worst cost_group: CLK, WNS: -1197.0
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25537    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.8
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25540    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.4
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                25538    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.2
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ init_drc                  25538    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.2
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ init_area                 25538    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.2
+            Path: retime_s1_37_reg/retime_s1_37_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ rem_buf                   25497    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.2
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ rem_inv                   25285    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.2
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ merge_bi                  25178    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path: retime_s1_42_reg/retime_s1_42_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ io_phase                  25125    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path: retime_s1_30_reg/retime_s1_30_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ gate_comp                 24956    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path: retime_s1_35_reg/retime_s1_35_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ gcomp_mog                 24954    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path: retime_s1_35_reg/retime_s1_35_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+ glob_area                 24763    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ area_down                 24523    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_147_reg/csa_tree_add_34_74_groupi_retime_s1_147_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ rem_buf                   24519    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_147_reg/csa_tree_add_34_74_groupi_retime_s1_147_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ rem_inv                   24496    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_147_reg/csa_tree_add_34_74_groupi_retime_s1_147_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ merge_bi                  24490    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_147_reg/csa_tree_add_34_74_groupi_retime_s1_147_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                24490    -1196         0        0
+            Worst cost_group: CLK, WNS: -1196.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_147_reg/csa_tree_add_34_74_groupi_retime_s1_147_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ incr_delay                24550    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.6
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_172_reg/csa_tree_add_35_74_groupi_retime_s1_172_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                24557    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path:
+csa_tree_add_35_74_groupi_retime_s1_34_reg/csa_tree_add_35_74_groupi_retime_s1_34_reg/CP -->
+  Ycc_reg[1]/Ycc_reg[1]/D
+ incr_delay                24557    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ init_drc                  24557    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ init_area                 24557    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ rem_buf                   24549    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ rem_inv                   24538    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ merge_bi                  24533    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ io_phase                  24526    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.3
+            Path: retime_s1_100_reg/retime_s1_100_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ gate_comp                 24481    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.1
+            Path: retime_s1_41_reg/retime_s1_41_reg/CP -->
+                    Ycc_reg[1]/Ycc_reg[1]/D
+ glob_area                 24423    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.1
+            Path:
+csa_tree_add_34_74_groupi_retime_s1_282_reg/csa_tree_add_34_74_groupi_retime_s1_282_reg/CP -->
+  Xcc_reg[0]/Xcc_reg[0]/D
+ area_down                 24377    -1194         0        0
+            Worst cost_group: CLK, WNS: -1194.1
+            Path: retime_s1_35_reg/retime_s1_35_reg/CP -->
+                    Xcc_reg[0]/Xcc_reg[0]/D
+
+  Done mapping GCC
+   
+  Pre-retime summary
+  ===========================
+  Slack               : -1246 ps
+  Number of registers : 326
+   
+  Retiming GCC
+Warning : The design contains sequential timing models. [RETIME-305]
+        : The following sequential timing models will be excluded from retiming.
+        /designs/GCC/instances_hier/RC_CG_HIER_INST6/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340741/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340740/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340739/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340738/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST340737/instances_seq/RC_CGIC_INST
+        /designs/GCC/instances_hier/RC_CG_DECLONE_HIER_INST/instances_seq/RC_CGIC_INST
+Warning : The design contains latches. [RETIME-301]
+        : The following latches will be excluded from retiming.
+        /designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare45/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]
+        /designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]
+Warning : The design contains scan flops that cannot be unmapped. [RETIME-315]
+        : The following scan flops will be excluded from retiming.
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_70_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_39_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_164_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_126_reg
+        /designs/GCC/instances_seq/csa_tree_add_34_74_groupi_retime_s1_307_reg
+Warning : The design contains scan flops that cannot be unmapped. [RETIME-315]
+        : The following scan flops will be excluded from retiming.
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_70_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_39_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_164_reg
+        /designs/GCC/instances_seq/csa_tree_add_35_74_groupi_retime_s1_126_reg
+        /designs/GCC/instances_seq/csa_tree_add_34_74_groupi_retime_s1_307_reg
+   
+  Post-retime summary
+  ===========================
+  Slack               : -1284 ps
+  Number of registers : 233
+   
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare0123/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/Compare23/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[1]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/CompareAll/instances_seq/max_reg[2]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]/pins_in/EN'.
+Info    : Unable to unmap a sequential cell with exceptions/attributes on the input pins. [MAP-6]
+        : The generic sequential can not inherit the clock latency from '/designs/GCC/instances_hier/compare01/instances_seq/max_reg[0]/pins_in/EN'.
+ 
+Global mapping target info
+==========================
+Cost Group 'CLK' target slack:  -953 ps
+Target path end-point (Pin: Ycc_reg[6]/d)
+
+Cost Group 'cg_enable_group_CLK' target slack:    58 ps
+Target path end-point (Pin: RC_CG_DECLONE_HIER_INST/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                30363    -1230 
+            Worst cost_group: CLK, WNS: -1230.4
+            Path: retime_s1_241_reg/CP --> Xcc_reg[0]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'CLK' target slack: -1230 ps
+Target path end-point (Pin: Xcc_reg[0]/D (DFQD1/D))
+
+Cost Group 'cg_enable_group_CLK' target slack:    35 ps
+Target path end-point (Pin: RC_CG_DECLONE_HIER_INST340740/RC_CGIC_INST/E (CKLNQD1/E))
+
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               23196    -1231 
+            Worst cost_group: CLK, WNS: -1231.4
+            Path: retime_s1_39_reg/CP --> Xcc_reg[7]/D
+Info    : Using '4' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '92' more seconds during global map.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [write_hdl]
+        : There is no unique design here.
+Warning : Failed to dump traces because there are multiple top designs. [OVF-103]
+        : Can not dump ovf traces with multiple top designs.
+        : Traces can only be generated if there is exactly one top design.
+Error   : There are multiple top designs.  Specify one. [WDO-103] [write_do_lec]
+        : Error: Cannot identify a unique top design.
+        : Rerun command with a specific design.
+Error   : There are multiple top designs.  Specify one. [WDO-103] [write_do_lec]
+        : Error: Cannot identify a unique top design.
+  Decloning clock-gating logic from /designs/GCC
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 23196    -1231         0        0
+            Worst cost_group: CLK, WNS: -1231.4
+            Path: retime_s1_39_reg/CP --> Xcc_reg[7]/D
+ 
+Incremental optimization status (pre-loop)
+==========================================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ simp_cc_inputs            22879    -1229         0        0
+            Worst cost_group: CLK, WNS: -1229.3
+            Path: retime_s1_39_reg/CP --> Xcc_reg[4]/D
+ hi_fo_buf                 22879    -1229         0        0
+            Worst cost_group: CLK, WNS: -1229.3
+            Path: retime_s1_39_reg/CP --> Xcc_reg[4]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                22879    -1229         0        0
+            Worst cost_group: CLK, WNS: -1229.3
+            Path: retime_s1_39_reg/CP --> Xcc_reg[4]/D
+ incr_delay                23677    -1145         0        0
+            Worst cost_group: CLK, WNS: -1145.8
+            Path: retime_s1_174_reg/CP --> Ycc_reg[3]/D
+ incr_delay                24057    -1111         0        0
+            Worst cost_group: CLK, WNS: -1111.0
+            Path: retime_s1_179_reg/CP --> Xcc_reg[7]/D
+ incr_delay                24294    -1093         0        0
+            Worst cost_group: CLK, WNS: -1093.1
+            Path: retime_s1_310_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24404    -1086         0        0
+            Worst cost_group: CLK, WNS: -1086.3
+            Path: retime_s1_27_reg/CP --> Xcc_reg[0]/D
+ incr_delay                24467    -1080         0        0
+            Worst cost_group: CLK, WNS: -1080.8
+            Path: retime_s1_297_reg/CP --> Xcc_reg[0]/D
+ incr_delay                24589    -1071         0        0
+            Worst cost_group: CLK, WNS: -1071.7
+            Path: retime_s1_310_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24629    -1066         0        0
+            Worst cost_group: CLK, WNS: -1066.3
+            Path: retime_s1_233_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24681    -1063         0        0
+            Worst cost_group: CLK, WNS: -1063.1
+            Path: retime_s1_310_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24693    -1062         0        0
+            Worst cost_group: CLK, WNS: -1062.3
+            Path: retime_s1_105_reg/CP --> Xcc_reg[0]/D
+ incr_delay                24736    -1058         0        0
+            Worst cost_group: CLK, WNS: -1058.9
+            Path: retime_s1_310_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24741    -1057         0        0
+            Worst cost_group: CLK, WNS: -1057.7
+            Path: retime_s1_310_reg/CP --> Ycc_reg[6]/D
+ incr_delay                24765    -1057         0        0
+            Worst cost_group: CLK, WNS: -1057.0
+            Path: retime_s1_180_reg/CP --> Xcc_reg[0]/D
+ incr_delay                24984    -1041         0        0
+            Worst cost_group: CLK, WNS: -1041.7
+            Path: retime_s1_321_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25162    -1027         0        0
+            Worst cost_group: CLK, WNS: -1027.1
+            Path: retime_s1_325_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25180    -1025         0        0
+            Worst cost_group: CLK, WNS: -1025.7
+            Path: retime_s1_106_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25251    -1021         0        0
+            Worst cost_group: CLK, WNS: -1021.4
+            Path: retime_s1_180_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25307    -1015         0        0
+            Worst cost_group: CLK, WNS: -1015.4
+            Path: retime_s1_261_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25388    -1008         0        0
+            Worst cost_group: CLK, WNS: -1008.5
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25515     -996         0        0
+            Worst cost_group: CLK, WNS: -996.2
+            Path: retime_s1_177_reg/CP --> Ycc_reg[7]/D
+ incr_delay                25561     -988         0        0
+            Worst cost_group: CLK, WNS: -988.5
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25565     -986         0        0
+            Worst cost_group: CLK, WNS: -986.5
+            Path: retime_s1_321_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25671     -978         0        0
+            Worst cost_group: CLK, WNS: -978.8
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25673     -978         0        0
+            Worst cost_group: CLK, WNS: -978.6
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25675     -978         0        0
+            Worst cost_group: CLK, WNS: -978.5
+            Path: retime_s1_282_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25705     -977         0        0
+            Worst cost_group: CLK, WNS: -977.0
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25704     -975         0        0
+            Worst cost_group: CLK, WNS: -975.1
+            Path: retime_s1_97_reg/CP --> Xcc_reg[2]/D
+ incr_delay                25707     -974         0        0
+            Worst cost_group: CLK, WNS: -974.2
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25773     -968         0        0
+            Worst cost_group: CLK, WNS: -968.9
+            Path: retime_s1_264_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25769     -966         0        0
+            Worst cost_group: CLK, WNS: -966.3
+            Path: retime_s1_247_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25812     -963         0        0
+            Worst cost_group: CLK, WNS: -963.3
+            Path: retime_s1_306_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25816     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ init_drc                  25816     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ init_area                 25816     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ undup                     25809     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ rem_buf                   25644     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_179_reg/CP --> Xcc_reg[0]/D
+ rem_inv                   25466     -961         0        0
+            Worst cost_group: CLK, WNS: -961.0
+            Path: retime_s1_259_reg/CP --> Xcc_reg[0]/D
+ merge_bi                  25327     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_264_reg/CP --> Xcc_reg[0]/D
+ rem_inv_qb                25323     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_264_reg/CP --> Xcc_reg[0]/D
+ io_phase                  25208     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_264_reg/CP --> Xcc_reg[0]/D
+ gate_comp                 25060     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Ycc_reg[3]/D
+ gcomp_mog                 25060     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Ycc_reg[3]/D
+ glob_area                 24839     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ area_down                 24722     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ rem_buf                   24696     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ rem_inv                   24671     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ merge_bi                  24656     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ rem_inv_qb                24648     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                24648     -960         0        0
+            Worst cost_group: CLK, WNS: -960.9
+            Path: retime_s1_306_reg/CP --> Xcc_reg[7]/D
+ incr_delay                24652     -960         0        0
+            Worst cost_group: CLK, WNS: -960.7
+            Path: retime_s1_265_reg/CP --> Ycc_reg[5]/D
+ incr_delay                24827     -956         0        0
+            Worst cost_group: CLK, WNS: -956.0
+            Path: retime_s1_189_reg/CP --> Ycc_reg[7]/D
+ incr_delay                24850     -955         0        0
+            Worst cost_group: CLK, WNS: -955.8
+            Path: retime_s1_31_reg/CP --> Xcc_reg[0]/D
+ incr_delay                24868     -955         0        0
+            Worst cost_group: CLK, WNS: -955.7
+            Path: retime_s1_232_reg/CP --> Ycc_reg[5]/D
+ incr_delay                24868     -955         0        0
+            Worst cost_group: CLK, WNS: -955.7
+            Path: retime_s1_232_reg/CP --> Ycc_reg[7]/D
+ incr_delay                24912     -953         0        0
+            Worst cost_group: CLK, WNS: -953.8
+            Path: retime_s1_27_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25000     -950         0        0
+            Worst cost_group: CLK, WNS: -950.9
+            Path: retime_s1_304_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25027     -949         0        0
+            Worst cost_group: CLK, WNS: -949.5
+            Path: retime_s1_28_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25096     -947         0        0
+            Worst cost_group: CLK, WNS: -947.0
+            Path: retime_s1_242_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25187     -945         0        0
+            Worst cost_group: CLK, WNS: -945.2
+            Path: retime_s1_105_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25275     -943         0        0
+            Worst cost_group: CLK, WNS: -943.1
+            Path: retime_s1_110_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25278     -942         0        0
+            Worst cost_group: CLK, WNS: -942.4
+            Path: retime_s1_110_reg/CP --> Ycc_reg[7]/D
+ incr_delay                25289     -941         0        0
+            Worst cost_group: CLK, WNS: -941.6
+            Path: retime_s1_28_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25291     -940         0        0
+            Worst cost_group: CLK, WNS: -940.7
+            Path: retime_s1_27_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25374     -934         0        0
+            Worst cost_group: CLK, WNS: -934.5
+            Path: retime_s1_31_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25376     -934         0        0
+            Worst cost_group: CLK, WNS: -934.3
+            Path: retime_s1_27_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25394     -933         0        0
+            Worst cost_group: CLK, WNS: -933.5
+            Path: retime_s1_130_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25394     -932         0        0
+            Worst cost_group: CLK, WNS: -932.6
+            Path: retime_s1_296_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25412     -932         0        0
+            Worst cost_group: CLK, WNS: -932.3
+            Path: retime_s1_179_reg/CP --> Ycc_reg[6]/D
+ incr_delay                25501     -929         0        0
+            Worst cost_group: CLK, WNS: -929.3
+            Path: retime_s1_280_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25569     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ init_drc                  25569     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ init_area                 25569     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ undup                     25562     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ rem_buf                   25486     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ rem_inv                   25413     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_162_reg/CP --> Xcc_reg[0]/D
+ merge_bi                  25355     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_209_reg/CP --> Xcc_reg[0]/D
+ rem_inv_qb                25350     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_209_reg/CP --> Xcc_reg[0]/D
+ io_phase                  25303     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_209_reg/CP --> Xcc_reg[0]/D
+ gate_comp                 25221     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_244_reg/CP --> Xcc_reg[0]/D
+ gcomp_mog                 25220     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_244_reg/CP --> Xcc_reg[0]/D
+ glob_area                 25096     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_149_reg/CP --> Ycc_reg[3]/D
+ area_down                 25024     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_264_reg/CP --> Xcc_reg[0]/D
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                25024     -925         0        0
+            Worst cost_group: CLK, WNS: -925.8
+            Path: retime_s1_264_reg/CP --> Xcc_reg[0]/D
+ incr_delay                25053     -925         0        0
+            Worst cost_group: CLK, WNS: -925.1
+            Path: retime_s1_219_reg/CP --> Xcc_reg[2]/D
+ incr_delay                25070     -924         0        0
+            Worst cost_group: CLK, WNS: -924.6
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25072     -924         0        0
+            Worst cost_group: CLK, WNS: -924.6
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ incr_delay                25072     -924         0        0
+            Worst cost_group: CLK, WNS: -924.6
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+ init_drc                  25072     -924         0        0
+            Worst cost_group: CLK, WNS: -924.6
+            Path: retime_s1_179_reg/CP --> Ycc_reg[3]/D
+
+  Done mapping GCC
+  Synthesis succeeded.
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [report]
+        : There is no unique design here.
+Error sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl'.
+Failed on find_unique_design
+1
+1
+    while executing
+"redirect /dev/null "eval $cmd""
+    (procedure "vrc_trw_display_path" line 32)
+    invoked from within
+"vrc_trw_display_path 1"
+    (procedure "vrc_trw_dialog" line 55)
+    invoked from within
+"vrc_trw_dialog $data"
+    (procedure "vrc_report_timing_worst" line 45)
+    invoked from within
+"vrc_report_timing_worst"
+    invoked from within
+".rc.menubar.report.menu.timing invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .rc.menubar.report.menu.timing 1"
+    (command bound to event)
+Sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl' (Wed Dec 17 11:57:38 -0600 2014)...
+Error   : The object for this attribute is missing or invalid. [TUI-19] [set_attribute]
+        : You must specify a 'root' object type as the final (fourth) argument when setting the 'lib_search_path' attribute.
+        : To see the usage/description for this attribute, type 'set_attribute -h <attr_name> *'.
+GUI is already visible.
+Error sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl'.
+1
+
+*** INTERRUPTED *** [signal 1]

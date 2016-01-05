@@ -1,0 +1,384 @@
+#Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+
+ovf_setup -ungroup_separator { _ }
+
+ovf_transform \
+-module { Center } \
+-type { tree } \
+-internal_type { 109 } \
+-internal_index { 15 } \
+-input { 7 A } \
+-output { 1 Z } \
+-from { \
+   { 1 rem_20_18 : UREM { { A } { 'b10 } } } \
+   { Z = { rem_20_18.1 } } } \
+-to { \
+   { 1 ps0 : SLICE { { A 0 0 } } } \
+   { Z = { ps0.1 } } }
+
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance5 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance4 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance3 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance2 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance1 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Distance } \
+-instance { distance0 } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Center } \
+-instance { centery } 
+ovf_ungroup \
+-module { GCC } \
+-insmod { Center } \
+-instance { centerx } 
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 33 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance0_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance0_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g800 : NOT { { s } } } \
+   { 8 mx : SELECT { { g800.1 } { s } { distance0_sub_12_35.1 } { distance0_sub_12_27.1 } } } \
+   { z = { mx.1 } } } \
+-to { \
+   { 1 not : NOT { { s } } } \
+   { 1 not948 : NOT { { s } } } \
+   { 8 mx_2 : SELECT { { not.1 } { s } { b } { a } } } \
+   { 8 mx_3 : SELECT { { not948.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP : USUB { { mx_2.1 } { mx_3.1 } } } \
+   { z = { SUB_UNS_OP.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 34 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance0_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance0_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g802 : NOT { { s } } } \
+   { 8 mx_4 : SELECT { { g802.1 } { s } { distance0_sub_13_35.1 } { distance0_sub_13_27.1 } } } \
+   { z = { mx_4.1 } } } \
+-to { \
+   { 1 not949 : NOT { { s } } } \
+   { 1 not950 : NOT { { s } } } \
+   { 8 mx_5 : SELECT { { not949.1 } { s } { b } { a } } } \
+   { 8 mx_6 : SELECT { { not950.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP953 : USUB { { mx_5.1 } { mx_6.1 } } } \
+   { z = { SUB_UNS_OP953.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 35 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance1_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance1_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g804 : NOT { { s } } } \
+   { 8 mx_7 : SELECT { { g804.1 } { s } { distance1_sub_12_35.1 } { distance1_sub_12_27.1 } } } \
+   { z = { mx_7.1 } } } \
+-to { \
+   { 1 not954 : NOT { { s } } } \
+   { 1 not955 : NOT { { s } } } \
+   { 8 mx_8 : SELECT { { not954.1 } { s } { b } { a } } } \
+   { 8 mx_9 : SELECT { { not955.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP958 : USUB { { mx_8.1 } { mx_9.1 } } } \
+   { z = { SUB_UNS_OP958.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 36 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance1_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance1_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g806 : NOT { { s } } } \
+   { 8 mx_10 : SELECT { { g806.1 } { s } { distance1_sub_13_35.1 } { distance1_sub_13_27.1 } } } \
+   { z = { mx_10.1 } } } \
+-to { \
+   { 1 not959 : NOT { { s } } } \
+   { 1 not960 : NOT { { s } } } \
+   { 8 mx_11 : SELECT { { not959.1 } { s } { b } { a } } } \
+   { 8 mx_12 : SELECT { { not960.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP963 : USUB { { mx_11.1 } { mx_12.1 } } } \
+   { z = { SUB_UNS_OP963.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 37 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance2_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance2_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g808 : NOT { { s } } } \
+   { 8 mx_13 : SELECT { { g808.1 } { s } { distance2_sub_12_35.1 } { distance2_sub_12_27.1 } } } \
+   { z = { mx_13.1 } } } \
+-to { \
+   { 1 not964 : NOT { { s } } } \
+   { 1 not965 : NOT { { s } } } \
+   { 8 mx_14 : SELECT { { not964.1 } { s } { b } { a } } } \
+   { 8 mx_15 : SELECT { { not965.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP968 : USUB { { mx_14.1 } { mx_15.1 } } } \
+   { z = { SUB_UNS_OP968.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 38 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance2_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance2_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g810 : NOT { { s } } } \
+   { 8 mx_16 : SELECT { { g810.1 } { s } { distance2_sub_13_35.1 } { distance2_sub_13_27.1 } } } \
+   { z = { mx_16.1 } } } \
+-to { \
+   { 1 not969 : NOT { { s } } } \
+   { 1 not970 : NOT { { s } } } \
+   { 8 mx_17 : SELECT { { not969.1 } { s } { b } { a } } } \
+   { 8 mx_18 : SELECT { { not970.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP973 : USUB { { mx_17.1 } { mx_18.1 } } } \
+   { z = { SUB_UNS_OP973.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 39 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance3_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance3_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g812 : NOT { { s } } } \
+   { 8 mx_19 : SELECT { { g812.1 } { s } { distance3_sub_12_35.1 } { distance3_sub_12_27.1 } } } \
+   { z = { mx_19.1 } } } \
+-to { \
+   { 1 not974 : NOT { { s } } } \
+   { 1 not975 : NOT { { s } } } \
+   { 8 mx_20 : SELECT { { not974.1 } { s } { b } { a } } } \
+   { 8 mx_21 : SELECT { { not975.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP978 : USUB { { mx_20.1 } { mx_21.1 } } } \
+   { z = { SUB_UNS_OP978.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 40 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance3_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance3_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g814 : NOT { { s } } } \
+   { 8 mx_22 : SELECT { { g814.1 } { s } { distance3_sub_13_35.1 } { distance3_sub_13_27.1 } } } \
+   { z = { mx_22.1 } } } \
+-to { \
+   { 1 not979 : NOT { { s } } } \
+   { 1 not980 : NOT { { s } } } \
+   { 8 mx_23 : SELECT { { not979.1 } { s } { b } { a } } } \
+   { 8 mx_24 : SELECT { { not980.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP983 : USUB { { mx_23.1 } { mx_24.1 } } } \
+   { z = { SUB_UNS_OP983.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 41 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance4_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance4_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g816 : NOT { { s } } } \
+   { 8 mx_25 : SELECT { { g816.1 } { s } { distance4_sub_12_35.1 } { distance4_sub_12_27.1 } } } \
+   { z = { mx_25.1 } } } \
+-to { \
+   { 1 not984 : NOT { { s } } } \
+   { 1 not985 : NOT { { s } } } \
+   { 8 mx_26 : SELECT { { not984.1 } { s } { b } { a } } } \
+   { 8 mx_27 : SELECT { { not985.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP988 : USUB { { mx_26.1 } { mx_27.1 } } } \
+   { z = { SUB_UNS_OP988.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 42 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance4_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance4_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g818 : NOT { { s } } } \
+   { 8 mx_28 : SELECT { { g818.1 } { s } { distance4_sub_13_35.1 } { distance4_sub_13_27.1 } } } \
+   { z = { mx_28.1 } } } \
+-to { \
+   { 1 not989 : NOT { { s } } } \
+   { 1 not990 : NOT { { s } } } \
+   { 8 mx_29 : SELECT { { not989.1 } { s } { b } { a } } } \
+   { 8 mx_30 : SELECT { { not990.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP993 : USUB { { mx_29.1 } { mx_30.1 } } } \
+   { z = { SUB_UNS_OP993.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 43 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance5_sub_12_27 : USUB { { a } { b } } } \
+   { 8 distance5_sub_12_35 : USUB { { b } { a } } } \
+   { 1 g820 : NOT { { s } } } \
+   { 8 mx_31 : SELECT { { g820.1 } { s } { distance5_sub_12_35.1 } { distance5_sub_12_27.1 } } } \
+   { z = { mx_31.1 } } } \
+-to { \
+   { 1 not994 : NOT { { s } } } \
+   { 1 not995 : NOT { { s } } } \
+   { 8 mx_32 : SELECT { { not994.1 } { s } { b } { a } } } \
+   { 8 mx_33 : SELECT { { not995.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP998 : USUB { { mx_32.1 } { mx_33.1 } } } \
+   { z = { SUB_UNS_OP998.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 210 } \
+-internal_index { 44 } \
+-input { 8 a } \
+-input { 8 b } \
+-input { 1 s } \
+-output { 8 z } \
+-from { \
+   { 8 distance5_sub_13_27 : USUB { { a } { b } } } \
+   { 8 distance5_sub_13_35 : USUB { { b } { a } } } \
+   { 1 g822 : NOT { { s } } } \
+   { 8 mx_34 : SELECT { { g822.1 } { s } { distance5_sub_13_35.1 } { distance5_sub_13_27.1 } } } \
+   { z = { mx_34.1 } } } \
+-to { \
+   { 1 not999 : NOT { { s } } } \
+   { 1 not1000 : NOT { { s } } } \
+   { 8 mx_35 : SELECT { { not999.1 } { s } { b } { a } } } \
+   { 8 mx_36 : SELECT { { not1000.1 } { s } { a } { b } } } \
+   { 8 SUB_UNS_OP1003 : USUB { { mx_35.1 } { mx_36.1 } } } \
+   { z = { SUB_UNS_OP1003.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 206 } \
+-internal_index { 53 } \
+-input { 3 add_56_14.A } \
+-output { 3 O1 } \
+-from { \
+   { 3 add_56_14 : UADD { { add_56_14.A } { 'b1 ZERO 3 } } } \
+   { O1 = { add_56_14.1 } } } \
+-to { \
+   { 3 inc_add_56_14_1 : UINC { { add_56_14.A } { 'b1 ZERO 3 } } } \
+   { O1 = { inc_add_56_14_1.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 206 } \
+-internal_index { 54 } \
+-input { 8 centery_add_16_35.A } \
+-output { 8 O1 } \
+-from { \
+   { 8 centery_add_16_35 : UADD { { centery_add_16_35.A } { 'b1 ZERO 8 } } } \
+   { O1 = { centery_add_16_35.1 } } } \
+-to { \
+   { 8 inc_centery_add_16_35_2 : UINC { { centery_add_16_35.A } { 'b1 ZERO 8 } } } \
+   { O1 = { inc_centery_add_16_35_2.1 } } }
+
+ovf_transform \
+-module { GCC } \
+-type { tree } \
+-internal_type { 206 } \
+-internal_index { 55 } \
+-input { 8 centerx_add_16_35.A } \
+-output { 8 O1 } \
+-from { \
+   { 8 centerx_add_16_35 : UADD { { centerx_add_16_35.A } { 'b1 ZERO 8 } } } \
+   { O1 = { centerx_add_16_35.1 } } } \
+-to { \
+   { 8 inc_centerx_add_16_35_3 : UINC { { centerx_add_16_35.A } { 'b1 ZERO 8 } } } \
+   { O1 = { inc_centerx_add_16_35_3.1 } } }
+
+ovf_uniquify \
+-module { GCC } \
+{ { Compare0123 Comparator Comparator_221 } } 
+ovf_uniquify \
+-module { GCC } \
+{ { CompareAll Comparator Comparator_221 } } 
+ovf_uniquify \
+-module { GCC } \
+{ { Compare45 Comparator Comparator_223 } } 
+ovf_uniquify \
+-module { GCC } \
+{ { Compare23 Comparator Comparator_224 } } 
+ovf_uniquify \
+-module { GCC } \
+{ { Compare0123 Comparator_221 Comparator_222 } } 

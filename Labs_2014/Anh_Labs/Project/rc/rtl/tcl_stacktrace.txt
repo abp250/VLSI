@@ -1,0 +1,50 @@
+Sun Dec 07 12:56:44 AM CST 2014
+Trace back: invalid command name ".main_pane.cs.24"
+    while executing
+".main_pane.cs.24 tabconfigure .main_pane.source -mark *"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 $pp tabconfigure $window]"
+    (object "::.main_pane" method "::mtiwidgets::Panemanager::tabconfigure" body line 9)
+    invoked from within
+"$itk_option(-panemanager) tabconfigure $itk_component(hull) -mark $itk_option(-mark)"
+    (while configuring option "-mark" for widget "::.main_pane.source")
+    (object "::.main_pane.source" method "::itk::Archetype::configure" )
+    invoked from within
+"$windowobj configure -mark "*""
+    (procedure "SourceTitle" line 9)
+    invoked from within
+"SourceTitle .main_pane.source"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-titlecommand) $frame_name"
+    (object "::.main_pane.source" method "::mtiwidgets::WindowObj::Title" body line 9)
+    invoked from within
+"Title"
+    (object "::.main_pane.source" method "::mtiwidgets::WindowObj::UpdateText" body line 9)
+    invoked from within
+"$windowobj UpdateText"
+    (object "::.main_pane.source.interior.cs.body.editor" method "::vsimwidgets::Srcedit::UpdateSourceState" body line 40)
+    invoked from within
+"UpdateSourceState"
+    (object "::.main_pane.source.interior.cs.body.editor" method "::vsimwidgets::Srcedit::Activate" body line 2)
+    invoked from within
+"$src Activate"
+    (procedure "SrceditActivate" line 3)
+    invoked from within
+"SrceditActivate .main_pane.source"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.source" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$window Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 34)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  2: ::tkerror {invalid command name ".main_pane.cs.24"}
+  1: ::bgerror {invalid command name ".main_pane.cs.24"}

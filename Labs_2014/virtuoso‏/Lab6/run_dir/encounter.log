@@ -1,0 +1,2392 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.10-p003_1 (64bit) 04/17/2013 15:43 (Linux 2.6)
+@(#)CDS: NanoRoute v13.10-p002 NR130329-0035/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.10-p007_1 (64bit) 04/10/2013 12:20:57 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.10-p003 (64bit) 04/17/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.10-p009_1 (64bit) Apr 10 2013 05:43:58 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.10-p010
+@(#)CDS: IQRC/TQRC 12.1.0-s388 (64bit) Fri Mar 29 14:11:58 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.10-p003_1" on Fri Oct 24 17:27:00 2014 (mem=73.6M) ---
+--- Running on co2046-04.ece.iastate.edu (x86_64 w/Linux 2.6.32-504.el6.x86_64) ---
+This version was compiled on Wed Apr 17 15:43:31 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+Finished RTL import.
+**WARNING: **WARN: (ENCRTLC-3029):	Running post-synthesis placement without specifying either floorplan or def file.
+
+<CMD> compileDesign
+Prepare to launch compileDesign.
+      synEffort = medium
+      mapEffort = high
+      incrEffort = high
+      opCond = 
+      wlmName = 
+      wlmLibrary = 
+      wlmMode = 
+      rcVar = 
+      rcAttr = 
+      preloadInclude = 
+      postloadInclude = 
+      prewriteInclude = 
+      endInclude = 
+      report = all
+      outDir = ./r2g_output
+      setupOnly = 0
+      removeTempFiles = 0
+
+Launching rc -f ./r2g_input/r2g.tcl -logfile /dev/null ...
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anhho7/.cadence/rc.gui'.
+Finished loading tool scripts (3 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v12.10-s012_1 (64-bit), built Jan 26 2013
+
+
+Copyright notice: Copyright 1997-2012 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 636 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Notice: Upcoming end of support for Linux 32-bit.
+Support for Linux 32-bit will be discontinued starting with the RC 13.1 release.
+To ensure continued access to the forthcoming releases, RC 13.1 and up, you are
+advised to start the transitioning to Linux 64-bit.
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+            design  ovf_current_verification_directory
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_area_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  enable_parallel_iopt
+              root  exact_match_seqs_async_controls
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+Sourcing './r2g_input/r2g.tcl' (Fri Oct 24 17:28:37 -0500 2014)...
+Start at: 10/24/2014 17:28:37
+Sourcing '/usr/local/cadence/edi/tools.lnx86/lib/etc/load_etc.tcl' (Fri Oct 24 17:28:37 -0500 2014)...
+Sourcing '/usr/local/cadence/edi/tools.lnx86/lib/etc/toolbox/insert_io_buffers.tcl' (Fri Oct 24 17:28:37 -0500 2014)...
+Sourcing '/usr/local/cadence/edi/tools.lnx86/lib/etc/toolbox/performance_statistics.tcl' (Fri Oct 24 17:28:37 -0500 2014)...
+Warning : Potential variable name conflict. [TUI-666]
+        : A variable that controls the tool's behavior was set. The 'iopt_stats' variable has the same name as an internal variable.
+        : Some Tcl variables are used internally to enable features that are not officially supported. If this variable was set as a part of a script that was not intended to change the tool's behavior (perhaps as a temporary variable to store a command result), choose another variable name. Otherwise, this variable name could produce unintended results. If you are setting this variable to change the tool's behavior, this warning can be ignored.
+  Setting attribute of root '/': 'information_level' = 9
+  Setting attribute of root '/': 'hdl_max_loop_limit' = 1024
+  Setting attribute of root '/': 'hdl_reg_naming_style' = %s_reg%s
+  Setting attribute of root '/': 'gen_module_prefix' = G2C_DP_
+  Setting attribute of root '/': 'optimize_constant_0_flops' = false
+  Setting attribute of root '/': 'optimize_constant_1_flops' = false
+  Setting attribute of root '/': 'input_pragma_keyword' = cadence synopsys get2chip g2c
+  Setting attribute of root '/': 'synthesis_off_command' = translate_off
+  Setting attribute of root '/': 'synthesis_on_command' = translate_on
+  Setting attribute of root '/': 'input_case_cover_pragma' = full_case
+  Setting attribute of root '/': 'input_case_decode_pragma' = parallel_case
+  Setting attribute of root '/': 'input_synchro_reset_pragma' = sync_set_reset
+  Setting attribute of root '/': 'input_synchro_reset_blk_pragma' = sync_set_reset_local
+  Setting attribute of root '/': 'input_asynchro_reset_pragma' = async_set_reset
+  Setting attribute of root '/': 'input_asynchro_reset_blk_pragma' = async_set_reset_local
+  Setting attribute of root '/': 'script_begin' = dc_script_begin
+  Setting attribute of root '/': 'script_end' = dc_script_end
+  Setting attribute of message 'LBR-30': 'max_print' = 0
+  Setting attribute of message 'LBR-31': 'max_print' = 0
+  Setting attribute of root '/': 'shrink_factor' = 1.0
+  Setting attribute of root '/': 'hdl_search_path' = ./
+  Setting attribute of root '/': 'lib_search_path' = ./
+            Reading file '/home/anhho7/Desktop/EE465/Lab6/run_dir/../encounter/libdir/lib/tcbn65gpluswc.lib'
+    Loading library ../encounter/libdir/lib/tcbn65gpluswc.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : ../encounter/libdir/lib/tcbn65gpluswc.lib:65:20: Construct 'define_cell_area' is not supported.
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : ../encounter/libdir/lib/tcbn65gpluswc.lib:67:20: Construct 'library_features' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : ../encounter/libdir/lib/tcbn65gpluswc.lib:70:17: Construct 'input_voltage' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : ../encounter/libdir/lib/tcbn65gpluswc.lib:106:18: Construct 'output_voltage' is not supported.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD1', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 56834, column 29.
+        : Currently, state tables are only supported for scan cells for the clocked LSSD scan style and for clock-gating cells whose Liberty attribute 'clock_gating_integrated_cell' is set to 'generic'.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD2', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 57098, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD3', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 57362, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD4', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 57626, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD6', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 57890, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD8', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 58154, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD12', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 58418, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD16', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 58682, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD20', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 58948, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLHQD24', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 59214, column 29.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD1', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 59478, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD2', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 59742, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD3', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 60006, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD4', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 60270, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD6', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 60534, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD8', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 60798, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD12', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 61062, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD16', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 61326, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD20', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 61592, column 28.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CKLNQD24', in file '../encounter/libdir/lib/tcbn65gpluswc.lib', at line 61858, column 28.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library '../encounter/libdir/lib/tcbn65gpluswc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library ../encounter/libdir/lib/tcbn65gpluswc.lib:
+  **********************************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 4
+  Found 'statetable' group in cell. [LBR-83]: 20
+  Created nominal operating condition. [LBR-412]: 1
+ 
+        Cell 'ANTENNA' has no outputs.
+        Cell 'ANTENNA' has no outputs.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+        Cell 'DCAP' has no outputs.
+        Cell 'DCAP' has no outputs.
+        Cell 'DCAP4' has no outputs.
+        Cell 'DCAP4' has no outputs.
+        Cell 'DCAP8' has no outputs.
+        Cell 'DCAP8' has no outputs.
+        Cell 'DCAP16' has no outputs.
+        Cell 'DCAP16' has no outputs.
+        Cell 'DCAP32' has no outputs.
+        Cell 'DCAP32' has no outputs.
+        Cell 'DCAP64' has no outputs.
+        Cell 'DCAP64' has no outputs.
+        Cell 'GDCAP' has no outputs.
+        Cell 'GDCAP' has no outputs.
+        Cell 'GDCAP2' has no outputs.
+        Cell 'GDCAP2' has no outputs.
+        Cell 'GDCAP3' has no outputs.
+        Cell 'GDCAP3' has no outputs.
+        Cell 'GDCAP4' has no outputs.
+        Cell 'GDCAP4' has no outputs.
+        Cell 'GDCAP10' has no outputs.
+        Cell 'GDCAP10' has no outputs.
+        Cell 'OD18DCAP16' has no outputs.
+        Cell 'OD18DCAP16' has no outputs.
+        Cell 'OD18DCAP32' has no outputs.
+        Cell 'OD18DCAP32' has no outputs.
+        Cell 'OD18DCAP64' has no outputs.
+        Cell 'OD18DCAP64' has no outputs.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: '../encounter/libdir/lib/tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 CKLHQD3 CKLHQD4 CKLHQD6 CKLHQD8 CKLHQD12 CKLHQD16 CKLHQD20 CKLHQD24 CKLNQD1 CKLNQD2 CKLNQD3 CKLNQD4 CKLNQD6 CKLNQD8 CKLNQD12 CKLNQD16 CKLNQD20 CKLNQD24 CKND20 CKND24 DCAP DCAP4 DCAP8 DCAP16 DCAP32 DCAP64 DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 GDCAP GDCAP2 GDCAP3 GDCAP4 GDCAP10 GDFCNQD1 GDFQD1 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GTIEH GTIEL GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 INVD20 INVD24 OD18DCAP16 OD18DCAP32 OD18DCAP64 .'
+        : The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'library' = ../encounter/libdir/lib/tcbn65gpluswc.lib
+
+  According to lef_library, there are total 8 routing layers [ V(4) / H(4) ]
+
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: '../encounter/libdir/lib/tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 CKLHQD3 CKLHQD4 CKLHQD6 CKLHQD8 CKLHQD12 CKLHQD16 CKLHQD20 CKLHQD24 CKLNQD1 CKLNQD2 CKLNQD3 CKLNQD4 CKLNQD6 CKLNQD8 CKLNQD12 CKLNQD16 CKLNQD20 CKLNQD24 CKND20 CKND24 DCAP DCAP4 DCAP8 DCAP16 DCAP32 DCAP64 DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 GDCAP GDCAP2 GDCAP3 GDCAP4 GDCAP10 GDFCNQD1 GDFQD1 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GTIEH GTIEL GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 INVD20 INVD24 OD18DCAP16 OD18DCAP32 OD18DCAP64 .'
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'X2' in libcell 'BENCD1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'X2' in libcell 'BENCD1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'X2' in libcell 'BENCD2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'X2' in libcell 'BENCD2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'X2' in libcell 'BENCD4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'X2' in libcell 'BENCD4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'PP' in libcell 'BMLD1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'PP' in libcell 'BMLD1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'X2' and 'PP' in libcell 'BMLD1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'PP' in libcell 'BMLD2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'PP' in libcell 'BMLD2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'X2' and 'PP' in libcell 'BMLD2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'PP' in libcell 'BMLD4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'PP' in libcell 'BMLD4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'X2' and 'PP' in libcell 'BMLD4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D0'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'CKXOR2D0'.
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+  Setting attribute of root '/': 'lef_library' = /home/anhho7/Desktop/EE465/Lab6/run_dir/../encounter/libdir/lef/tcbn65gplus_8lmT2.lef
+
+EC INFO: Total cpu-time and memory after SETUP: 5 sec., 134.91 MBytes.
+
+            Reading Verilog file './../../Lab4/rc/syn/run_dir/design_mapped.v'
+
+EC INFO: Total cpu-time and memory after LOAD: 5 sec., 141.05 MBytes.
+
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: '../encounter/libdir/lib/tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 CKLHQD3 CKLHQD4 CKLHQD6 CKLHQD8 CKLHQD12 CKLHQD16 CKLHQD20 CKLHQD24 CKLNQD1 CKLNQD2 CKLNQD3 CKLNQD4 CKLNQD6 CKLNQD8 CKLNQD12 CKLNQD16 CKLNQD20 CKLNQD24 CKND20 CKND24 DCAP DCAP4 DCAP8 DCAP16 DCAP32 DCAP64 DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 GDCAP GDCAP2 GDCAP3 GDCAP4 GDCAP10 GDFCNQD1 GDFQD1 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GTIEH GTIEL GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 INVD20 INVD24 OD18DCAP16 OD18DCAP32 OD18DCAP64 .'
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'physical_cells', Total cells: 35, Usable cells: 0, Cells unusable for mapping: 35.
+	List of unusable cells: 'FILL1 FILL16 FILL1_LL FILL2 FILL32 FILL4 FILL64 FILL8 FILL_NW_HH FILL_NW_LL GFILL GFILL10 GFILL2 GFILL3 GFILL4 ISOHID1 ISOHID2 ISOHID4 ISOHID8 ISOLOD1 ISOLOD2 ISOLOD4 ISOLOD8 LVLHLD1 LVLHLD2 LVLHLD4 LVLHLD8 LVLLHCD1 LVLLHCD2 LVLLHCD4 LVLLHCD8 LVLLHD1 LVLLHD2 LVLLHD4 LVLLHD8 .'
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'lab1' from file './../../Lab4/rc/syn/run_dir/design_mapped.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'lab1'.
+  Setting attribute of root '/': 'remove_assigns' = true
+
+EC INFO: Total cpu-time and memory after ELAB: 6 sec., 155.53 MBytes.
+
+Warning : In PLE mode. This attribute will be ignored. [LBR-93]
+        : Cannot set the 'wireload_mode' attribute.
+        : If you want, set attribute 'interconnect_mode' to 'wireload' first.
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+ "current_design"          - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"              - successful     32 , failed      0 (runtime  0.00)
+ "get_lib_cells"           - successful     85 , failed      0 (runtime  0.00)
+ "get_ports"               - successful     33 , failed      0 (runtime  0.00)
+ "set_clock_gating_check"  - successful      1 , failed      0 (runtime  0.00)
+ "set_dont_use"            - successful     85 , failed      0 (runtime  0.00)
+ "set_input_delay"         - successful     32 , failed      0 (runtime  0.00)
+ "set_units"               - successful      2 , failed      0 (runtime  0.00)
+ "set_wire_load_mode"      - successful      1 , failed      0 (runtime  0.00)
+ "set_wire_load_selection_group" - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0
+
+EC INFO: Total cpu-time and memory after CONSTRAINT: 6 sec., 155.53 MBytes.
+
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: '../encounter/libdir/lib/tcbn65gpluswc.lib', Total cells: 811, Usable cells: 710, Cells unusable for mapping: 101.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 CKLHQD3 CKLHQD4 CKLHQD6 CKLHQD8 CKLHQD12 CKLHQD16 CKLHQD20 CKLHQD24 CKLNQD1 CKLNQD2 CKLNQD3 CKLNQD4 CKLNQD6 CKLNQD8 CKLNQD12 CKLNQD16 CKLNQD20 CKLNQD24 CKND20 CKND24 DCAP DCAP4 DCAP8 DCAP16 DCAP32 DCAP64 DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4 FA1D0 FA1D1 FA1D2 FA1D4 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 GDCAP GDCAP2 GDCAP3 GDCAP4 GDCAP10 GDFCNQD1 GDFQD1 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GTIEH GTIEL GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 INVD20 INVD24 OD18DCAP16 OD18DCAP32 OD18DCAP64 .'
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'physical_cells', Total cells: 35, Usable cells: 0, Cells unusable for mapping: 35.
+	List of unusable cells: 'FILL1 FILL16 FILL1_LL FILL2 FILL32 FILL4 FILL64 FILL8 FILL_NW_HH FILL_NW_LL GFILL GFILL10 GFILL2 GFILL3 GFILL4 ISOHID1 ISOHID2 ISOHID4 ISOHID8 ISOLOD1 ISOLOD2 ISOLOD4 ISOLOD8 LVLHLD1 LVLHLD2 LVLHLD4 LVLHLD8 LVLLHCD1 LVLLHCD2 LVLLHCD4 LVLLHCD8 LVLLHD1 LVLLHD2 LVLLHD4 LVLLHD8 .'
+
+EC INFO: Total numbers of exceptions: 5
+
+
+EC INFO: Total cpu-time and memory after POST-SDC: 6 sec., 155.53 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+        : Use 'report timing -lint' for more information.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+
+EC INFO: Reporting Initial QoR below...
+
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v12.10-s012_1
+  Generated on:           Oct 24 2014  05:28:41 pm
+  Module:                 lab1
+  Technology libraries:   tcbn65gpluswc 121
+                          physical_cells 
+  Operating conditions:   WCCOM 
+  Interconnect mode:      global
+  Area mode:              physical library
+============================================================
+
+Timing
+--------
+
+Clock Period 
+-------------
+iCLK  1600.0 
+
+
+  Cost    Critical           Violating 
+ Group   Path Slack   TNS      Paths   
+---------------------------------------
+default    No paths       0            
+iCLK       No paths       0            
+I2C          1564.4       0          0 
+C2O        No paths       0            
+C2C          -721.4   -7508         14 
+I2O        No paths       0            
+---------------------------------------
+Total                 -7508         14 
+
+Instance Count
+--------------
+Leaf Instance Count            3094 
+Sequential Instance Count        49 
+Combinational Instance Count   3045 
+Hierarchical Instance Count       0 
+Total Area                         14690.764
+Cell Area                          6966.000
+
+
+Max Fanout                         49 (iRST_N)
+Min Fanout                         0 (UNCONNECTED)
+Average Fanout                     2.0
+Terms to net ratio                 3.0
+Terms to instance ratio            3.0
+Runtime                            7 seconds
+RC peak memory usage:              155.53 
+EDI peak memory usage:             no_value 
+Hostname                           co2046-04.ece.iastate.edu
+
+EC INFO: Reporting Initial Summary below...
+
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v12.10-s012_1
+  Generated on:           Oct 24 2014  05:28:41 pm
+  Module:                 lab1
+  Technology libraries:   tcbn65gpluswc 121
+                          physical_cells 
+  Operating conditions:   WCCOM 
+  Interconnect mode:      global
+  Area mode:              physical library
+============================================================
+
+	Timing
+	------
+
+ Slack       Endpoint     Cost Group 
+------------------------------------------
+ -721ps oRESULT_reg[13]/D C2C        
+
+
+	Area
+	----
+
+Instance  Cells  Cell Area  Net Area  Total Area 
+-------------------------------------------------
+lab1       3094       6966      7725       14691 
+
+	Design Rule Check
+	-----------------
+
+Max_transition design rule: no violations.
+
+Max_capacitance design rule: no violations.
+
+
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 1.15 ohm (from lef_library)
+Site size           : 2.00 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+M1              H         1.00        0.000192  
+M2              V         1.00        0.000179  
+M3              H         1.00        0.000179  
+M4              V         1.00        0.000179  
+M5              H         1.00        0.000179  
+M6              V         1.00        0.000179  
+M7              H         1.00        0.000208  
+M8              V         1.00        0.000217  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+M1              H         1.00         1.777778  
+M2              V         1.00         1.400000  
+M3              H         1.00         1.400000  
+M4              V         1.00         1.400000  
+M5              H         1.00         1.400000  
+M6              V         1.00         1.400000  
+M7              H         1.00         0.055000  
+M8              V         1.00         0.055000  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+M1              H         1.00         0.090000  
+M2              V         1.00         0.100000  
+M3              H         1.00         0.100000  
+M4              V         1.00         0.100000  
+M5              H         1.00         0.100000  
+M6              V         1.00         0.100000  
+M7              H         1.00         0.400000  
+M8              V         1.00         0.400000  
+
+    Unmapping 'lab1' ...
+  Done unmapping 'lab1'
+  Synthesis succeeded.
+
+EC INFO: Total cpu-time and memory after SYN2GEN: 7 sec., 155.53 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 1.15 ohm (from lef_library)
+Site size           : 2.00 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+M1              H         1.00        0.000192  
+M2              V         1.00        0.000179  
+M3              H         1.00        0.000179  
+M4              V         1.00        0.000179  
+M5              H         1.00        0.000179  
+M6              V         1.00        0.000179  
+M7              H         1.00        0.000208  
+M8              V         1.00        0.000217  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+M1              H         1.00         1.777778  
+M2              V         1.00         1.400000  
+M3              H         1.00         1.400000  
+M4              V         1.00         1.400000  
+M5              H         1.00         1.400000  
+M6              V         1.00         1.400000  
+M7              H         1.00         0.055000  
+M8              V         1.00         0.055000  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+M1              H         1.00         0.090000  
+M2              V         1.00         0.100000  
+M3              H         1.00         0.100000  
+M4              V         1.00         0.100000  
+M5              H         1.00         0.100000  
+M6              V         1.00         0.100000  
+M7              H         1.00         0.400000  
+M8              V         1.00         0.400000  
+
+      Removing temporary intermediate hierarchies under lab1
+Mapping lab1 to gates.
+      Mapping 'lab1'...
+        Preparing the circuit
+          Pruning unused logic
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+Info    : Automatically enabling super-threading. [ST-121]
+        : Host 'co2046-04.ece.iastate.edu' has 8 processors available.
+        : RC is entering super-threading mode because it is running on a multi-processor machine.  Two super-thread servers will be running on 'localhost' and no super-thread licenses will be checked out.  This is enabled by the root attribute 'auto_super_thread'.
+Info    : Attempting to launch a super-threading server. [ST-120]
+        : Attempting to Launch server 1 of 2.
+        : RC is entering super-threading mode and is launching a CPU server process.  This is enabled by the root attribute 'super_thread_servers' or 'auto_super_thread'.
+            : The server is process '16730' in this host.
+Info    : Attempting to launch a super-threading server. [ST-120]
+        : Attempting to Launch server 2 of 2.
+            : The server is process '16733' in this host.
+Info    : Connection established with super-threading server. [ST-110]
+        : The server is process '16733' in this host.
+        : RC is entering super-threading mode and has established a connection with a CPU server process.  This is enabled by the root attributes 'super_thread_servers' or 'auto_super_thread'.
+Info    : Connection established with super-threading server. [ST-110]
+        : The server is process '16730' in this host.
+          Structuring (delay-based) lab1...
+            Starting partial collapsing (xors only) lab1
+            Finished partial collapsing.
+            Starting partial collapsing  lab1
+            Finished partial collapsing.
+            Performing redundancy-removal...
+            Performing redundancy-removal...
+          Done structuring (delay-based) lab1
+ 
+Global mapping target info
+==========================
+Cost Group 'I2C' target slack:    47 ps
+Target path end-point (Pin: A1_reg[2]/d)
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+           Pin                       Type         Fanout Load Arrival   
+                                                         (fF)   (ps)    
+------------------------------------------------------------------------
+(clock iCLK)                <<<  launch                             0 R 
+(design_mapped.sdc_line_38)      ext delay                              
+iA1[2]                      (u)  in port               1  5.0           
+A1_reg[2]/d                 <<<  unmapped_d_flop                        
+A1_reg[2]/clk                    setup                                  
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock iCLK)                     capture                         1600 R 
+------------------------------------------------------------------------
+Cost Group   : 'I2C' (path_group 'I2C')
+Start-point  : iA1[2]
+End-point    : A1_reg[2]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 1574ps.
+ 
+Cost Group 'C2C' target slack:  -178 ps
+Target path end-point (Pin: oRESULT_reg[15]/d)
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+       Pin                    Type          Fanout Load Arrival   
+                                                   (fF)   (ps)    
+------------------------------------------------------------------
+(clock iCLK)        <<<  launch                               0 R 
+B1_reg[4]/clk                                                     
+B1_reg[4]/q         (u)  unmapped_d_flop         8 40.0           
+g35277/in_1                                                       
+g35277/z            (u)  unmapped_nand2          4 20.0           
+g80171/in_1                                                       
+g80171/z            (u)  unmapped_complex2       1  5.0           
+g80172/in_1                                                       
+g80172/z            (u)  unmapped_nand2          2 10.0           
+g80036/in_1                                                       
+g80036/z            (u)  unmapped_or2            1  5.0           
+g80037/in_1                                                       
+g80037/z            (u)  unmapped_nand2          4 20.0           
+g80336/in_1                                                       
+g80336/z            (u)  unmapped_complex2       1  5.0           
+g79833/in_1                                                       
+g79833/z            (u)  unmapped_nand2          2 10.0           
+g80366/in_0                                                       
+g80366/z            (u)  unmapped_complex2       1  5.0           
+g79702/in_1                                                       
+g79702/z            (u)  unmapped_nand2          6 30.0           
+g79584/in_0                                                       
+g79584/z            (u)  unmapped_complex2       3 15.0           
+g79440/in_1                                                       
+g79440/z            (u)  unmapped_complex2       1  5.0           
+g79368/in_0                                                       
+g79368/z            (u)  unmapped_complex2       3 15.0           
+g79286/in_1                                                       
+g79286/z            (u)  unmapped_nand2          1  5.0           
+g79209/in_0                                                       
+g79209/z            (u)  unmapped_nand2          3 15.0           
+g79117/in_0                                                       
+g79117/z            (u)  unmapped_nand2          2 10.0           
+g79073/in_0                                                       
+g79073/z            (u)  unmapped_nand2          4 20.0           
+g80469/in_0                                                       
+g80469/z            (u)  unmapped_complex2       2 10.0           
+g28979/in_0                                                       
+g28979/z            (u)  unmapped_nand2          2 10.0           
+g78751/in_1                                                       
+g78751/z            (u)  unmapped_or2            1  5.0           
+g78752/in_1                                                       
+g78752/z            (u)  unmapped_nand2          4 20.0           
+g78674/in_1                                                       
+g78674/z            (u)  unmapped_nand2          2 10.0           
+g78515/in_1                                                       
+g78515/z            (u)  unmapped_nand2          9 45.0           
+g78411/in_1                                                       
+g78411/z            (u)  unmapped_complex2       7 35.0           
+g80627/in_0                                                       
+g80627/z            (u)  unmapped_complex2       1  5.0           
+g78211/in_1                                                       
+g78211/z            (u)  unmapped_nand2          1  5.0           
+g80650/in_0                                                       
+g80650/z            (u)  unmapped_complex2       3 15.0           
+g78128/in_0                                                       
+g78128/z            (u)  unmapped_or2            1  5.0           
+g78129/in_1                                                       
+g78129/z            (u)  unmapped_nand2          2 10.0           
+g78043/in_0                                                       
+g78043/z            (u)  unmapped_nand2          2 10.0           
+g78003/in_1                                                       
+g78003/z            (u)  unmapped_nand2          2 10.0           
+g77959/in_1                                                       
+g77959/z            (u)  unmapped_or2            1  5.0           
+g77960/in_1                                                       
+g77960/z            (u)  unmapped_nand2          6 30.0           
+g77908/in_0                                                       
+g77908/z            (u)  unmapped_or2            1  5.0           
+g80725/in_0                                                       
+g80725/z            (u)  unmapped_complex2       1  5.0           
+g80732/in_1                                                       
+g80732/z            (u)  unmapped_complex2       1  5.0           
+g77795/in_1                                                       
+g77795/z            (u)  unmapped_or2            2 10.0           
+g77772/in_0                                                       
+g77772/z            (u)  unmapped_complex2       2 10.0           
+g77765/in_1                                                       
+g77765/z            (u)  unmapped_nand2          1  5.0           
+g80752/in_1                                                       
+g80752/z            (u)  unmapped_complex2       1  5.0           
+g77715/in_0                                                       
+g77715/z            (u)  unmapped_nand2          4 20.0           
+g80757/in_1                                                       
+g80757/z            (u)  unmapped_complex2       1  5.0           
+g80762/in_1                                                       
+g80762/z            (u)  unmapped_complex2       4 20.0           
+g80765/in_1                                                       
+g80765/z            (u)  unmapped_complex2       1  5.0           
+g77668/in_0                                                       
+g77668/z            (u)  unmapped_nand2          2 10.0           
+g80771/in_0                                                       
+g80771/z            (u)  unmapped_complex2       1  5.0           
+g77664/in_1                                                       
+g77664/z            (u)  unmapped_nand2          1  5.0           
+oRESULT_reg[15]/d   <<<  unmapped_d_flop                          
+oRESULT_reg[15]/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock iCLK)             capture                           1600 R 
+------------------------------------------------------------------
+Cost Group   : 'C2C' (path_group 'C2C')
+Start-point  : B1_reg[4]/clk
+End-point    : oRESULT_reg[15]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of -178ps.
+ 
+          Restructuring (delay-based) lab1...
+          Done restructuring (delay-based) lab1
+        Optimizing component lab1...
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+           Pin                    Type      Fanout Load Slew Delay Arrival   
+                                                   (fF) (ps)  (ps)   (ps)    
+-----------------------------------------------------------------------------
+(clock iCLK)                     launch                                  0 R 
+(design_mapped.sdc_line_23)      ext delay                      +1       1 R 
+iA0[1]                           in port         1  2.9    0    +0       1 R 
+A0_reg[1]/D                 <<<  DFCND4                         +0       1   
+A0_reg[1]/CP                     setup                     0   +34      35 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock iCLK)                     capture                              1600 R 
+-----------------------------------------------------------------------------
+Cost Group   : 'I2C' (path_group 'I2C')
+Timing slack :    1565ps 
+Start-point  : iA0[1]
+End-point    : A0_reg[1]/D
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+       Pin               Type     Fanout Load Slew Delay Arrival   
+                                         (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------
+(clock iCLK)            launch                                 0 R 
+A1_reg[5]/CP                                     0             0 R 
+A1_reg[5]/Q             DFCND4         4 22.7   74  +199     199 R 
+g92609/I                                              +0     199   
+g92609/Z                BUFFD6         4 18.2   36   +61     260 R 
+g92520/A2                                             +0     260   
+g92520/Z                AN2D4          2  7.4   29   +57     317 R 
+g92191/A1                                             +0     317   
+g92191/ZN               ND2D3          1  6.3   33   +29     346 F 
+g92093/A1                                             +0     346   
+g92093/ZN               ND2D4          2 11.7   41   +29     375 R 
+g92092/I                                              +0     375   
+g92092/ZN               INVD4          1  6.3   17   +20     395 F 
+g91962/A1                                             +0     395   
+g91962/ZN               ND2D4          1  9.3   34   +22     417 R 
+g91914/A1                                             +0     417   
+g91914/ZN               CKND2D8        2 16.4   35   +32     450 F 
+g91913/I                                              +0     450   
+g91913/ZN               CKND6          1  6.3   18   +19     469 R 
+g91685/A1                                             +0     469   
+g91685/ZN               ND2D4          2 11.3   38   +30     499 F 
+g91616/A1                                             +0     499   
+g91616/ZN               CKND2D4        2  9.3   41   +33     532 R 
+g91539/A1                                             +0     532   
+g91539/ZN               ND2D2          1  4.1   31   +30     562 F 
+g91508/A1                                             +0     562   
+g91508/ZN               INR2XD4        3 25.9   49   +70     633 F 
+g91507/I                                              +0     633   
+g91507/ZN               INVD8          1 10.1   24   +24     657 R 
+g91339/A2                                             +0     657   
+g91339/ZN               NR2D8          1  9.9   16   +17     674 F 
+g91313/A1                                             +0     674   
+g91313/ZN               NR2D8          3 13.3   47   +33     707 R 
+g91234/A1                                             +0     707   
+g91234/ZN               CKND2D4        2 10.9   42   +35     742 F 
+g91036/A2                                             +0     742   
+g91036/ZN               ND2D4          1  9.3   32   +31     774 R 
+g90968/A1                                             +0     774   
+g90968/ZN               CKND2D8        2 13.8   31   +30     804 F 
+g90967/I                                              +0     804   
+g90967/ZN               INVD6          2 10.2   22   +22     826 R 
+g90864/A1                                             +0     826   
+g90864/ZN               CKND2D4        2 15.5   48   +36     861 F 
+g90838/A1                                             +0     861   
+g90838/ZN               ND2D4          1  6.3   27   +27     888 R 
+g90733/A1                                             +0     888   
+g90733/ZN               ND2D4          2 16.8   52   +39     928 F 
+g90732/I                                              +0     928   
+g90732/ZN               INVD6          1 15.9   33   +32     960 R 
+g90725/A2                                             +0     960   
+g90725/ZN               NR2XD8         9 34.5   36   +34     993 F 
+g90519/A2                                             +0     993   
+g90519/ZN               ND2D4          2 11.4   36   +32    1026 R 
+g90421/A1                                             +0    1026   
+g90421/ZN               CKND2D8        1 13.8   31   +31    1056 F 
+g90420/I                                              +0    1057   
+g90420/ZN               CKND12         5 40.7   35   +30    1086 R 
+g90419/I                                              +0    1086   
+g90419/ZN               INVD6          1  5.2   14   +16    1102 F 
+g90328/A1                                             +0    1102   
+g90328/ZN               NR2XD2         2  5.6   41   +26    1129 R 
+g89833/A2                                             +0    1129   
+g89833/ZN               XNR3D4         2 13.7   55  +180    1309 F 
+g89832/I                                              +0    1309   
+g89832/ZN               INVD6          2  7.9   26   +25    1334 R 
+g89763/A1                                             +0    1334   
+g89763/ZN               CKND2D4        1  6.3   27   +23    1358 F 
+g89732/A1                                             +0    1358   
+g89732/ZN               ND2D4          2 10.7   34   +27    1384 R 
+g89731/I                                              +0    1384   
+g89731/ZN               INVD4          1  5.9   16   +18    1402 F 
+g89662/A1                                             +0    1402   
+g89662/ZN               CKND2D4        1  6.3   32   +22    1425 R 
+g89651/A1                                             +0    1425   
+g89651/ZN               ND2D4          2 10.6   36   +32    1457 F 
+g89650/I                                              +0    1457   
+g89650/ZN               INVD4          2  7.9   25   +25    1482 R 
+g89571/A1                                             +0    1482   
+g89571/ZN               CKND2D4        1  6.3   25   +23    1505 F 
+g89557/A1                                             +0    1505   
+g89557/ZN               ND2D4          2 10.8   35   +26    1531 R 
+g89505/A1                                             +0    1531   
+g89505/ZN               CKND2D4        1  6.2   49   +26    1557 F 
+g89489/B1                                             +0    1557   
+g89489/ZN               IND2D4         1  5.8   31   +27    1583 R 
+g89448/A1                                             +0    1584   
+g89448/ZN               CKND2D4        2  9.2   36   +29    1612 F 
+g89395/A3                                             +0    1612   
+g89395/ZN               AOI31D4        3  9.5   89   +64    1676 R 
+g89367/A1                                             +0    1676   
+g89367/ZN               ND2D3          1  6.3   42   +42    1718 F 
+g89362/A1                                             +0    1718   
+g89362/ZN               ND2D4          2  8.4   30   +28    1747 R 
+g89344/A1                                             +0    1747   
+g89344/ZN               ND2D4          1  6.3   27   +25    1772 F 
+g89327/A1                                             +0    1772   
+g89327/ZN               ND2D4          2  9.3   31   +25    1797 R 
+g89326/I                                              +0    1797   
+g89326/ZN               INVD4          2  8.0   17   +19    1816 F 
+g89318/A1                                             +0    1816   
+g89318/ZN               AOI21D4        1  3.7   50   +30    1846 R 
+g89315/A1                                             +0    1846   
+g89315/Z                CKXOR2D2       1  2.9   44  +101    1947 F 
+oRESULT_reg[15]/D  <<<  DFCNQD1                       +0    1947   
+oRESULT_reg[15]/CP      setup                    0   +14    1962 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock iCLK)            capture                             1600 R 
+-------------------------------------------------------------------
+Cost Group   : 'C2C' (path_group 'C2C')
+Timing slack :    -362ps (TIMING VIOLATION)
+Start-point  : A1_reg[5]/CP
+End-point    : oRESULT_reg[15]/D
+
+ 
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                21874     -361 
+            Worst cost_group: C2C, WNS: -361.7
+            Path: A1_reg[5]/CP --> oRESULT_reg[15]/D
+ 
+Global incremental target info
+==============================
+Cost Group 'I2C' target slack:    31 ps
+Target path end-point (Pin: B0_reg[5]/D (DFCND4/D))
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+           Pin                    Type      Fanout Load Arrival   
+                                                   (fF)   (ps)    
+------------------------------------------------------------------
+(clock iCLK)                <<<  launch                       0 R 
+(design_mapped.sdc_line_27)      ext delay                        
+iB0[5]                           in port         1  2.9           
+B0_reg[5]/D                 <<<  DFCND4                           
+B0_reg[5]/CP                     setup                            
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock iCLK)                     capture                   1600 R 
+------------------------------------------------------------------
+Cost Group   : 'I2C' (path_group 'I2C')
+Start-point  : iB0[5]
+End-point    : B0_reg[5]/D
+
+The global mapper estimates a slack for this path of 1565ps.
+ 
+Cost Group 'C2C' target slack:  -362 ps
+Target path end-point (Pin: oRESULT_reg[16]/D (DFCNQD1/D))
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+       Pin               Type     Fanout Load Arrival   
+                                         (fF)   (ps)    
+--------------------------------------------------------
+(clock iCLK)       <<<  launch                      0 R 
+A1_reg[5]/CP                                            
+A1_reg[5]/Q             DFCND4         4 22.7           
+g92609/I                                                
+g92609/Z                BUFFD6         4 18.2           
+g92520/A2                                               
+g92520/Z                AN2D4          2  7.4           
+g92191/A1                                               
+g92191/ZN               ND2D3          1  6.3           
+g92093/A1                                               
+g92093/ZN               ND2D4          2 11.7           
+g92092/I                                                
+g92092/ZN               INVD4          1  6.3           
+g91962/A1                                               
+g91962/ZN               ND2D4          1  9.3           
+g91914/A1                                               
+g91914/ZN               CKND2D8        2 16.4           
+g91913/I                                                
+g91913/ZN               CKND6          1  6.3           
+g91685/A1                                               
+g91685/ZN               ND2D4          2 11.3           
+g91616/A1                                               
+g91616/ZN               CKND2D4        2  9.3           
+g91539/A1                                               
+g91539/ZN               ND2D2          1  4.1           
+g91508/A1                                               
+g91508/ZN               INR2XD4        3 25.9           
+g91507/I                                                
+g91507/ZN               INVD8          1 10.1           
+g91339/A2                                               
+g91339/ZN               NR2D8          1  9.9           
+g91313/A1                                               
+g91313/ZN               NR2D8          3 13.3           
+g91234/A1                                               
+g91234/ZN               CKND2D4        2 10.9           
+g91036/A2                                               
+g91036/ZN               ND2D4          1  9.3           
+g90968/A1                                               
+g90968/ZN               CKND2D8        2 13.8           
+g90841/A1                                               
+g90841/ZN               ND2D4          2 17.1           
+g90729/A1                                               
+g90729/ZN               CKND2D8        4 21.6           
+g90598/A1                                               
+g90598/ZN               AOI21D4        1  8.7           
+g90494/A1                                               
+g90494/ZN               NR2XD4         1 15.5           
+g90475/A2                                               
+g90475/ZN               NR2XD8         9 51.8           
+g90465/I                                                
+g90465/ZN               CKND8          1  6.3           
+g90356/A1                                               
+g90356/ZN               ND2D4          1 10.8           
+g90308/A2                                               
+g90308/ZN               ND2D8          1 14.6           
+g90190/A1                                               
+g90190/ZN               NR2XD8         5 28.6           
+g90037/A1                                               
+g90037/ZN               OAI22D4        1  8.3           
+g89947/A1                                               
+g89947/ZN               NR2XD4         3 12.0           
+g89946/I                                                
+g89946/ZN               INVD2          1  6.2           
+g89866/B1                                               
+g89866/ZN               IND2D4         1  6.6           
+g89834/A2                                               
+g89834/ZN               ND2D4          2  9.6           
+g89696/A1                                               
+g89696/ZN               CKND2D2        1  4.1           
+g89681/A1                                               
+g89681/ZN               INR2XD4        3 20.0           
+g89680/I                                                
+g89680/ZN               INVD8          2  9.6           
+g89630/A1                                               
+g89630/ZN               ND2D2          1  6.6           
+g89559/A2                                               
+g89559/ZN               ND2D4          3 12.5           
+g89444/A1                                               
+g89444/ZN               IND2D4         1 10.6           
+g89437/A2                                               
+g89437/ZN               ND2D8          5 22.3           
+g89434/I                                                
+g89434/ZN               INVD4          1  5.9           
+g89406/A1                                               
+g89406/ZN               CKND2D4        2 11.7           
+g89387/A1                                               
+g89387/ZN               ND2D4          1  8.7           
+g89380/A2                                               
+g89380/ZN               NR2XD4         2 11.7           
+g89359/A1                                               
+g89359/ZN               NR2XD4         1  6.3           
+g89338/A1                                               
+g89338/ZN               ND2D4          2 11.8           
+g89337/I                                                
+g89337/ZN               INVD6          2  9.4           
+g89330/A1                                               
+g89330/ZN               NR2D3          1  6.1           
+g89324/B1                                               
+g89324/ZN               INR2D4         1  4.3           
+g89319/A2                                               
+g89319/ZN               ND2D2          1  3.7           
+g89316/A1                                               
+g89316/Z                CKXOR2D2       1  2.9           
+oRESULT_reg[16]/D  <<<  DFCNQD1                         
+oRESULT_reg[16]/CP      setup                           
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock iCLK)            capture                  1600 R 
+--------------------------------------------------------
+Cost Group   : 'C2C' (path_group 'C2C')
+Start-point  : A1_reg[5]/CP
+End-point    : oRESULT_reg[16]/D
+
+The global mapper estimates a slack for this path of -372ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+           Pin                    Type      Fanout Load Slew Delay Arrival   
+                                                   (fF) (ps)  (ps)   (ps)    
+-----------------------------------------------------------------------------
+(clock iCLK)                     launch                                  0 R 
+(design_mapped.sdc_line_37)      ext delay                      +1       1 R 
+iA1[3]                           in port         1  2.9    0    +0       1 R 
+A1_reg[3]/D                 <<<  DFCND4                         +0       1   
+A1_reg[3]/CP                     setup                     0   +34      35 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock iCLK)                     capture                              1600 R 
+-----------------------------------------------------------------------------
+Cost Group   : 'I2C' (path_group 'I2C')
+Timing slack :    1565ps 
+Start-point  : iA1[3]
+End-point    : A1_reg[3]/D
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+       Pin               Type     Fanout Load Slew Delay Arrival   
+                                         (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------
+(clock iCLK)            launch                                 0 R 
+B0_reg[1]/CP                                     0             0 R 
+B0_reg[1]/Q             DFCND4         1  6.3   42  +174     174 R 
+g92627/I                                              +0     174   
+g92627/ZN               INVD4          1 13.8   25   +26     200 F 
+g92626/I                                              +0     200   
+g92626/ZN               CKND12         7 33.7   30   +25     226 R 
+g92439/A2                                             +0     226   
+g92439/Z                AN2D4          1  5.2   25   +52     278 R 
+g92019/B                                              +0     278   
+g92019/S                HA1D2          3 11.3   64  +100     378 R 
+g92017/I                                              +0     378   
+g92017/ZN               CKND3          1  4.8   25   +27     404 F 
+g91857/A1                                             +0     405   
+g91857/ZN               CKND2D3        1  6.3   40   +29     433 R 
+g91821/A1                                             +0     434   
+g91821/ZN               ND2D4          2 10.3   36   +33     467 F 
+g91561/A                                              +0     467   
+g91561/CO               HA1D4          2  7.5   22   +46     513 F 
+g91413/A1                                             +0     513   
+g91413/Z                OA21D4         2  7.2   30   +69     582 F 
+g91412/I                                              +0     582   
+g91412/Z                CKBD1          2  6.4   50   +57     640 F 
+g91279/A1                                             +0     640   
+g91279/ZN               IND2D2         1  5.1   40   +64     704 F 
+g91265/A2                                             +0     704   
+g91265/ZN               ND2D3          8 22.9   78   +55     759 R 
+g91151/S                                              +0     759   
+g91151/Z                MUX2D1         2  5.0   59  +109     868 R 
+g90972/A1                                             +0     868   
+g90972/ZN               OAI221D1       2  7.3  155  +102     970 F 
+g90542/A                                              +0     970   
+g90542/S                HA1D1          2  4.8   44  +108    1077 F 
+g90393/A1                                             +0    1077   
+g90393/ZN               IND2D1         1  4.0   56   +78    1156 F 
+g90384/B                                              +0    1156   
+g90384/ZN               IOA21D2        1  3.0   32   +28    1184 R 
+g90250/A1                                             +0    1184   
+g90250/ZN               ND2D1          1  4.0   64   +42    1226 F 
+g90211/B                                              +0    1226   
+g90211/ZN               IOA21D2        2  8.4   53   +44    1270 R 
+g90092/A1                                             +0    1270   
+g90092/ZN               ND2D2          2  7.5   48   +43    1313 F 
+g89940/B                                              +0    1313   
+g89940/ZN               OAI21D4        2  7.2   57   +35    1349 R 
+g89939/I                                              +0    1349   
+g89939/ZN               INVD2          2  6.5   28   +29    1378 F 
+g89851/A2                                             +0    1378   
+g89851/ZN               ND2D2          1  3.9   28   +26    1403 R 
+g89799/A1                                             +0    1403   
+g89799/ZN               ND2D2          2  7.3   47   +36    1440 F 
+g89751/A1                                             +0    1440   
+g89751/ZN               NR2XD2         1  5.4   39   +33    1473 R 
+g89729/A1                                             +0    1473   
+g89729/ZN               NR2XD2         2  6.5   33   +28    1501 F 
+g89569/A2                                             +0    1501   
+g89569/ZN               ND2D2          1  5.8   36   +31    1532 R 
+g89550/A1                                             +0    1532   
+g89550/ZN               CKND2D4        2  9.0   32   +30    1562 F 
+g89495/A1                                             +0    1562   
+g89495/ZN               NR2XD3         2  8.1   38   +31    1593 R 
+g89474/A2                                             +0    1593   
+g89474/ZN               CKND2D4        2  7.8   29   +31    1624 F 
+g89395/A2                                             +0    1624   
+g89395/ZN               AOI31D4        3  9.5   89   +56    1681 R 
+g89367/A1                                             +0    1681   
+g89367/ZN               ND2D3          1  6.3   42   +42    1723 F 
+g89362/A1                                             +0    1723   
+g89362/ZN               ND2D4          2  8.4   33   +28    1751 R 
+g89344/A1                                             +0    1751   
+g89344/ZN               ND2D4          1  6.3   29   +26    1777 F 
+g89327/A1                                             +0    1778   
+g89327/ZN               ND2D4          2  9.1   31   +25    1803 R 
+g89326/I                                              +0    1803   
+g89326/ZN               INVD4          2  8.8   18   +20    1822 F 
+g89318/A1                                             +0    1822   
+g89318/ZN               AOI21D4        1  3.7   51   +30    1853 R 
+g89315/A1                                             +0    1853   
+g89315/Z                CKXOR2D2       1  2.9   44  +102    1954 F 
+oRESULT_reg[15]/D  <<<  DFCNQD1                       +0    1954   
+oRESULT_reg[15]/CP      setup                    0   +14    1969 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock iCLK)            capture                             1600 R 
+-------------------------------------------------------------------
+Cost Group   : 'C2C' (path_group 'C2C')
+Timing slack :    -369ps (TIMING VIOLATION)
+Start-point  : B0_reg[1]/CP
+End-point    : oRESULT_reg[15]/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr               18813     -368 
+            Worst cost_group: C2C, WNS: -368.7
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+Info    : A super-threading server has been shut down normally. [ST-112]
+        : The server was process '16730' in this host.
+        : A super-threaded optimization is complete and a CPU server was successfully shut down.
+Info    : A super-threading server has been shut down normally. [ST-112]
+        : The server was process '16733' in this host.
+        ------------------------------------------------------------
+                            Super-Thread Summary
+          time in super-thread mode               : 20.67 sec
+          foreground process active time          : 20.67 sec
+          background processes total active time  : 0.00 sec
+          approximate speedup                     : 1.00X
+           * reported times are wall-clock (elapsed time),
+             not CPU time
+        ------------------------------------------------------------
+                            Stats from servers
+          servers : localhost localhost
+          memory_usage (Mb) : 122.32 121.90
+        ------------------------------------------------------------
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+        : The use of 'Conformal LEC12.1-p100' or later builds is recommended to get better verification results.
+Generating a dofile for design 'lab1' in file 'fv/lab1/rtl_to_g1.do' ...
+Info    : Forcing flat compare. [WDO-212]
+        : No hierarchies found in design.
+Info    : 'Conformal LEC12.1-p100' or later builds is recommended for verification. [WDO-600]
+Generating a dofile for design 'lab1' in file 'fv/lab1/rtl_to_g1_withoutovf.do' ...
+Info    : Forcing flat compare. [WDO-212]
+        : No hierarchies found in design.
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'incremental_opto', value: '0' (default: '1')
+        : Some Tcl variables are used internally to enable features that are not officially supported.
+
+  Done mapping lab1
+  Synthesis succeeded.
+
+EC INFO: Total cpu-time and memory after SYN2MAP: 31 sec., 204.78 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 1.15 ohm (from lef_library)
+Site size           : 2.00 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+M1              H         1.00        0.000192  
+M2              V         1.00        0.000179  
+M3              H         1.00        0.000179  
+M4              V         1.00        0.000179  
+M5              H         1.00        0.000179  
+M6              V         1.00        0.000179  
+M7              H         1.00        0.000208  
+M8              V         1.00        0.000217  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+M1              H         1.00         1.777778  
+M2              V         1.00         1.400000  
+M3              H         1.00         1.400000  
+M4              V         1.00         1.400000  
+M5              H         1.00         1.400000  
+M6              V         1.00         1.400000  
+M7              H         1.00         0.055000  
+M8              V         1.00         0.055000  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+M1              H         1.00         0.090000  
+M2              V         1.00         0.100000  
+M3              H         1.00         0.100000  
+M4              V         1.00         0.100000  
+M5              H         1.00         0.100000  
+M6              V         1.00         0.100000  
+M7              H         1.00         0.400000  
+M8              V         1.00         0.400000  
+
+  Incrementally optimizing lab1
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                 18813     -368         0        0
+            Worst cost_group: C2C, WNS: -368.7
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+ const_prop                18813     -368         0        0
+            Worst cost_group: C2C, WNS: -368.7
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+ simp_cc_inputs            18655     -367         0        0
+            Worst cost_group: C2C, WNS: -367.0
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ hi_fo_buf                 18655     -367         0        0
+            Worst cost_group: C2C, WNS: -367.0
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+  hi_fo_buf         0  (        0 /        0 )  0
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                18655     -367         0        0
+            Worst cost_group: C2C, WNS: -367.0
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                19418     -301         0        0
+            Worst cost_group: C2C, WNS: -301.7
+            Path: B1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                19736     -287         0        0
+            Worst cost_group: C2C, WNS: -287.7
+            Path: A1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                19951     -277         0        0
+            Worst cost_group: C2C, WNS: -277.7
+            Path: A0_reg[4]/CP --> oRESULT_reg[16]/D
+ incr_delay                19990     -274         0        0
+            Worst cost_group: C2C, WNS: -274.9
+            Path: A1_reg[5]/CP --> oRESULT_reg[16]/D
+ incr_delay                20035     -272         0        0
+            Worst cost_group: C2C, WNS: -272.3
+            Path: A0_reg[3]/CP --> oRESULT_reg[15]/D
+ incr_delay                20077     -270         0        0
+            Worst cost_group: C2C, WNS: -270.9
+            Path: B1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                20076     -270         0        0
+            Worst cost_group: C2C, WNS: -270.1
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+   crit_msz      3579  (     1417 /     1596 )  6828
+  crit_upsz      2198  (      449 /      472 )  1638
+  crit_slew       484  (        4 /        5 )  222
+   setup_dn       417  (        0 /        0 )  0
+ plc_bal_star         0  (        0 /        0 )  0
+ drc_buftim         0  (        0 /        0 )  0
+     plc_st       417  (        0 /        0 )  0
+   plc_star       417  (        0 /        0 )  0
+  plc_lo_st       417  (        0 /        0 )  0
+       fopt       417  (        0 /        0 )  5
+  crit_swap       417  (        0 /        0 )  103
+  mux2_swap       417  (        0 /        0 )  5
+  crit_dnsz      1308  (       32 /       36 )  747
+  load_swap       420  (        1 /        1 )  102
+       fopt       796  (       49 /       54 )  712
+   setup_dn       427  (        0 /        0 )  0
+  load_isol       564  (        8 /        8 )  898
+  load_isol       449  (        0 /        0 )  46
+   move_for       449  (        0 /        0 )  64
+   move_for       449  (        0 /        0 )  11
+     rem_bi       449  (        0 /        3 )  15
+    offload       449  (        0 /        0 )  12
+     rem_bi       449  (        0 /       17 )  82
+    offload       449  (        0 /        0 )  90
+      phase       449  (        0 /        0 )  0
+   in_phase       449  (        0 /        0 )  0
+  merge_bit       486  (        3 /        4 )  27
+ merge_idrvr       433  (        0 /        0 )  0
+ merge_iload       433  (        0 /        0 )  0
+ merge_idload       500  (        1 /       40 )  208
+ merge_drvr       460  (        0 /        9 )  48
+ merge_load       460  (        0 /        8 )  32
+     decomp       460  (        0 /        0 )  179
+   p_decomp       460  (        0 /        0 )  69
+   levelize       460  (        0 /        8 )  31
+   mb_split       460  (        0 /        0 )  0
+        dup       478  (        5 /        5 )  260
+ mux_retime       427  (        0 /        0 )  1
+    buf2inv       427  (        0 /        0 )  0
+        exp        64  (        5 /       38 )  109
+  gate_deco        49  (        2 /        2 )  504
+  gcomp_tim      1992  (       26 /       37 )  4140
+ inv_pair_2_buf       884  (        1 /        1 )  5
+
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'crr_max_tries', value: '300' (default: '62')
+ incr_delay                20062     -269         0        0
+            Worst cost_group: C2C, WNS: -269.9
+            Path: A1_reg[6]/CP --> oRESULT_reg[16]/D
+ incr_delay                20786     -259         0        0
+            Worst cost_group: C2C, WNS: -259.6
+            Path: B1_reg[4]/CP --> oRESULT_reg[16]/D
+ incr_delay                20850     -257         0        0
+            Worst cost_group: C2C, WNS: -257.3
+            Path: A0_reg[0]/CP --> oRESULT_reg[16]/D
+ incr_delay                20878     -257         0        0
+            Worst cost_group: C2C, WNS: -257.1
+            Path: B1_reg[4]/CP --> oRESULT_reg[16]/D
+ incr_delay                21008     -252         0        0
+            Worst cost_group: C2C, WNS: -252.0
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                21032     -250         0        0
+            Worst cost_group: C2C, WNS: -250.8
+            Path: B1_reg[4]/CP --> oRESULT_reg[16]/D
+ incr_delay                21433     -234         0        0
+            Worst cost_group: C2C, WNS: -234.4
+            Path: A1_reg[1]/CP --> oRESULT_reg[13]/D
+ incr_delay                21553     -229         0        0
+            Worst cost_group: C2C, WNS: -229.7
+            Path: B0_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                21720     -227         0        0
+            Worst cost_group: C2C, WNS: -227.1
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                21743     -226         0        0
+            Worst cost_group: C2C, WNS: -226.5
+            Path: B1_reg[6]/CP --> oRESULT_reg[15]/D
+ incr_delay                21874     -219         0        0
+            Worst cost_group: C2C, WNS: -219.3
+            Path: B0_reg[6]/CP --> oRESULT_reg[15]/D
+ incr_delay                21869     -219         0        0
+            Worst cost_group: C2C, WNS: -219.0
+            Path: A1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                21904     -217         0        0
+            Worst cost_group: C2C, WNS: -217.6
+            Path: B0_reg[4]/CP --> oRESULT_reg[16]/D
+ incr_delay                21927     -217         0        0
+            Worst cost_group: C2C, WNS: -217.1
+            Path: B0_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                21943     -216         0        0
+            Worst cost_group: C2C, WNS: -216.8
+            Path: A1_reg[2]/CP --> oRESULT_reg[15]/D
+ incr_delay                22000     -215         0        0
+            Worst cost_group: C2C, WNS: -215.4
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                22119     -212         0        0
+            Worst cost_group: C2C, WNS: -212.0
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                22127     -211         0        0
+            Worst cost_group: C2C, WNS: -211.7
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                22077     -211         0        0
+            Worst cost_group: C2C, WNS: -211.6
+            Path: B1_reg[6]/CP --> oRESULT_reg[16]/D
+ incr_delay                22129     -207         0        0
+            Worst cost_group: C2C, WNS: -207.1
+            Path: A1_reg[5]/CP --> oRESULT_reg[16]/D
+ incr_delay                22216     -205         0        0
+            Worst cost_group: C2C, WNS: -205.8
+            Path: A1_reg[5]/CP --> oRESULT_reg[16]/D
+ incr_delay                22209     -205         0        0
+            Worst cost_group: C2C, WNS: -205.6
+            Path: A1_reg[5]/CP --> oRESULT_reg[15]/D
+ incr_delay                22216     -205         0        0
+            Worst cost_group: C2C, WNS: -205.4
+            Path: A1_reg[0]/CP --> oRESULT_reg[16]/D
+ incr_delay                22239     -205         0        0
+            Worst cost_group: C2C, WNS: -205.0
+            Path: A1_reg[5]/CP --> oRESULT_reg[16]/D
+ incr_delay                22253     -203         0        0
+            Worst cost_group: C2C, WNS: -203.6
+            Path: B1_reg[0]/CP --> oRESULT_reg[16]/D
+ incr_delay                22254     -203         0        0
+            Worst cost_group: C2C, WNS: -203.4
+            Path: A0_reg[3]/CP --> oRESULT_reg[16]/D
+ incr_delay                22249     -203         0        0
+            Worst cost_group: C2C, WNS: -203.2
+            Path: B1_reg[0]/CP --> oRESULT_reg[15]/D
+ incr_delay                22231     -201         0        0
+            Worst cost_group: C2C, WNS: -201.9
+            Path: A1_reg[5]/CP --> oRESULT_reg[15]/D
+ incr_delay                22254     -200         0        0
+            Worst cost_group: C2C, WNS: -200.5
+            Path: A1_reg[5]/CP --> oRESULT_reg[13]/D
+ incr_delay                22268     -197         0        0
+            Worst cost_group: C2C, WNS: -197.7
+            Path: B1_reg[6]/CP --> oRESULT_reg[14]/D
+ incr_delay                22273     -195         0        0
+            Worst cost_group: C2C, WNS: -195.1
+            Path: A1_reg[7]/CP --> oRESULT_reg[16]/D
+ incr_delay                22278     -194         0        0
+            Worst cost_group: C2C, WNS: -194.3
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                22273     -192         0        0
+            Worst cost_group: C2C, WNS: -192.8
+            Path: B1_reg[6]/CP --> oRESULT_reg[12]/D
+ incr_delay                22273     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[6]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+    crr_220       177  (       16 /      166 )  15010
+   crr_glob       290  (        9 /       16 )  403
+    crr_200       562  (      229 /      529 )  10091
+   crr_glob      2185  (      213 /      229 )  953
+    crr_300       435  (      112 /      398 )  10419
+   crr_glob      1145  (      103 /      112 )  687
+    crr_400       168  (       22 /      152 )  5691
+   crr_glob       408  (       18 /       22 )  251
+    crr_111       449  (      122 /      422 )  20276
+   crr_glob       917  (       98 /      122 )  959
+    crr_210       408  (       77 /      377 )  17170
+   crr_glob       885  (       60 /       77 )  719
+    crr_110       548  (      220 /      520 )  14180
+   crr_glob      1769  (      185 /      220 )  1156
+    crr_101       534  (      197 /      497 )  11655
+   crr_glob      1545  (      176 /      197 )  1017
+    crr_201       411  (       85 /      385 )  14052
+   crr_glob       980  (       77 /       85 )  710
+    crr_211       303  (       37 /      288 )  22278
+   crr_glob       553  (       25 /       37 )  644
+   crit_msz      1290  (      348 /      399 )  2312
+  crit_upsz       544  (       45 /       50 )  347
+  crit_slew       409  (        8 /        8 )  223
+   setup_dn       586  (        0 /        0 )  0
+ plc_bal_star         0  (        0 /        0 )  0
+ drc_buftim         0  (        0 /        0 )  0
+     plc_st       295  (        0 /        0 )  0
+   plc_star       295  (        0 /        0 )  0
+  plc_lo_st       295  (        0 /        0 )  0
+       fopt       682  (        8 /        8 )  253
+  crit_swap       419  (        8 /        8 )  145
+  mux2_swap       324  (        0 /        0 )  3
+  crit_dnsz       531  (        1 /        1 )  295
+  load_swap       410  (        4 /        4 )  95
+       fopt       682  (        8 /        8 )  253
+   setup_dn       586  (        0 /        0 )  0
+  load_isol       638  (        2 /        2 )  572
+  load_isol       638  (        2 /        2 )  572
+   move_for       630  (        0 /        0 )  42
+   move_for       630  (        0 /        0 )  42
+     rem_bi       630  (        0 /       17 )  81
+    offload       630  (        0 /        0 )  65
+     rem_bi       630  (        0 /       17 )  81
+    offload       630  (        0 /        0 )  65
+  merge_bit       370  (        4 /        4 )  12
+ merge_idrvr       307  (        0 /        0 )  0
+ merge_iload       307  (        0 /        0 )  0
+ merge_idload       307  (        0 /       19 )  101
+ merge_drvr       307  (        0 /        0 )  0
+ merge_load       307  (        0 /        0 )  1
+      phase       307  (        0 /        0 )  0
+     decomp       307  (        0 /        0 )  119
+   p_decomp       307  (        0 /        0 )  67
+   levelize       307  (        0 /        0 )  2
+   mb_split       307  (        0 /        0 )  0
+   in_phase       307  (        0 /        0 )  0
+        dup       304  (        1 /        1 )  118
+ mux_retime       299  (        0 /        0 )  0
+    buf2inv       299  (        0 /        0 )  0
+        exp        59  (        2 /       42 )  226
+  gate_deco        48  (        1 /        1 )  485
+  gcomp_tim       977  (        0 /        1 )  2014
+ inv_pair_2_buf       364  (        1 /        1 )  2
+ init_drc                  22273     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[6]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+  crit_slew         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+ drc_buf_sp         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+ drc_buf_sp         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+ init_area                 22273     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[6]/CP --> oRESULT_reg[14]/D
+ undup                     22269     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[6]/CP --> oRESULT_reg[14]/D
+ rem_buf                   22024     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: A0_reg[6]/CP --> oRESULT_reg[15]/D
+ rem_inv                   21843     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: A0_reg[6]/CP --> oRESULT_reg[15]/D
+ merge_bi                  21532     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ rem_inv_qb                21532     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ io_phase                  21112     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: B1_reg[2]/CP --> oRESULT_reg[15]/D
+ gate_comp                 20782     -191         0        0
+            Worst cost_group: C2C, WNS: -191.9
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ glob_area                 20436     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: B0_reg[0]/CP --> oRESULT_reg[14]/D
+ area_down                 20245     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: A0_reg[6]/CP --> oRESULT_reg[15]/D
+ rem_buf                   20188     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: B0_reg[3]/CP --> oRESULT_reg[15]/D
+ rem_inv                   20165     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: B0_reg[3]/CP --> oRESULT_reg[15]/D
+ merge_bi                  20136     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: B0_reg[3]/CP --> oRESULT_reg[15]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+      undup        12  (        1 /        1 )  18
+    rem_buf       233  (       75 /       84 )  223
+    rem_inv       240  (       58 /       72 )  259
+   merge_bi       164  (      121 /      133 )  205
+ rem_inv_qb        10  (        1 /        1 )  14
+ seq_res_area         3  (        0 /        0 )  245
+   io_phase       591  (      147 /      157 )  735
+  gate_comp      2313  (       85 /      108 )  3461
+  gcomp_mog        11  (        0 /        0 )  462
+  glob_area        60  (       50 /       60 )  687
+  area_down       759  (      162 /      181 )  1793
+    rem_buf       152  (       18 /       21 )  151
+    rem_inv       132  (       11 /       18 )  145
+   merge_bi        38  (       12 /       17 )  55
+ rem_inv_qb         9  (        0 /        0 )  11
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                20136     -191         0        0
+            Worst cost_group: C2C, WNS: -191.8
+            Path: B0_reg[3]/CP --> oRESULT_reg[15]/D
+ incr_delay                20206     -191         0        0
+            Worst cost_group: C2C, WNS: -191.5
+            Path: A0_reg[5]/CP --> oRESULT_reg[15]/D
+ incr_delay                20221     -191         0        0
+            Worst cost_group: C2C, WNS: -191.2
+            Path: B1_reg[1]/CP --> oRESULT_reg[15]/D
+ incr_delay                20265     -190         0        0
+            Worst cost_group: C2C, WNS: -190.9
+            Path: B1_reg[3]/CP --> oRESULT_reg[15]/D
+ incr_delay                20306     -190         0        0
+            Worst cost_group: C2C, WNS: -190.4
+            Path: B0_reg[4]/CP --> oRESULT_reg[15]/D
+ incr_delay                20366     -189         0        0
+            Worst cost_group: C2C, WNS: -189.0
+            Path: A1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                20445     -188         0        0
+            Worst cost_group: C2C, WNS: -188.6
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+ incr_delay                20502     -187         0        0
+            Worst cost_group: C2C, WNS: -187.7
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+ incr_delay                20540     -187         0        0
+            Worst cost_group: C2C, WNS: -187.4
+            Path: B0_reg[1]/CP --> oRESULT_reg[15]/D
+ incr_delay                20709     -186         0        0
+            Worst cost_group: C2C, WNS: -186.1
+            Path: A1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                20812     -184         0        0
+            Worst cost_group: C2C, WNS: -184.0
+            Path: B1_reg[0]/CP --> oRESULT_reg[14]/D
+ incr_delay                21026     -180         0        0
+            Worst cost_group: C2C, WNS: -180.9
+            Path: A0_reg[3]/CP --> oRESULT_reg[14]/D
+ incr_delay                21148     -179         0        0
+            Worst cost_group: C2C, WNS: -179.4
+            Path: A1_reg[1]/CP --> oRESULT_reg[14]/D
+ incr_delay                21176     -179         0        0
+            Worst cost_group: C2C, WNS: -179.1
+            Path: A1_reg[1]/CP --> oRESULT_reg[14]/D
+ incr_delay                21192     -178         0        0
+            Worst cost_group: C2C, WNS: -178.5
+            Path: A1_reg[7]/CP --> oRESULT_reg[14]/D
+ incr_delay                21264     -175         0        0
+            Worst cost_group: C2C, WNS: -175.3
+            Path: A1_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21282     -174         0        0
+            Worst cost_group: C2C, WNS: -174.8
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                21287     -174         0        0
+            Worst cost_group: C2C, WNS: -174.5
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                21292     -174         0        0
+            Worst cost_group: C2C, WNS: -174.3
+            Path: B1_reg[3]/CP --> oRESULT_reg[16]/D
+ incr_delay                21396     -173         0        0
+            Worst cost_group: C2C, WNS: -173.6
+            Path: B0_reg[4]/CP --> oRESULT_reg[14]/D
+ incr_delay                21360     -173         0        0
+            Worst cost_group: C2C, WNS: -173.5
+            Path: A0_reg[3]/CP --> oRESULT_reg[14]/D
+ incr_delay                21428     -171         0        0
+            Worst cost_group: C2C, WNS: -171.0
+            Path: A1_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                21440     -170         0        0
+            Worst cost_group: C2C, WNS: -170.9
+            Path: A0_reg[7]/CP --> oRESULT_reg[14]/D
+ incr_delay                21490     -170         0        0
+            Worst cost_group: C2C, WNS: -170.6
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21502     -170         0        0
+            Worst cost_group: C2C, WNS: -170.1
+            Path: B1_reg[3]/CP --> oRESULT_reg[16]/D
+ incr_delay                21514     -169         0        0
+            Worst cost_group: C2C, WNS: -169.9
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21517     -169         0        0
+            Worst cost_group: C2C, WNS: -169.8
+            Path: A1_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21517     -169         0        0
+            Worst cost_group: C2C, WNS: -169.6
+            Path: A1_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21559     -168         0        0
+            Worst cost_group: C2C, WNS: -168.6
+            Path: B0_reg[1]/CP --> oRESULT_reg[14]/D
+ incr_delay                21610     -166         0        0
+            Worst cost_group: C2C, WNS: -166.5
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21619     -166         0        0
+            Worst cost_group: C2C, WNS: -166.1
+            Path: A0_reg[7]/CP --> oRESULT_reg[14]/D
+ incr_delay                21617     -165         0        0
+            Worst cost_group: C2C, WNS: -165.9
+            Path: A0_reg[2]/CP --> oRESULT_reg[14]/D
+ incr_delay                21630     -165         0        0
+            Worst cost_group: C2C, WNS: -165.6
+            Path: A1_reg[7]/CP --> oRESULT_reg[16]/D
+ incr_delay                21658     -164         0        0
+            Worst cost_group: C2C, WNS: -164.4
+            Path: B1_reg[1]/CP --> oRESULT_reg[14]/D
+ incr_delay                21658     -164         0        0
+            Worst cost_group: C2C, WNS: -164.0
+            Path: B1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                21707     -162         0        0
+            Worst cost_group: C2C, WNS: -162.9
+            Path: A0_reg[3]/CP --> oRESULT_reg[16]/D
+ incr_delay                21812     -162         0        0
+            Worst cost_group: C2C, WNS: -162.1
+            Path: A0_reg[3]/CP --> oRESULT_reg[14]/D
+ incr_delay                21813     -161         0        0
+            Worst cost_group: C2C, WNS: -161.8
+            Path: B1_reg[1]/CP --> oRESULT_reg[16]/D
+ incr_delay                21843     -159         0        0
+            Worst cost_group: C2C, WNS: -159.7
+            Path: B1_reg[0]/CP --> oRESULT_reg[16]/D
+ incr_delay                21857     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+    crr_220       178  (       14 /      164 )  16731
+   crr_glob       289  (       11 /       14 )  369
+    crr_200       420  (       89 /      389 )  8421
+   crr_glob       851  (       79 /       89 )  537
+    crr_300       418  (       77 /      377 )  10980
+   crr_glob       847  (       70 /       77 )  575
+    crr_400       219  (       17 /      200 )  6964
+   crr_glob       542  (       15 /       17 )  268
+    crr_111       380  (       63 /      363 )  17690
+   crr_glob       550  (       42 /       63 )  731
+    crr_210       393  (       62 /      362 )  15455
+   crr_glob       743  (       50 /       62 )  658
+    crr_110       423  (       94 /      394 )  11067
+   crr_glob       934  (       80 /       94 )  673
+    crr_101       430  (       86 /      386 )  9519
+   crr_glob       765  (       74 /       86 )  552
+    crr_201       381  (       59 /      359 )  12246
+   crr_glob       758  (       52 /       59 )  587
+    crr_211       373  (       54 /      354 )  25266
+   crr_glob       621  (       36 /       54 )  765
+   crit_msz      1593  (      352 /      391 )  2844
+  crit_upsz       947  (      104 /      114 )  1222
+  crit_slew       469  (        4 /        4 )  274
+   setup_dn       800  (        0 /        0 )  0
+ plc_bal_star         0  (        0 /        0 )  0
+ drc_buftim         0  (        0 /        0 )  0
+     plc_st       398  (        0 /        0 )  0
+   plc_star       398  (        0 /        0 )  0
+  plc_lo_st       398  (        0 /        0 )  0
+       fopt       919  (        7 /        8 )  399
+  crit_swap       398  (        0 /        0 )  130
+  mux2_swap       398  (        0 /        0 )  3
+  crit_dnsz       728  (        5 /        5 )  486
+  load_swap       487  (        1 /        1 )  143
+       fopt       919  (        7 /        8 )  399
+   setup_dn       800  (        0 /        0 )  0
+  load_isol       804  (        0 /        0 )  753
+  load_isol       804  (        0 /        0 )  753
+   move_for       804  (        0 /        0 )  77
+   move_for       804  (        0 /        0 )  77
+     rem_bi       804  (        0 /        6 )  32
+    offload       804  (        0 /        0 )  24
+     rem_bi       804  (        0 /        6 )  32
+    offload       804  (        0 /        0 )  24
+  merge_bit       472  (        2 /        2 )  11
+ merge_idrvr       445  (        0 /        0 )  0
+ merge_iload       445  (        0 /        0 )  1
+ merge_idload       445  (        0 /       21 )  104
+ merge_drvr       445  (        0 /        5 )  26
+ merge_load       445  (        0 /        5 )  28
+      phase       445  (        0 /        0 )  0
+     decomp       445  (        0 /        0 )  163
+   p_decomp       445  (        0 /        0 )  85
+   levelize       445  (        0 /        5 )  25
+   mb_split       445  (        0 /        0 )  0
+   in_phase       445  (        0 /        0 )  1
+        dup       475  (        3 /        4 )  262
+ mux_retime       416  (        0 /        0 )  0
+    buf2inv       416  (        0 /        0 )  0
+        exp       111  (        4 /       66 )  257
+  gate_deco        53  (        0 /        0 )  539
+  gcomp_tim      1439  (        1 /        1 )  3148
+ inv_pair_2_buf       450  (        0 /        0 )  2
+ init_drc                  21857     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+  crit_slew         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+ init_area                 21857     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+ rem_buf                   21695     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B1_reg[0]/CP --> oRESULT_reg[14]/D
+ rem_inv                   21598     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B1_reg[0]/CP --> oRESULT_reg[14]/D
+ merge_bi                  21462     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B0_reg[2]/CP --> oRESULT_reg[14]/D
+ rem_inv_qb                21457     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B0_reg[2]/CP --> oRESULT_reg[14]/D
+ io_phase                  21253     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B0_reg[1]/CP --> oRESULT_reg[16]/D
+ gate_comp                 21081     -159         0        0
+            Worst cost_group: C2C, WNS: -159.3
+            Path: B0_reg[1]/CP --> oRESULT_reg[16]/D
+ glob_area                 20883     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: B1_reg[2]/CP --> oRESULT_reg[16]/D
+ area_down                 20762     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A0_reg[2]/CP --> oRESULT_reg[16]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+      undup        13  (        0 /        0 )  19
+    rem_buf       183  (       50 /       56 )  185
+    rem_inv       162  (       27 /       35 )  190
+   merge_bi        77  (       54 /       60 )  104
+ rem_inv_qb        11  (        2 /        2 )  12
+   io_phase       451  (       76 /       86 )  538
+  gate_comp      2192  (       49 /       62 )  3208
+  gcomp_mog         9  (        0 /        0 )  448
+  glob_area        57  (       43 /       57 )  644
+  area_down       760  (       95 /      105 )  1756
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                20762     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A0_reg[2]/CP --> oRESULT_reg[16]/D
+ incr_delay                20768     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+   crit_msz       122  (        7 /        9 )  188
+  crit_upsz        80  (        0 /        0 )  89
+  crit_slew        80  (        0 /        0 )  37
+   setup_dn        80  (        0 /        0 )  0
+ plc_bal_star         0  (        0 /        0 )  0
+ drc_buftim         0  (        0 /        0 )  0
+     plc_st        80  (        0 /        0 )  0
+   plc_star        80  (        0 /        0 )  0
+  plc_lo_st        80  (        0 /        0 )  0
+       fopt        80  (        0 /        0 )  1
+  crit_swap        80  (        0 /        0 )  27
+  mux2_swap        80  (        0 /        0 )  0
+  crit_dnsz       172  (        0 /        0 )  114
+  load_swap        80  (        0 /        0 )  18
+       fopt        80  (        0 /        0 )  24
+   setup_dn        80  (        0 /        0 )  0
+  load_isol        80  (        0 /        0 )  144
+  load_isol        80  (        0 /        0 )  27
+   move_for        80  (        0 /        0 )  19
+   move_for        80  (        0 /        0 )  0
+     rem_bi        80  (        0 /        0 )  0
+    offload        80  (        0 /        0 )  0
+     rem_bi        80  (        0 /        2 )  7
+    offload        80  (        0 /        0 )  2
+      phase        80  (        0 /        0 )  0
+   in_phase        80  (        0 /        0 )  0
+  merge_bit        80  (        0 /        0 )  0
+ merge_idrvr        80  (        0 /        0 )  0
+ merge_iload        80  (        0 /        0 )  0
+ merge_idload        80  (        0 /        0 )  0
+ merge_drvr        80  (        0 /        0 )  1
+ merge_load        80  (        0 /        0 )  0
+     decomp        80  (        0 /        0 )  44
+   p_decomp        80  (        0 /        0 )  17
+   levelize        80  (        0 /        0 )  0
+   mb_split        80  (        0 /        0 )  0
+        dup        80  (        0 /        0 )  48
+ mux_retime        80  (        0 /        0 )  0
+    buf2inv        80  (        0 /        0 )  0
+        exp        21  (        0 /       12 )  33
+  gate_deco        22  (        0 /        0 )  210
+  gcomp_tim       189  (        0 /        0 )  401
+ inv_pair_2_buf        80  (        0 /        0 )  2
+
+ init_drc                  20768     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+  crit_slew         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+  Inserting buffers to remove assign statements...
+Info    : Option '-skip_unconstrained_paths' is a hidden obsolete option. [UTUI-125]
+        : The option '-skip_unconstrained_paths' is ON be default and will be removed from next release of RC.
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst - - DRC Totals - -
+                           Total  Weighted     Max       Max 
+Operation                   Area   Slacks     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                20768     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+   crit_msz        40  (        0 /        1 )  51
+  crit_upsz        40  (        0 /        0 )  36
+  crit_slew        40  (        0 /        0 )  15
+   setup_dn        40  (        0 /        0 )  0
+ plc_bal_star         0  (        0 /        0 )  0
+ drc_buftim         0  (        0 /        0 )  0
+     plc_st        40  (        0 /        0 )  0
+   plc_star        40  (        0 /        0 )  0
+  plc_lo_st        40  (        0 /        0 )  0
+       fopt        40  (        0 /        0 )  1
+  crit_swap        40  (        0 /        0 )  11
+  mux2_swap        40  (        0 /        0 )  0
+  crit_dnsz        86  (        0 /        0 )  44
+  load_swap        40  (        0 /        0 )  7
+       fopt        40  (        0 /        0 )  20
+   setup_dn        40  (        0 /        0 )  0
+  load_isol        40  (        0 /        0 )  65
+  load_isol        40  (        0 /        0 )  12
+      phase        40  (        0 /        0 )  0
+   in_phase        40  (        0 /        0 )  0
+     decomp        40  (        0 /        0 )  19
+   p_decomp        40  (        0 /        0 )  8
+   levelize        40  (        0 /        0 )  0
+        dup        40  (        0 /        0 )  21
+ mux_retime        40  (        0 /        0 )  0
+    buf2inv        40  (        0 /        0 )  0
+        exp         1  (        0 /        1 )  2
+ inv_pair_2_buf        40  (        0 /        0 )  3
+
+ init_drc                  20768     -159         0        0
+            Worst cost_group: C2C, WNS: -159.2
+            Path: A1_reg[4]/CP --> oRESULT_reg[14]/D
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+  crit_slew         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+ simple_buf         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+
+      Trick     Calls    Accepts   Attempts          Time 
+-----------------------------------------------------------
+     plc_st         0  (        0 /        0 )  0
+   plc_star         0  (        0 /        0 )  0
+   drc_bufs         0  (        0 /        0 )  0
+   drc_fopt         0  (        0 /        0 )  0
+   drc_bufb         0  (        0 /        0 )  0
+        dup         0  (        0 /        0 )  0
+  crit_dnsz         0  (        0 /        0 )  0
+  crit_upsz         0  (        0 /        0 )  0
+
+
+  Done mapping lab1
+  Synthesis succeeded.
+
+EC INFO: Total cpu-time and memory after INCR: 375 sec., 204.78 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+
+EC INFO: Total cpu-time and memory after ASSIGN: 376 sec., 204.78 MBytes.
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Finished SDC export (command execution time mm:ss (real) = 00:01).
+
+EC INFO: Total cpu-time and memory after WRITE: 376 sec., 204.78 MBytes.
+
+  Setting attribute of root '/': 'interconnect_mode' = wireload
+  Setting attribute of design 'lab1': 'force_wireload' = none
+  Setting attribute of root '/': 'wireload_mode' = top
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: '../encounter/libdir/lib/tcbn65gpluswc.lib', Total cells: 811, Usable cells: 710, Cells unusable for mapping: 101.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 CKLHQD3 CKLHQD4 CKLHQD6 CKLHQD8 CKLHQD12 CKLHQD16 CKLHQD20 CKLHQD24 CKLNQD1 CKLNQD2 CKLNQD3 CKLNQD4 CKLNQD6 CKLNQD8 CKLNQD12 CKLNQD16 CKLNQD20 CKLNQD24 CKND20 CKND24 DCAP DCAP4 DCAP8 DCAP16 DCAP32 DCAP64 DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4 FA1D0 FA1D1 FA1D2 FA1D4 GAN2D1 GAN2D2 GAOI21D1 GAOI21D2 GAOI22D1 GBUFFD1 GBUFFD2 GBUFFD3 GBUFFD4 GBUFFD8 GDCAP GDCAP2 GDCAP3 GDCAP4 GDCAP10 GDFCNQD1 GDFQD1 GINVD1 GINVD2 GINVD3 GINVD4 GINVD8 GMUX2D1 GMUX2D2 GMUX2ND1 GMUX2ND2 GND2D1 GND2D2 GND2D3 GND2D4 GND3D1 GND3D2 GNR2D1 GNR2D2 GNR3D1 GNR3D2 GOAI21D1 GOAI21D2 GOR2D1 GOR2D2 GSDFCNQD1 GTIEH GTIEL GXNR2D1 GXNR2D2 GXOR2D1 GXOR2D2 INVD20 INVD24 OD18DCAP16 OD18DCAP32 OD18DCAP64 .'
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'physical_cells', Total cells: 35, Usable cells: 0, Cells unusable for mapping: 35.
+	List of unusable cells: 'FILL1 FILL16 FILL1_LL FILL2 FILL32 FILL4 FILL64 FILL8 FILL_NW_HH FILL_NW_LL GFILL GFILL10 GFILL2 GFILL3 GFILL4 ISOHID1 ISOHID2 ISOHID4 ISOHID8 ISOLOD1 ISOLOD2 ISOLOD4 ISOLOD8 LVLHLD1 LVLHLD2 LVLHLD4 LVLHLD8 LVLLHCD1 LVLLHCD2 LVLLHCD4 LVLLHCD8 LVLLHD1 LVLLHD2 LVLLHD4 LVLLHD8 .'
+        Tracing clock networks.
+        Levelizing the circuit.
+        Applying wireload models.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'lab1'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v12.10-s012_1
+  Generated on:           Oct 24 2014  05:34:56 pm
+  Module:                 lab1
+  Technology libraries:   tcbn65gpluswc 121
+                          physical_cells 
+  Operating conditions:   WCCOM (balanced_tree)
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+       Pin           Type     Fanout Load Slew Delay Arrival   
+                                     (fF) (ps)  (ps)   (ps)    
+---------------------------------------------------------------
+(clock iCLK)         launch                                0 R 
+B1_reg[6]/CP                                 0             0 R 
+B1_reg[6]/QN         DFCND4        1  6.9   36  +238     238 F 
+g99643/A2                                         +0     238   
+g99643/ZN            NR2XD4        1  4.1   23   +30     268 R 
+g99642/B                                          +0     268   
+g99642/ZN            OAI21D4       2  5.6   35   +35     303 F 
+g102907/A2                                        +0     303   
+g102907/ZN           ND2D3         1  4.0   25   +26     329 R 
+g102906/A1                                        +0     329   
+g102906/ZN           CKND2D4       1  4.5   22   +21     350 F 
+g102905/A1                                        +0     350   
+g102905/ZN           ND2D4         2  7.6   33   +22     371 R 
+g102911/A1                                        +0     371   
+g102911/ZN           ND2D4         2  9.3   34   +30     402 F 
+g88/A1                                            +0     402   
+g88/ZN               ND2D4         1  4.5   22   +21     423 R 
+g95863/A1                                         +0     423   
+g95863/ZN            ND2D4         2  6.6   27   +24     447 F 
+g533/S                                            +0     447   
+g533/PP              BMLD4         2  8.0   45  +151     598 R 
+g101874/A1                                        +0     598   
+g101874/ZN           ND2D3         3  5.9   32   +32     629 F 
+g101873/A1                                        +0     629   
+g101873/Z            AN2D4         1  8.8   22   +45     674 F 
+g101863/A2                                        +0     674   
+g101863/ZN           ND2D8         2 13.7   26   +23     697 R 
+g98037/A1                                         +0     697   
+g98037/ZN            ND2D8         3 12.8   30   +28     726 F 
+g98039/I                                          +0     726   
+g98039/ZN            INVD6         2 18.2   32   +28     754 R 
+g96709/A1                                         +0     754   
+g96709/ZN            NR2XD8        1 12.8   24   +21     775 F 
+g100019/A1                                        +0     775   
+g100019/ZN           NR2XD8        1 14.1   36   +24     798 R 
+g101966/A2                                        +0     798   
+g101966/ZN           NR2XD8        6 24.1   29   +31     829 F 
+g101965/I                                         +0     829   
+g101965/ZN           INVD12        8 28.7   27   +25     854 R 
+g102210/A1                                        +0     854   
+g102210/ZN           IOA21D4       2  5.7   41   +79     933 R 
+g102214/I                                         +0     933   
+g102214/ZN           INVD2         1  4.5   20   +22     956 F 
+g102213/A1                                        +0     956   
+g102213/ZN           ND2D4         2 11.9   37   +26     982 R 
+g102851/A3                                        +0     982   
+g102851/ZN           ND3D8         2  7.6   37   +42    1024 F 
+g102856/I                                         +0    1024   
+g102856/ZN           CKND3         1  6.9   27   +26    1050 R 
+g102855/A1                                        +0    1050   
+g102855/ZN           NR2XD4        1  8.3   24   +21    1071 F 
+g102754/A2                                        +0    1071   
+g102754/ZN           NR2D8         3 10.8   42   +38    1109 R 
+g103099/A1                                        +0    1109   
+g103099/ZN           AOI21D4       1  6.5   32   +32    1141 F 
+g99578/A1                                         +0    1141   
+g99578/ZN            NR2XD4        3 12.7   41   +32    1173 R 
+g94850/A2                                         +0    1173   
+g94850/Z             AN2D4         1  8.4   31   +59    1232 R 
+g96699/A1                                         +0    1232   
+g96699/ZN            NR2D8         4  9.6   24   +17    1249 F 
+g96700/A1                                         +0    1249   
+g96700/Z             AN2D4         1  4.1   16   +38    1287 F 
+g94313/A1                                         +0    1287   
+g94313/ZN            AOI21D4       1  4.5   53   +32    1319 R 
+g101495/A1                                        +0    1319   
+g101495/ZN           ND2D4         2  9.5   36   +35    1354 F 
+g100345/A1                                        +0    1354   
+g100345/ZN           NR2XD3        2  6.4   33   +29    1383 R 
+g100344/A1                                        +0    1383   
+g100344/ZN           NR2XD3        1  4.8   23   +22    1405 F 
+g100340/A2                                        +0    1405   
+g100340/ZN           ND2D4         1  8.4   30   +25    1430 R 
+g101055/A1                                        +0    1430   
+g101055/ZN           ND2D8         3  9.8   26   +27    1457 F 
+g98717/A2                                         +0    1457   
+g98717/Z             XOR2D1        1  1.1   30   +86    1543 R 
+oRESULT_reg[14]/D    DFCNQD1                      +0    1543   
+oRESULT_reg[14]/CP   setup                   0   +38    1581 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock iCLK)         capture                            1600 R 
+---------------------------------------------------------------
+Cost Group   : 'C2C' (path_group 'C2C')
+Timing slack :      19ps 
+Start-point  : B1_reg[6]/CP
+End-point    : oRESULT_reg[14]/D
+
+
+EC INFO: Total cpu-time and memory after FINAL: 377 sec., 204.78 MBytes.
+
+
+EC INFO: End at: 10/24/2014 17:34:56
+
+EC INFO: Elapsed-time: 379 seconds
+
+Normal exit.
+Finished compileDesign (elapsed-time: 382 seconds, or 0:6:22).
+**ERROR: (ENCSYT-40503):	Support for the loadConfig command and the configuration file based design import
+methodology for designs which are not configured as multi-mode/multi-corner (MMMC) has
+been discontinued in this release.
+*** Memory Usage v#7 (Current mem = 496.094M, initial mem = 73.582M) ***
+--- Ending "Encounter" (totcpu=0:06:32, real=0:07:57, mem=496.1M) ---

@@ -1,0 +1,13 @@
+/* control initialization file */
+/* data format: @opcode control-signals 
+   control signal format: 
+         alusrc, aluop[1], aluop[0], branch, memread, 
+         memwrite, regwrite, regdst, memtoreg */
+/* COMPLETE THE CODING FOR LW, SW, AND BEQ 
+   Replace "x" with the correct value
+   (You can keep "x" if the value is "don't care") */
+   
+@00 010000110    // R-type
+@23 100010101    // lw -- load word
+@2b 1000010xx    // sw -- store word
+@04 0011000xx    // beq -- branch if equal

@@ -1,0 +1,6 @@
+T -1  CLK /CLK
+? Terminal CLK in the schematic is not present in the layout.
+T -1  CLKbar /CLKbar
+? Terminal CLKbar in the schematic is not present in the layout.
+? Terminal D's type in the schematic: input, in the layout: inputOutput
+? Terminal Q's type in the schematic: output, in the layout: inputOutput

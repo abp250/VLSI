@@ -1,0 +1,8 @@
+Total numbers of exceptions: 6
+
+/designs/GCC/timing/exceptions/path_groups/CLK
+/designs/GCC/timing/exceptions/path_groups/design_mapped.sdc_line_16
+/designs/GCC/timing/exceptions/path_groups/C2C
+/designs/GCC/timing/exceptions/path_groups/C2O
+/designs/GCC/timing/exceptions/path_groups/I2C
+/designs/GCC/timing/exceptions/path_groups/I2O

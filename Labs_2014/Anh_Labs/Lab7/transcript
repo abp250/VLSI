@@ -1,0 +1,28 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe
+# Loading project ALT_MULTADD_pipe
+# after#211
+vsim work.ALT_MULTADD_pipe_tb
+# vsim work.ALT_MULTADD_pipe_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.ALT_MULTADD_pipe_tb(fast)
+quit -sim
+vsim -novopt work.ALT_MULTADD_pipe_tb
+# vsim -novopt work.ALT_MULTADD_pipe_tb 
+# Loading work.ALT_MULTADD_pipe_tb
+# Loading work.ALT_MULTADD_pipe
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALT_MULTADD_pipe' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /ALT_MULTADD_pipe_tb/test
+restart
+run
+run
+run

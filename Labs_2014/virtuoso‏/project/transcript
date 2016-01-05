@@ -1,0 +1,99 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/project/project
+# Project file /home/anhho7/Desktop/EE465/project/project.mpf was not found.
+# Unable to open project.
+# Loading project GCC
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.TestFixture
+# vsim -novopt work.TestFixture 
+# Refreshing /home/anhho7/Desktop/EE465/project/work.TestFixture
+# Loading work.TestFixture
+# ** Error: (vsim-3033) /home/anhho7/Desktop/EE465/project/TestFixture.v(11): Instantiation of 'MM' failed. The design unit was not found.
+#         Region: /TestFixture
+#         Searched libraries:
+#             /home/anhho7/Desktop/EE465/project/work
+# Error loading design
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -novopt work.TestFixture
+# vsim -novopt work.TestFixture 
+# Refreshing /home/anhho7/Desktop/EE465/project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 0 failed with no errors. 
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of Center.v failed with 1 errors.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# 5 compiles, 1 failed with 1 error. 

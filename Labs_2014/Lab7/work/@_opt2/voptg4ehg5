@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anhho7/Desktop/EE465/Lab7
+T_opt
+Z1 VkjKinThk@C;L?ZB?IR^Cg0
+Z2 04 16 4 work ALT_MULTADD_pipe fast 0
+Z3 =1--543c4a7f-aa2c6-6c27
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.5c;42
+T_opt1
+Z7 V9lVZTS=[z`6>S3fIPf8Ma0
+Z8 04 14 4 work ALT_MULTADD_tb fast 0
+Z9 =1--5441764b-179bf-59fd
+R4
+Z10 n@_opt1
+R6
+T_opt2
+Z11 Ve1O?XB>hQgAUEXcnB9icS2
+Z12 04 19 4 work ALT_MULTADD_pipe_tb fast 0
+Z13 =1--5441991c-aeceb-3407
+R4
+Z14 n@_opt2
+R6
+vALT_MULTADD
+Z15 I[@UK^c<^ZNh3>A<8@?WR]3
+Z16 VPJl[OAfMknoPXBiP>4MVz1
+Z17 w1413579254
+Z18 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+Z19 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+L0 1
+Z20 OL;L;6.5c;42
+r1
+31
+Z21 !s102 -nocovercells
+Z22 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z23 n@a@l@t_@m@u@l@t@a@d@d
+Z24 !s100 Rh`d8G55O0KOc9HOQRjYZ1
+!s85 0
+vALT_MULTADD_pipe
+Z25 Vk1n5GKZUCWYFIYGMXNXi12
+r1
+31
+Z26 I`[lcK8ifH1PW8AYa`g2^52
+Z27 w1413579751
+Z28 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+Z29 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+L0 1
+R20
+R21
+R22
+Z30 n@a@l@t_@m@u@l@t@a@d@d_pipe
+!s85 0
+Z31 !s100 J?k7Y;^kYEf:kbAZ3YI_o0
+vALT_MULTADD_pipe_tb
+Z32 Vb[fmzN?9JXa25JfaKCLH`2
+r1
+31
+Z33 ILeljzMgXI;Uz`0]WgV3H31
+Z34 w1413579627
+Z35 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe_tb.v
+Z36 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe_tb.v
+L0 2
+R20
+R21
+R22
+Z37 n@a@l@t_@m@u@l@t@a@d@d_pipe_tb
+!s85 0
+Z38 !s100 n7@g5AC=G_04L7SnA1[]?3
+vALT_MULTADD_tb
+Z39 Il?fn]Wh_T`LV6P5gI]k@^3
+Z40 VK==^Sk4DJ?mm9QEhQzh4?1
+Z41 w1413578014
+Z42 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+Z43 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+L0 2
+R20
+r1
+31
+R21
+R22
+Z44 n@a@l@t_@m@u@l@t@a@d@d_tb
+Z45 !s100 XE[=Bo33<0CIUF?4;@2l_1
+!s85 0
+vlab1
+Z46 I939^:J6;KdB8[D8EHD>0U3
+Z47 V>]a[^kaTE;3LJ]Tbkd@A^3
+Z48 w1411859443
+R18
+R19
+L0 1
+R20
+r1
+31
+R21
+R22
+Z49 !s100 o<nG]?m19FTX8zGU@b8QJ2
+!s85 0
+vlab1_tb
+Z50 I`=AZ2KS^>I6eg9^MzTPl=0
+Z51 VdO]ZRJZ:5FGg2UXEPToZj0
+Z52 w1413237282
+R42
+R43
+L0 2
+R20
+r1
+31
+R21
+R22
+Z53 !s100 15n3_JR14gWmaE8TE^HX;0
+!s85 0

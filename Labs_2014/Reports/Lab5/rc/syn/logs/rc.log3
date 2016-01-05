@@ -1,0 +1,479 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/abp250/.cadence/rc.gui'.
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v10.10-s209_1 (64-bit), built Feb  3 2011
+
+
+Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+Patent notices: Protected by U.S. Patents: 5892687; 6470486; 6772398; 6772399; 
+6807651; 6832357; 7007247 
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  dp_perform_rewriting_operations
+       design  lp_optimize_dynamic_power_first
+       design  multipass_mux_optimization
+       design  name_mapping_record_name_changes
+       design  name_mapping_version
+       design  output_name_mapping_file
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  dp_area_mode
+         root  dp_perform_csa_operations
+         root  dp_perform_rewriting_operations
+         root  dp_perform_sharing_operations
+         root  dp_perform_speculation_operations
+         root  exact_match_seqs_async_controls
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  ple_parameter_source_priority
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_no_exit
+         root  wlec_old_lp_ec_flow
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_skip_iso_check_hier_compare
+         root  wlec_skip_lvl_check_hier_compare
+         root  wlec_verbose
+    subdesign  allow_csa_subdesign
+    subdesign  allow_sharing_subdesign
+    subdesign  allow_speculation_subdesign
+    subdesign  dp_perform_rewriting_operations
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> dc::set_time_unit -picoseconds
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [dc::set_time_unit]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+Failed on find_unique_design
+rc:/>   Setting attribute of root '/': 'lib_search_path' = ../libdir
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Mon Sep 29 17:38:37 -0500 2014)...
+	else if (iRST_N ==1)
+	                |
+Warning : Ignoring redundant edge check. [VLOGPT-417]
+        : Edge signal 'iRST_N' in file '../rtl/ALT_MULTADD.v' on line 22, column 18.
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+  Elaborating top-level block 'lab1' from file '../rtl/ALT_MULTADD.v'.
+  Done elaborating 'lab1'.
+dc::set_time_unit -picoseconds
+rc:/> dc::set_load_unit -picofarads
+rc:/> define_clock -period 400 -name clk [clock_ports] -rise 50 -fall 50
+/designs/lab1/timing/clock_domains/domain_1/clk
+rc:/> set_attribute clock_network_late_latency 1 clk
+  Setting attribute of clock 'clk': 'clock_network_late_latency' = 1.0 1.0 1.0 1.0
+rc:/> set_attribute clock_source_early_latency 1.5 clk
+  Setting attribute of clock 'clk': 'clock_source_early_latency' = 1.5 1.5 1.5 1.5
+rc:/> set_attribute clock_setup_uncertainty {100 50} clk
+  Setting attribute of clock 'clk': 'clock_setup_uncertainty' = 100.0 50.0
+rc:/> set_attribute slew {100 110 110 120}  [find / -clock clk]
+  Setting attribute of clock 'clk': 'slew' = 100.0 110.0 110.0 120.0
+rc:/> report clocks
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v10.10-s209_1
+  Generated on:           Sep 29 2014  05:39:16 pm
+  Module:                 lab1
+  Technology library:     tcbn65gpluswc 121
+  Operating conditions:   WCCOM (balanced_tree)
+  Wireload mode:          segmented
+  Area mode:              timing library
+============================================================
+
+
+ Clock Description
+ ----------------- 
+
+ Clock                            Clock    Source     No of   
+ Name   Period   Rise    Fall     Domain  Pin/Port  Registers 
+--------------------------------------------------------------
+ clk     400.0   200.0   200.0   domain_1   iCLK           49 
+
+ Clock Network Latency / Setup Uncertainty
+ ----------------------------------------- 
+
+        Network   Network   Source   Source     Setup        Setup    
+Clock   Latency   Latency  Latency  Latency  Uncertainty  Uncertainty 
+ Name    Rise      Fall      Rise     Fall       Rise         Fall    
+----------------------------------------------------------------------
+clk         1.0       1.0      0.0      0.0        100.0         50.0 
+
+ Clock Relationship (with uncertainty & latency)
+ ----------------------------------------------- 
+
+  From    To    R->R    R->F    F->R    F->F 
+---------------------------------------------
+  clk    clk   300.0   350.0   300.0   350.0 
+rc:/> external_delay -clock clk -input 200 -name in_delay/designs/ALT_MULTADD/ ports_in/*
+{/designs/lab1/timing/external_delays/in_delay\/designs\/ALT_MULTADD\/}
+rc:/> external_delay -clock clk -output 200 -name out_delay/designs/ALT_MULTADD/ ports_out/*
+{/designs/lab1/timing/external_delays/out_delay\/designs\/ALT_MULTADD\/}
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ports_in/*
+Error   : A required object parameter could not be found. [TUI-61] [set_attribute]
+        : An object named '/designs/ALT_MULTADD/ports_in/*' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+1
+rc:/> set_attribute external_driver [find [find/ -libcell MUX2ND2] -libpin ZN]/designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/"
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN]/designs/ALT_MULTADD/ ports_in/*
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+        : To see the usage/description for this attribute, type 'set_attribute -h <attr_name> *'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+Error   : Failed to parse attribute string. [TUI-23] [set_attribute]
+        : Unable to convert the string '/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN/designs/ALT_MULTADD/' to type 'collection of 'string'' for the attribute 'external_driver'.
+1
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN]/designs/ALT_MULTADD/ports_in/*
+Error   : The object for this attribute is missing or invalid. [TUI-19] [set_attribute]
+        : You must specify a 'port' object type as the final (fourth) argument when setting the 'external_driver' attribute.
+        : To see the usage/description for this attribute, type 'set_attribute -h <attr_name> *'.
+1
+rc:/> set_attribute external_driver [find [find /-libcell MUX2ND2] -libpin ZN]/designs/ALT_MULTADD/ ports_in/*
+Missing '-option' argument.  At least one is required.
+ find: finds an object by type and name
+
+Usage: find [<root_path>] [-maxdepth <integer>] [-mindepth <integer>] [-ignorecase] [-regexp <expression>] [-split] [-vname] [-option|*]+ <object> 
+
+    [<root_path>]: 
+        specifies the name of the directory from where to start searching. Do an explicit search if not specified. Argument may include wildcard ('*') 
+        characters. 
+    <object>: 
+        specifies the name of the object to match. Argument may include wildcard ('*') characters and single character match ('?') characters. 
+    [-maxdepth <integer>]: 
+        descends no more than the specified number of levels below 'root_path'. A level of '0' searches only the 'root_path'. Default: infinity. 
+    [-mindepth <integer>]: 
+        skips the specified number of levels below 'root_path' before finding objects. A level of '1' searches all objects except 'root_path'. Default: 0. 
+    [-ignorecase]: 
+        specifies case insensitive search 
+    [-split]: 
+        split output one object per line 
+    [-regexp <expression>]: 
+        specifies regular expression 
+    [-vname]: 
+        return Verilog style names where appropriate 
+    [-option]: 
+        specifies the type of object to find. Multiple types are supported or '*' for all. Each specified option must be of the form '-<object_type>'. The 
+        following are valid object types: 
+
+        actual_scan_chain                  actual_scan_segment                   attribute                             blockage 
+        boundary_scan_segment              clock                                 cluster                               constant 
+        cost_group                         cpf_command                           cpf_command_id                        ctp_source 
+        ctp_timed_object                   def_pin                               design                                dft_configuration_mode 
+        direct_access_function             domain_macro_parameter                exception                             exploration_power_domain 
+        exported_variable                  external_delay                        fill                                  formal_verification_constraint 
+        gcell                              group                                 hdl_arch                              hdl_bind 
+        hdl_block                          hdl_comp                              hdl_config                            hdl_impl 
+        hdl_inst                           hdl_label                             hdl_lib                               hdl_oper 
+        hdl_pack                           hdl_param                             hdl_pin                               hdl_proc 
+        hdl_subp                           instance                              isolation_rule                        job 
+        jtag_instruction                   jtag_instruction_register             jtag_macro                            jtag_port 
+        layer                              level_shifter_group                   level_shifter_rule                    libarc 
+        libcell                            libpin                                library                               library_domain 
+        mbist_clock                        message                               message_group                         mode 
+        net                                nominal_condition                     nondefaultrule                        object_type 
+        opcg_domain                        opcg_mode                             opcg_trigger                          operating_condition 
+        osc_source                         osc_source_reference                  pcell                                 pdomain 
+        pin                                pin_bus                               port                                  port_bus 
+        power_domain                       power_ground_net                      power_mode                            queue 
+        region                             root                                  row                                   run 
+        run_parameter                      scan_chain                            scan_segment                          scenario 
+        sdp_column                         sdp_group                             sdp_instance                          sdp_row 
+        seq_function                       slot                                  specialnet                            style 
+        subdesign                          subport                               subport_bus                           subscenario 
+        test_clock                         test_clock_domain                     test_signal                           thread 
+        thread_parameter                   thread_result                         track                                 via 
+        violation                          wireload                              wireload_selection                    
+1
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+Error   : A required object parameter could not be found. [TUI-61] [set_attribute]
+        : An object named '/designs/ALT_MULTADD/' could not be found.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+1
+rc:/> set_attribute external_driver[find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+Error   : Invalid attribute name. [TUI-40] [set_attribute]
+        : 'external_driver/libraries/tcbn65gpluswc/libcells/MUX2ND2/ZN' is not a valid attribute.
+        : Use 'set_attribute -h' to see a list of all valid attributes that can be set.
+1
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+Error   : A required object parameter could not be found. [TUI-61] [set_attribute]
+        : An object named '/designs/ALT_MULTADD/' could not be found.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+1
+rc:/> set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ports_in/*
+Error   : A required object parameter could not be found. [TUI-61] [set_attribute]
+        : An object named '/designs/ALT_MULTADD/ports_in/*' could not be found.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+1
+rc:/> set_attribute external_driver [find [find/ -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/"
+rc:/> set_attribute external_driver [find [find  -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+Error   : A required object parameter could not be found. [TUI-61] [set_attribute]
+        : An object named '/designs/ALT_MULTADD/' could not be found.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+1
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> set_attribute external_driver [find[find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ ports_in/*
+invalid command name "find/libraries/tcbn65gpluswc/libcells/MUX2ND2"
+rc:/> 
+*** INTERRUPTED *** [signal 15]

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      abp250
+HostName                       co2046-06.ece.iastate.edu
+ProcessIdentifier              7219
+ProcessCreationTime_UTC        1411135608
+ProcessCreationTime_Readable   Fri Sep 19 09:06:48 2014 CDT
+AppIdentifier                  /usr/local/cadence/ic/tools/dfII/bin/32bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/abp250/Documents/EE465/libManager.log
+TimeEditLocked                 Fri Sep 19 09:06:48 2014 CDT

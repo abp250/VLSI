@@ -1,0 +1,24 @@
+dc::set_time_unit -picoseconds
+dc::set_load_unit -picofarads
+define_clock -period 400 -name clk [clock_ports] -rise 50 -fall 50
+set_attribute clock_network_late_latency 1 clk
+set_attribute clock_source_early_latency 1.5 clk
+set_attribute clock_setup_uncertainty {100 50} clk
+set_attribute slew {100 110 110 120}  [find / -clock clk]
+report clocks
+external_delay -clock clk -input 200 -name in_delay/designs/ALT_MULTADD/ ports_in/*
+external_delay -clock clk -output 200 -name out_delay/designs/ALT_MULTADD/ ports_out/*
+set_attribute external_driver [find [find / -libcell MUX2ND2] -libpin ZN] /designs/ALT_MULTADD/ports_in/*
+set_attribute external_pin_cap 2 /designs/ALT_MULTADD/ports_out/*
+set_attribute max_fanout 10 /designs/*
+synthesize -to_mapped -effort high
+report area > ${OUTPUT_DIR}/area.rpt
+report gates > ${OUTPUT_DIR}/gates.rpt
+report timing > ${OUTPUT_DIR}/timing.rpt
+report timing -lint > ${OUTPUT_DIR}/lint.rpt
+report summary > ${OUTPUT_DIR}/summary.rpt
+report power > ${OUTPUT_DIR}/power.rpt
+write -mapped > ${OUTPUT_DIR}/jpeg_mapped.v
+write_script > ${OUTPUT_DIR}/jpeg_mapped.g
+write_sdc > ${OUTPUT_DIR}/jpeg_mapped.sdc
+

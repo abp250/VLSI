@@ -1,0 +1,408 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.06s.
+*WARNING* Line ignored: ((editor = "gvim"))
+*WARNING* Line must contain 4 elements.
+*WARNING* Line ignored: ((editor = "gvim"))
+*WARNING* Line must contain 4 elements.
+*WARNING* Line ignored: ((editor = "gvim"))
+*WARNING* Line must contain 4 elements.
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* Read '/home/abp250/Documents/EE465/cds.lib' file 6 times.  Possible recursive cds.lib files - skipping INCLUDE.
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15: Skipping: './cds.lib' DEFINE labLib /home/abp250/Documents/EE465/labLib
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+
+Running simulation in directory: "/home/abp250/Documents/EE465/LVS".
+
+*WARNING* Line ignored: ((editor = "gvim"))
+*WARNING* Line must contain 4 elements.
+*WARNING* (reader): string at line 1 was not terminated on EOF, '"' added
+                    at line 2 of string "...)"
+*WARNING* (reader): a '(' at line 1 was still unclosed on EOF, ')' added
+                    at line 2 of string "...)""
+*WARNING* (reader): illegal character '$' ignored at line 1 of string "...                        $"
+*WARNING* (reader): illegal character '$' ignored at line 1 of string "...                        $"
+*WARNING* (reader): illegal character '$' ignored at line 1 of string "...                        $"
+*WARNING* (reader): illegal character '$' ignored at line 1 of string "...                        $"
+*WARNING* (reader): illegal character '$' ignored at line 1 of string "...                        $"
+*Error* lineread/read: syntax error encountered in input at line 2 column 2 in file /usr/local/cadence/IC615/tools.lnx86/dfII/etc/context/auCore.ini
+*WARNING* (reader): string at line 1 was not terminated on EOF, '"' added
+                    at line 2 of string "...)"
+*WARNING* (loadContext): could not restore method, undefined generic _parModeOnPreCreateHistory _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeOnPreRun _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeOnExit _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeOnEntry _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeAllowSwitch _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetup _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetParView _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetSchView _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeGetParView _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeGetSchView _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeBuildParViewHelp _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeBuildParView _mspsModeExt
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeUpdateParView _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeBuildEst _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeAllowSwitch _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetup _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetParView _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeSetSchView _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeGetParView _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parModeGetSchView _mspsModeSchEst
+
+*WARNING* (loadContext): could not restore method, undefined generic _parEstBuildViewName _mspsEstBuild
+
+*WARNING* (loadContext): could not restore method, undefined generic _parEstBuildCellName _mspsEstBuild
+
+*WARNING* (loadContext): could not restore method, undefined generic _parEstBuildLibName _mspsEstBuild
+
+*WARNING* (loadContext): could not restore method, undefined generic _parMsgReport _mspsMsgReporter
+
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* LIB basic from File /home/abp250/Documents/EE465/cds.lib Line 2 redefines
+LIB basic from the same file (defined earlier.)
+*WARNING* LIB NCSU_Analog_Parts from File /home/abp250/Documents/EE465/cds.lib Line 3 redefines
+LIB NCSU_Analog_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_Digital_Parts from File /home/abp250/Documents/EE465/cds.lib Line 4 redefines
+LIB NCSU_Digital_Parts from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami06 from File /home/abp250/Documents/EE465/cds.lib Line 6 redefines
+LIB NCSU_TechLib_ami06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_ami16 from File /home/abp250/Documents/EE465/cds.lib Line 7 redefines
+LIB NCSU_TechLib_ami16 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_hp06 from File /home/abp250/Documents/EE465/cds.lib Line 8 redefines
+LIB NCSU_TechLib_hp06 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02 from File /home/abp250/Documents/EE465/cds.lib Line 9 redefines
+LIB NCSU_TechLib_tsmc02 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc02d from File /home/abp250/Documents/EE465/cds.lib Line 10 redefines
+LIB NCSU_TechLib_tsmc02d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03 from File /home/abp250/Documents/EE465/cds.lib Line 11 redefines
+LIB NCSU_TechLib_tsmc03 from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc03d from File /home/abp250/Documents/EE465/cds.lib Line 12 redefines
+LIB NCSU_TechLib_tsmc03d from the same file (defined earlier.)
+*WARNING* LIB NCSU_TechLib_tsmc04_4M2P from File /home/abp250/Documents/EE465/cds.lib Line 13 redefines
+LIB NCSU_TechLib_tsmc04_4M2P from the same file (defined earlier.)
+*WARNING* LIB OSU_stdcells_ami05 from File /home/abp250/Documents/EE465/cds.lib Line 14 redefines
+LIB OSU_stdcells_ami05 from the same file (defined earlier.)
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15, Repeat of INCLUDE of '/home/abp250/Documents/EE465/cds.lib'.
+*WARNING* Read '/home/abp250/Documents/EE465/cds.lib' file 6 times.  Possible recursive cds.lib files - skipping INCLUDE.
+*WARNING* '/home/abp250/Documents/EE465/cds.lib', Line 15: Skipping: './cds.lib' DEFINE labLib /home/abp250/Documents/EE465/labLib
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+*WARNING* LIB labLib from File /home/abp250/Documents/EE465/cds.lib Line 16 redefines
+LIB labLib from the same file (defined earlier.)
+*WARNING* LIB avTech from File /home/abp250/Documents/EE465/cds.lib Line 17 redefines
+LIB avTech from the same file (defined earlier.)
+
+
+Begin netlist:    Sep 19 10:15:42 2014
+	view name list	= ("auLvs" "extracted" "schematic")
+	stop name list	= ("auLvs")
+	library name	= "labLib"
+	cell name	= "DFF"
+	view name	= "extracted"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+*WARNING* Parameter 'lxUseCell' already exists.
+End netlist:    Sep 19 10:15:42 2014
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	17 nodes merged into 17 nodes
+
+
+Begin netlist:    Sep 19 10:15:42 2014
+	view name list	= ("auLvs" "schematic")
+	stop name list	= ("auLvs")
+	library name	= "labLib"
+	cell name	= "DFF"
+	view name	= "schematic"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+End netlist:    Sep 19 10:15:42 2014
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	26 nodes merged into 26 nodes
+
+Running netlist comparison program:  LVS
+Begin comparison:    Sep 19 10:15:43 2014
+@(#)$CDS: LVS version 6.1.5 01/16/2012 21:48 (sjfdl074) $
+
+3 net-list ambiguities were resolved by random selection.
+
+The net-lists failed to match.
+
+                             layout  schematic
+                                instances
+        un-matched              7       7      
+        rewired                 1       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  20      20     
+        total                   20      20     
+
+                                  nets
+        un-matched              7       6      
+        merged                  1       0      
+        pruned                  0       0      
+        active                  17      15     
+        total                   17      15     
+
+                                terminals
+        un-matched              4       2      
+        matched but
+        different type          2       2      
+        total                   6       6      
+End comparison:      Sep 19 10:15:43 2014
+
+
+Comparison program completed successfully.

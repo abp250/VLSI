@@ -1,0 +1,200 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project labpartners
+# Compile of GCC.v was successful.
+# Compile of testfixture.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -novopt work.testfixture
+# vsim -novopt work.testfixture 
+# Refreshing /home/anhho7/Desktop/EE465/labpartners/work.testfixture
+# Loading work.testfixture
+# Refreshing /home/anhho7/Desktop/EE465/labpartners/work.GCC
+# Loading work.GCC
+# ** Warning: (vsim-3009) [TSCALE] - Module 'GCC' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /testfixture/GCC_0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -r /*
+restart
+# ** Warning: (vsim-3009) [TSCALE] - Module 'GCC' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /testfixture/GCC_0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Warning: (vsim-3009) [TSCALE] - Module 'GCC' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /testfixture/GCC_0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

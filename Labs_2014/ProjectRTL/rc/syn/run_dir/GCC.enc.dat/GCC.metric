@@ -1,0 +1,20 @@
+se::start_metric placeDesign {-noPrePlaceOpt}
+se::save_metric design.numStandardCell {12239}
+se::save_metric design.numNet {12353}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {12239}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {38564}
+se::save_metric design.numTermPerNet {3.12}
+se::save_metric design.util {70.056 %}
+se::save_metric design.pinDensity {0.368}
+se::save_metric place.totalNetLength {1.51e+05 um}
+se::save_metric cputime {0:0:25}
+se::save_metric realtime {0:0:26}
+se::save_metric mem {316.3M}
+se::end_metric placeDesign {-noPrePlaceOpt}

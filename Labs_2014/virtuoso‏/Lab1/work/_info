@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/abp250/Documents/EE465/Lab1
+vcontrol
+IeL[iI;J78::?a>1oKB3=j3
+V=?`@[ECT5C7HXZ4XJzEQF0
+w1409606124
+8/home/abp250/Documents/EE465/Lab1/control.v
+F/home/abp250/Documents/EE465/Lab1/control.v
+L0 3
+Z1 OL;L;6.5c;42
+r1
+31
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+!s100 <8SVf6aWFWn^SROVD5BG62
+!s85 0
+vlab1
+V>]a[^kaTE;3LJ]Tbkd@A^3
+r1
+!s85 0
+31
+I7F5N>6G<0:OeeKR@[i<T21
+w1409614476
+8/home/abp250/Documents/EE465/Lab1/lab1.v
+F/home/abp250/Documents/EE465/Lab1/lab1.v
+L0 1
+R1
+R2
+R3
+!s100 IahIB^zZ5@EX3e24Rz]^C0
+vlab1_tb
+VdO]ZRJZ:5FGg2UXEPToZj0
+r1
+31
+I`=AZ2KS^>I6eg9^MzTPl=0
+w1409614198
+8/home/abp250/Documents/EE465/Lab1/lab1_tb.v
+F/home/abp250/Documents/EE465/Lab1/lab1_tb.v
+L0 2
+R1
+R2
+R3
+!s85 0
+!s100 15n3_JR14gWmaE8TE^HX;0
+vp2s
+I>7c1k6n^WRU;5SAIXi0Ql0
+V^@:[?T?R5UHQ5nVfDJEgP0
+w1409606117
+8/home/abp250/Documents/EE465/Lab1/Serial_parallel.v
+F/home/abp250/Documents/EE465/Lab1/Serial_parallel.v
+L0 1
+R1
+r1
+31
+R2
+R3
+!s100 `>Q`hQc93PFccdDm9aJ;Q1
+!s85 0
+vp2s_tb
+IIRJ8^g6`z4fUM2iSJ6J0>2
+V@DMndbA<gM6K<^:4KiJTB3
+w1409606120
+8/home/abp250/Documents/EE465/Lab1/Serial_parallel_tb.v
+F/home/abp250/Documents/EE465/Lab1/Serial_parallel_tb.v
+L0 3
+R1
+r1
+31
+R2
+R3
+!s100 6WCU6QWej@N2jnh[J:@AP0
+!s85 0
+vt_control
+I9L4eGE`K[?EP?`nI9iY]21
+Vl@T^0;3gG9>4I2GoP>13o1
+w1409606130
+8/home/abp250/Documents/EE465/Lab1/t_control.v
+F/home/abp250/Documents/EE465/Lab1/t_control.v
+L0 1
+R1
+r1
+31
+R2
+R3
+!s100 6ne];dP2^0`NaXKFBa3iH2
+!s85 0

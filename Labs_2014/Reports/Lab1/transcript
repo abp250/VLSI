@@ -1,0 +1,491 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-431.23.3.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project Lab1
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# ** Error: (vsim-3037) /home/abp250/Documents/EE465/Lab1/lab1_tb.v(9): Missing instance name in instantiation of 'lab1'.
+#         Region: /lab1_tb
+# Error loading design
+# Break key hit 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Loading work.lab1_tb
+# ** Error: (vsim-3037) /home/abp250/Documents/EE465/Lab1/lab1_tb.v(9): Missing instance name in instantiation of 'lab1'.
+#         Region: /lab1_tb
+# Error loading design
+# Compile of lab1_tb.v was successful.
+# Load canceled
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# ** Error: (vsim-3037) /home/abp250/Documents/EE465/Lab1/lab1_tb.v(9): Missing instance name in instantiation of 'lab1'.
+#         Region: /lab1_tb
+# Error loading design
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of lab1.v was successful.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+# ** Warning: (vsim-3015) /home/abp250/Documents/EE465/Lab1/lab1_tb.v(9): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'iB0'.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run -all
+# Break key hit 
+# Simulation stop requested.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of lab1_tb.v was successful.
+quit -sim
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.
+# Break key hit 
+# Break key hit 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of lab1.v was successful.
+add wave sim:/lab1_tb/*
+# Break key hit 
+restart
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of lab1.v was successful.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+quit -sim
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Load canceled
+# Compile of lab1.v was successful.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 2 errors.
+# Compile of lab1.v failed with 2 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 2 errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run -all
+# Break key hit 
+# Simulation stop requested.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of lab1.v failed with 1 errors.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of t_control.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 2 failed with 2 errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of t_control.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 2 failed with 2 errors. 
+# Optimization canceled
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of Serial_parallel.v failed with 1 errors.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 2 failed with 2 errors. 
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+# Compile of lab1.v failed with 1 errors.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of control.v failed with 1 errors.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 2 failed with 2 errors. 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors. 
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1.v failed with 1 errors.
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v failed with 1 errors.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of control.v was successful.
+# Compile of Serial_parallel.v was successful.
+# Compile of Serial_parallel_tb.v was successful.
+# Compile of t_control.v was successful.
+# Compile of lab1.v was successful.
+# Compile of lab1_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of lab1.v was successful.
+vsim -novopt work.lab1_tb
+# vsim -novopt work.lab1_tb 
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1_tb
+# Loading work.lab1_tb
+# Refreshing /home/abp250/Documents/EE465/Lab1/work.lab1
+# Loading work.lab1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'lab1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /lab1_tb/X
+add wave sim:/lab1_tb/X/*
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.

@@ -1,0 +1,6 @@
+module Compare (x[0], x[1], x[2], x[3], x[4], x[5], y[0], y[1], y[2], y[3], y[4], y[5], w[0], w[1], w[2], w[3], w[4], w[5], X, Y);
+
+
+
+
+endmodule

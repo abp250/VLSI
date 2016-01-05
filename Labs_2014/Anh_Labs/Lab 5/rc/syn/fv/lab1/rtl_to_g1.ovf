@@ -1,0 +1,32 @@
+#Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+
+ovf_setup -ungroup_separator { _ }
+
+ovf_transform \
+-module { lab1 } \
+-type { share } \
+-internal_type { 215 } \
+-internal_index { 2 } \
+-input { 17 final_adder_add_11_19.A } \
+-input { 17 final_adder_add_11_19.B } \
+-input { 17 final_adder_add_31_30.A } \
+-input { 17 final_adder_add_31_30.B } \
+-input { 1 final_adder_add_31_30.CI } \
+-output { 17 O1 } \
+-output { 17 O2 } \
+-switch { s1 final_adder_add_11_19 } \
+-switch { s2 final_adder_add_31_30 } \
+-from { \
+   { 17 final_adder_add_11_19 : UADD { { final_adder_add_11_19.A } { final_adder_add_11_19.B } } } \
+   { 17 final_adder_add_31_30 : UADD_CI { { final_adder_add_31_30.A } { final_adder_add_31_30.B } { final_adder_add_31_30.CI ZERO 17 } } } \
+   { O1 = { final_adder_add_11_19.1 } } \
+   { O2 = { final_adder_add_31_30.1 } } } \
+-to { \
+   { 17 MUX_0 : SELECT { { s1 } { s2 } { final_adder_add_11_19.B } { final_adder_add_31_30.B } } } \
+   { 17 MUX_1 : SELECT { { s1 } { s2 } { final_adder_add_11_19.A } { final_adder_add_31_30.A } } } \
+   { 1 MUX_2 : SELECT { { s1 } { s2 } { 'b0 } { final_adder_add_31_30.CI } } } \
+   { 17 final_adder_add_11_19_Y_final_adder_add_31_30 : UADD_CI { { MUX_0.1 } { MUX_1.1 } { MUX_2.1 ZERO 17 } } } \
+   { O1 = { final_adder_add_11_19_Y_final_adder_add_31_30.1 } } \
+   { O2 = { final_adder_add_11_19_Y_final_adder_add_31_30.1 } } }
+

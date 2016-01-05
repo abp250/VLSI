@@ -1,0 +1,64 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/Project/Project
+# Loading project Project
+# after#382
+# Compile of GCC.v was successful.
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of Distance.v was successful.
+# Compile of Distance_tb.v was successful.
+# Compile of MM.v was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -novopt work.TestFixture
+# vsim -novopt work.TestFixture 
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.MM
+# Loading work.MM
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+run
+run
+run
+quit -sim
+vsim -novopt work.TestFixture
+# vsim -novopt work.TestFixture 
+# Loading work.TestFixture
+# Loading work.MM
+# Loading work.Distance
+# Loading work.Comparator
+# Loading work.Center
+run
+run
+run
+add wave -r /*
+restart
+run
+run
+run

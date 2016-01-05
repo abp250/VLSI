@@ -1,0 +1,175 @@
+@(#)$CDS: LVS version 6.1.5 01/16/2012 21:48 (sjfdl074) $
+
+Command line: /usr/local/cadence/IC615/tools.lnx86/dfII/bin/32bit/LVS -dir /home/abp250/Documents/EE465/LVS -l -s -t /home/abp250/Documents/EE465/LVS/layout /home/abp250/Documents/EE465/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/abp250/Documents/EE465/LVS/layout/netlist
+       count
+        17              nets
+        6               terminals
+        10              pmos
+        10              nmos
+
+    Net-list summary for /home/abp250/Documents/EE465/LVS/schematic/netlist
+       count
+        15              nets
+        6               terminals
+        10              pmos
+        10              nmos
+
+
+    Terminal correspondence points
+    N15       N10       D
+    N14       N2        Q
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+
+        Device summary for layout
+                   bad  total
+            pmos     3     10
+            nmos     4     10
+
+
+        Device summary for schematic
+                   bad  total
+            pmos     3     10
+            nmos     4     10
+
+3 net-list ambiguities were resolved by random selection.
+
+The net-lists failed to match.
+
+                             layout  schematic
+                                instances
+        un-matched              7       7      
+        rewired                 1       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  20      20     
+        total                   20      20     
+
+                                  nets
+        un-matched              7       6      
+        merged                  1       0      
+        pruned                  0       0      
+        active                  17      15     
+        total                   17      15     
+
+                                terminals
+        un-matched              4       2      
+        matched but
+        different type          2       2      
+        total                   6       6      
+
+
+Probe files from /home/abp250/Documents/EE465/LVS/schematic
+
+devbad.out:
+I /I13/P0
+? Device does not cross-match.
+I /I13/P1
+? Device does not cross-match.
+I /I13/N0
+? Device does not cross-match.
+I /I13/N1
+? Device does not cross-match.
+I /I10/N1
+? Device does not cross-match.
+I /I10/P3
+? Device does not cross-match.
+I /I15/N0
+? Device does not cross-match.
+
+netbad.out:
+N /gnd!
+? Net does not cross-match. It has 14 connections.
+N /vdd!
+? Net does not cross-match. It has 14 connections.
+N /net9
+? Net does not cross-match. It has 6 connections.
+N /CLKbar
+? Net does not cross-match. It has 4 connections.
+N /I13/net19
+? Net does not cross-match. It has 2 connections.
+N /I13/net18
+? Net does not cross-match. It has 2 connections.
+
+mergenet.out:
+
+termbad.out:
+T -1  CLK /CLK
+? Terminal CLK in the schematic is not present in the layout.
+T -1  CLKbar /CLKbar
+? Terminal CLKbar in the schematic is not present in the layout.
+? Terminal D's type in the schematic: input, in the layout: inputOutput
+? Terminal Q's type in the schematic: output, in the layout: inputOutput
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/abp250/Documents/EE465/LVS/layout
+
+devbad.out:
+I /+4
+? Device does not cross-match.
+I /+11
+? Device does not cross-match.
+I /+12
+? Device does not cross-match.
+I /+14
+? Device does not cross-match.
+I /+2
+? Device does not cross-match.
+I /+1
+? Device does not cross-match.
+I /+3
+? Device does not cross-match.
+
+netbad.out:
+N /GND
+? Net does not cross-match. It has 12 connections.
+N /VDD
+? Net does not cross-match. It has 12 connections.
+N /17
+? Net does not cross-match. It has 1 connections.
+N /SEL
+? Net does not cross-match. It has 3 connections.
+N /11
+? Net does not cross-match. It has 4 connections.
+N /14
+? Net does not cross-match. It has 2 connections.
+N /9
+? Net does not cross-match. It has 2 connections.
+
+mergenet.out:
+N /16
+? Net /16 merged with /SEL
+
+termbad.out:
+T /+5 G /SEL
+? Terminal "G" on device /+5 should be connected to /SELbar instead of /SEL
+? Terminal D's type in the layout: inputOutput, in the schematic: input
+T -1  GND /GND
+? Terminal GND in the layout is not present in the schematic.
+? Terminal Q's type in the layout: inputOutput, in the schematic: output
+T -1  SEL /SEL
+? Terminal SEL in the layout is not present in the schematic.
+T -1  SELbar /SELbar
+? Terminal SELbar in the layout is not present in the schematic.
+T -1  VDD /VDD
+? Terminal VDD in the layout is not present in the schematic.
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

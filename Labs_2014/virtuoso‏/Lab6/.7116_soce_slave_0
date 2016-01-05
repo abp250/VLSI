@@ -1,0 +1,102 @@
+catch {set ::env(LS_COLORS) "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"}
+catch {set ::env(CDS_LOAD_ENV) "CWDElseHome"}
+catch {set ::env(HOME) "/home/anhho7"}
+catch {set ::env(LANG) "C"}
+catch {set ::env(ENCOUNTER) "/usr/local/cadence/edi/tools.lnx86/fe"}
+catch {set ::env(HISTSIZE) "1000"}
+catch {set ::env(LOGNAME) "anhho7"}
+catch {set ::env(QTLIB) "/usr/lib64/qt-3.3/lib"}
+catch {set ::env(GTK_RC_FILES) "/etc/gtk/gtkrc:/home/anhho7/.gtkrc-1.2-gnome2"}
+catch {set ::env(XDG_SESSION_COOKIE) "aa9882803abe6f824a4f2fbe00000052-1412629811.240780-1538360129"}
+catch {set ::env(DESKTOP_STARTUP_ID) ""}
+catch {set ::env(SHELL) "/bin/bash"}
+catch {set ::env(QTDIR) "/usr/lib64/qt-3.3"}
+catch {set ::env(W3264_ENV) "/home/anhho7/.kshrc"}
+catch {set ::env(GNOME_DESKTOP_SESSION_ID) "this-is-deprecated"}
+catch {set ::env(USER) "anhho7"}
+catch {set ::env(ORBIT_SOCKETDIR) "/tmp/orbit-anhho7"}
+catch {set ::env(CDK_DIR) "/usr/local/cadence/iclocal/ncsu-cdk-1.6.0.beta/"}
+catch {set ::env(MANPATH) "/usr/local/cadence/edi/share/fe/man:/usr/local/cadence/edi/share/fe/man/internal/man:/usr/local/cadence/ic/tools/man"}
+catch {set ::env(GNOME_KEYRING_PID) "4595"}
+catch {set ::env(KRB5CCNAME) "FILE:/tmp/krb5cc_58219_pYBeIN"}
+catch {set ::env(QRC_ENABLE_EXTRACTION) "t"}
+catch {set ::env(GDMSESSION) "gnome"}
+catch {set ::env(IC) "/usr/local/cadence/ic"}
+catch {set ::env(TCLTK_ROOT) "/usr/local/cadence/edi/share/tcltools/icd8.4.11/lib"}
+catch {set ::env(DESKTOP_SESSION) "gnome"}
+catch {set ::env(OA_BIT) "64"}
+catch {set ::env(BLT_LIBRARY) "/usr/local/cadence/edi/share/tcltools/icd8.4.11/lib/blt2.4"}
+catch {set ::env(KDEDIRS) "/usr"}
+catch {set ::env(COLORTERM) "gnome-terminal"}
+catch {set ::env(DBUS_SESSION_BUS_ADDRESS) "unix:abstract=/tmp/dbus-WQa08bewno,guid=8e9f1f82a784669ab1e18a670003faf1"}
+catch {set ::env(CADMOSHOME) "/usr/local/cadence/edi/tools/fe/celtic"}
+catch {set ::env(USERNAME) ""}
+catch {set ::env(SHLVL) "4"}
+catch {set ::env(PATH) "/usr/local/cadence/edi/bin:/usr/local/cadence/edi/tools.lnx86/bin/64bit:/usr/local/cadence/edi/tools.lnx86/bin:/usr/local/cadence/edi/share/oa/bin:/usr/local/cadence/edi/tools/bin:/usr/local/cadence/mmsim/bin:/usr/local/cadence/mmsim/tools/bin:/usr/local/cadence/assura/bin:/usr/local/cadence/assura/tools/bin:/usr/local/mentor/calibre/bin:/usr/local/cadence/ic/tools/bin:/usr/local/cadence/ic/tools/dfII/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/anhho7/bin"}
+catch {set ::env(GDM_KEYBOARD_LAYOUT) "us"}
+catch {set ::env(CDS_Netlisting_Mode) "Analog"}
+catch {set ::env(_) "*7077*/usr/local/cadence/edi/tools.lnx86/fe/bin/64bit/encounter"}
+catch {set ::env(LC_ALL) "C"}
+catch {set ::env(ASSURAHOME) "/usr/local/cadence/assura"}
+catch {set ::env(LD_LIBRARY_PATH) "/usr/local/cadence/edi/share/oa/lib/linux_rhel40_gcc44x_64/opt:/usr/local/cadence/edi/tools.lnx86/tcltools/icd8.4.11/lib/64bit:/usr/local/cadence/edi/tools.lnx86/Qt/64bit/lib:/usr/local/cadence/edi/tools.lnx86/lib/64bit:/usr/local/cadence/edi/tools.lnx86/lib:/usr/local/cadence/edi/tools.lnx86/pvs/lib/64bit:/usr/local/cadence/edi/tools.lnx86/mesalib/lib/64bit:/usr/local/cadence/edi/tools.lnx86/lib/64bit/SuSE/SLES11"}
+catch {set ::env(HISTCONTROL) "ignoredups"}
+catch {set ::env(LESSOPEN) "|/usr/bin/lesspipe.sh %s"}
+catch {set ::env(XMODIFIERS) "@im=none"}
+catch {set ::env(CDS_AUTO_64BIT) "ALL"}
+catch {set ::env(EXTHOME) "/usr/local/cadence/edi"}
+catch {set ::env(IMSETTINGS_INTEGRATE_DESKTOP) "yes"}
+catch {set ::env(SSH_ASKPASS) "/usr/libexec/openssh/gnome-ssh-askpass"}
+catch {set ::env(PWD) "/home/anhho7/Desktop/EE465/Lab6"}
+catch {set ::env(CDNS_QTDIR) "/usr/local/cadence/edi/tools.lnx86/Qt/64bit"}
+catch {set ::env(CDS_SET_LOCALE) "C"}
+catch {set ::env(KDE_IS_PRELINKED) "1"}
+catch {set ::env(BASH_ENV) "/home/anhho7/.bashrc"}
+catch {set ::env(DISPLAY) ":0.0"}
+catch {set ::env(GNOME_KEYRING_SOCKET) "/tmp/keyring-U47rWd/socket"}
+catch {set ::env(TK_TABLE_LIBRARY_FILE) "tkTable.tcl"}
+catch {set ::env(GDM_LANG) "en_US.UTF-8"}
+catch {set ::env(IMSETTINGS_MODULE) "none"}
+catch {set ::env(WINDOWID) "39845892"}
+catch {set ::env(CDS_REGISTRY_ROOT) "/usr/local/cadence/registry"}
+catch {set ::env(FMS) "/usr/local/cadence/edi/tools.lnx86/fms"}
+catch {set ::env(TCL_LIBRARY) "/usr/local/cadence/edi/share/tcltools/icd8.4.11/lib/tcl8.4"}
+catch {set ::env(QT_IM_MODULE) "xim"}
+catch {set ::env(SOFTWARERC) "1"}
+catch {set ::env(TIX_LIBRARY) "/usr/local/cadence/edi/share/tcltools/icd8.4.11/lib/Tix8.4"}
+catch {set ::env(LM_LICENSE_FILE) "1717@io.ece.iastate.edu:/usr/local/cadence/licenses/license.dat:"}
+catch {set ::env(TK_LIBRARY) "/usr/local/cadence/edi/share/tcltools/icd8.4.11/lib/tk8.4"}
+catch {set ::env(MAIL) "/var/spool/mail/anhho7"}
+catch {set ::env(MMSIMHOME) "/usr/local/cadence/mmsim"}
+catch {set ::env(WINDOWPATH) "1"}
+catch {set ::env(SSH_AUTH_SOCK) "/tmp/keyring-U47rWd/socket.ssh"}
+catch {set ::env(MGC_HOME) "/usr/local/mentor/calibre"}
+catch {set ::env(AMBIT_MSG_PATH) "/usr/local/cadence/edi/etc/fe/cteng/msgc:/usr/local/cadence/edi/etc/fe/syntechEtc/msgc:/usr/local/cadence/edi/share/fe/man:/usr/local/cadence/edi/share/fe/man/internal/man"}
+catch {set ::env(TERM) "xterm"}
+catch {set ::env(CVS_RSH) "ssh"}
+catch {set ::env(A__z) ""*SHLVL"}
+catch {set ::env(XAUTHORITY) "/var/run/gdm/auth-for-anhho7-hT3BKQ/database"}
+catch {set ::env(TK_TABLE_LIBRARY) "EMBEDDED_RUNTIME"}
+catch {set ::env(G_BROKEN_FILENAMES) "1"}
+catch {set ::env(CDS_LANG) "en_US.UTF-8"}
+catch {set ::env(AMBIT_BDF_PATH) "/usr/local/cadence/edi/etc/fe/cteng/bdfc:/usr/local/cadence/edi/etc/fe/syntechEtc/bdfc"}
+catch {set ::env(SPECTRE_DEFAULTS) "-E"}
+catch {set ::env(LOCAL_REGISTRY_ROOT) "/usr/local/cadence/smLocal"}
+catch {set ::env(QTINC) "/usr/lib64/qt-3.3/include"}
+setBetaFeature soceSupportDifferentTripPoints 1
+setBetaFeature socePDAwareCGDecloning 1
+setBetaFeature soceSupportSeperateBidiSlew 1
+setBetaFeature soceSkipECSMTran 1
+setBetaFeature soceAllowTrilibFlow 1
+setBetaFeature soceSignoffExtraction 1
+setBetaFeature soceIlmSupportPreRouteFlow 1
+setBetaFeature soceWireEditPolygonDrc 1
+setBetaFeature soceGuaranteeSnodeSequence 1
+setBetaFeature socePreRouteUseImprovedClkRC 1
+setBetaFeature soceNewSpefInCapacitanceParser 1
+setBetaFeature soceUseDrawnWidthForRho 1
+setBetaFeature soceSupportRiseFallPinCap 1
+setBetaFeature socePrePostRouteExtrNameConvention 1
+setBetaFeature soceRunQRCIlmFlow 1
+setBetaFeature soceSupportSeparateBidiSlew 1
+setBetaFeature soceCteBudgeting 1
+startEdpSlave 0 co2046-11.ece.iastate.edu 58730 47284

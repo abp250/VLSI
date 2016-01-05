@@ -1,0 +1,7 @@
+Total numbers of exceptions: 5
+
+/designs/lab1/timing/exceptions/path_groups/iCLK
+/designs/lab1/timing/exceptions/path_groups/C2C
+/designs/lab1/timing/exceptions/path_groups/C2O
+/designs/lab1/timing/exceptions/path_groups/I2C
+/designs/lab1/timing/exceptions/path_groups/I2O

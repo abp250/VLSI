@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anhho7/Desktop/EE465/Lab7
+T_opt
+Z1 VkjKinThk@C;L?ZB?IR^Cg0
+Z2 04 16 4 work ALT_MULTADD_pipe fast 0
+Z3 =1--543c4a7f-aa2c6-6c27
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.5c;42
+T_opt1
+Z7 V9lVZTS=[z`6>S3fIPf8Ma0
+Z8 04 14 4 work ALT_MULTADD_tb fast 0
+Z9 =1--5441764b-179bf-59fd
+R4
+Z10 n@_opt1
+R6
+T_opt2
+Ve1O?XB>hQgAUEXcnB9icS2
+04 19 4 work ALT_MULTADD_pipe_tb fast 0
+Z11 =1--5441991c-aeceb-3407
+R4
+Z12 n@_opt2
+R6
+vALT_MULTADD
+Z13 I[@UK^c<^ZNh3>A<8@?WR]3
+Z14 VPJl[OAfMknoPXBiP>4MVz1
+Z15 w1413579254
+Z16 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+Z17 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+L0 1
+Z18 OL;L;6.5c;42
+r1
+31
+Z19 !s102 -nocovercells
+Z20 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z21 n@a@l@t_@m@u@l@t@a@d@d
+Z22 !s100 Rh`d8G55O0KOc9HOQRjYZ1
+!s85 0
+vALT_MULTADD_pipe
+Z23 Vk1n5GKZUCWYFIYGMXNXi12
+r1
+31
+Z24 I`[lcK8ifH1PW8AYa`g2^52
+Z25 w1413579751
+Z26 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+Z27 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+L0 1
+R18
+R19
+R20
+Z28 n@a@l@t_@m@u@l@t@a@d@d_pipe
+!s85 0
+Z29 !s100 J?k7Y;^kYEf:kbAZ3YI_o0
+vALT_MULTADD_pipe_tb
+Z30 Vb[fmzN?9JXa25JfaKCLH`2
+r1
+31
+Z31 ILeljzMgXI;Uz`0]WgV3H31
+Z32 w1413579627
+Z33 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe_tb.v
+Z34 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe_tb.v
+L0 2
+R18
+R19
+R20
+Z35 n@a@l@t_@m@u@l@t@a@d@d_pipe_tb
+!s85 0
+Z36 !s100 n7@g5AC=G_04L7SnA1[]?3
+vALT_MULTADD_tb
+Z37 Il?fn]Wh_T`LV6P5gI]k@^3
+Z38 VK==^Sk4DJ?mm9QEhQzh4?1
+Z39 w1413578014
+Z40 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+Z41 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+L0 2
+R18
+r1
+31
+R19
+R20
+Z42 n@a@l@t_@m@u@l@t@a@d@d_tb
+Z43 !s100 XE[=Bo33<0CIUF?4;@2l_1
+!s85 0
+vlab1
+Z44 I939^:J6;KdB8[D8EHD>0U3
+Z45 V>]a[^kaTE;3LJ]Tbkd@A^3
+Z46 w1411859443
+R16
+R17
+L0 1
+R18
+r1
+31
+R19
+R20
+Z47 !s100 o<nG]?m19FTX8zGU@b8QJ2
+!s85 0
+vlab1_tb
+Z48 I`=AZ2KS^>I6eg9^MzTPl=0
+Z49 VdO]ZRJZ:5FGg2UXEPToZj0
+Z50 w1413237282
+R40
+R41
+L0 2
+R18
+r1
+31
+R19
+R20
+Z51 !s100 15n3_JR14gWmaE8TE^HX;0
+!s85 0

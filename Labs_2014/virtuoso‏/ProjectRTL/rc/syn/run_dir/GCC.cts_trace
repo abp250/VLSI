@@ -1,0 +1,260 @@
+
+
+
+
+
+Tracing Clock CLK
+
+****** Clock Tree (CLK) Structure
+Nr. Subtrees                   : 8
+Nr. Sinks                      : 139
+Nr.          Rising  Sync Pins : 139
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFKCND1 (CP)                            2
+DFD4 (CP)                               35
+DFQD4 (CP)                              85
+DFQD1 (CP)                              8
+DFD1 (CP)                               8
+DFKCNQD1 (CP)                           1
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+CKLNQD1 (CP)                            7
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (CLK) Cell: (EMPTY) Net: (CLK) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 16
+          Nr. of     Rising  Sync Pins  : 16
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 7
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST0/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST0/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST1/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST1/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9846) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST2/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST2/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9850) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST3/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST3/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9854) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST4/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST4/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9858) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST5/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST5/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9862) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 20
+          Nr. of     Rising  Sync Pins  : 20
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+*DEPTH 1 Input_Pin: (RC_CG_HIER_INST6/RC_CGIC_INST/CP) Output_Pin: (RC_CG_HIER_INST6/RC_CGIC_INST/Q) Cell: (CKLNQD1) Net: (rc_gclk_9866) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 3
+          Nr. of     Rising  Sync Pins  : 3
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock CLK
+*DEPTH 0: CLK
+ (Sync)Xcc_reg[1]/CP
+ (Sync)Xcc_reg[2]/CP
+ (Sync)Xcc_reg[3]/CP
+ (Sync)Xcc_reg[4]/CP
+ (Sync)Xcc_reg[6]/CP
+ (Sync)Ycc_reg[2]/CP
+ (Sync)Ycc_reg[4]/CP
+ (Sync)Ycc_reg[7]/CP
+ (Sync)Xcc_reg[0]/CP
+ (Sync)Xcc_reg[7]/CP
+ (Sync)Ycc_reg[0]/CP
+ (Sync)Ycc_reg[1]/CP
+ (Sync)Ycc_reg[3]/CP
+ (Sync)Ycc_reg[6]/CP
+ (Sync)Xcc_reg[5]/CP
+ (Sync)Ycc_reg[5]/CP
+ *DEPTH 1: RC_CG_HIER_INST0/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[0][0]/CP
+  (Sync)w_reg[0][1]/CP
+  (Sync)w_reg[0][2]/CP
+  (Sync)w_reg[0][3]/CP
+  (Sync)x_reg[0][0]/CP
+  (Sync)x_reg[0][1]/CP
+  (Sync)x_reg[0][2]/CP
+  (Sync)x_reg[0][3]/CP
+  (Sync)x_reg[0][4]/CP
+  (Sync)x_reg[0][5]/CP
+  (Sync)x_reg[0][7]/CP
+  (Sync)y_reg[0][0]/CP
+  (Sync)y_reg[0][1]/CP
+  (Sync)y_reg[0][2]/CP
+  (Sync)y_reg[0][3]/CP
+  (Sync)y_reg[0][4]/CP
+  (Sync)y_reg[0][6]/CP
+  (Sync)y_reg[0][5]/CP
+  (Sync)y_reg[0][7]/CP
+  (Sync)x_reg[0][6]/CP
+ *DEPTH 1: RC_CG_HIER_INST1/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[1][0]/CP
+  (Sync)w_reg[1][1]/CP
+  (Sync)w_reg[1][2]/CP
+  (Sync)w_reg[1][3]/CP
+  (Sync)x_reg[1][3]/CP
+  (Sync)x_reg[1][4]/CP
+  (Sync)x_reg[1][6]/CP
+  (Sync)y_reg[1][0]/CP
+  (Sync)y_reg[1][1]/CP
+  (Sync)y_reg[1][3]/CP
+  (Sync)y_reg[1][5]/CP
+  (Sync)y_reg[1][6]/CP
+  (Sync)x_reg[1][2]/CP
+  (Sync)x_reg[1][5]/CP
+  (Sync)y_reg[1][2]/CP
+  (Sync)y_reg[1][4]/CP
+  (Sync)y_reg[1][7]/CP
+  (Sync)x_reg[1][0]/CP
+  (Sync)x_reg[1][7]/CP
+  (Sync)x_reg[1][1]/CP
+ *DEPTH 1: RC_CG_HIER_INST2/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[3][0]/CP
+  (Sync)w_reg[3][1]/CP
+  (Sync)w_reg[3][2]/CP
+  (Sync)w_reg[3][3]/CP
+  (Sync)x_reg[3][1]/CP
+  (Sync)x_reg[3][3]/CP
+  (Sync)x_reg[3][4]/CP
+  (Sync)y_reg[3][0]/CP
+  (Sync)y_reg[3][1]/CP
+  (Sync)y_reg[3][2]/CP
+  (Sync)y_reg[3][3]/CP
+  (Sync)y_reg[3][4]/CP
+  (Sync)y_reg[3][5]/CP
+  (Sync)y_reg[3][6]/CP
+  (Sync)x_reg[3][0]/CP
+  (Sync)x_reg[3][2]/CP
+  (Sync)x_reg[3][5]/CP
+  (Sync)x_reg[3][7]/CP
+  (Sync)x_reg[3][6]/CP
+  (Sync)y_reg[3][7]/CP
+ *DEPTH 1: RC_CG_HIER_INST3/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[4][0]/CP
+  (Sync)w_reg[4][1]/CP
+  (Sync)w_reg[4][2]/CP
+  (Sync)w_reg[4][3]/CP
+  (Sync)x_reg[4][1]/CP
+  (Sync)x_reg[4][2]/CP
+  (Sync)x_reg[4][4]/CP
+  (Sync)x_reg[4][5]/CP
+  (Sync)y_reg[4][0]/CP
+  (Sync)y_reg[4][1]/CP
+  (Sync)y_reg[4][2]/CP
+  (Sync)y_reg[4][3]/CP
+  (Sync)y_reg[4][4]/CP
+  (Sync)y_reg[4][6]/CP
+  (Sync)x_reg[4][0]/CP
+  (Sync)x_reg[4][3]/CP
+  (Sync)x_reg[4][7]/CP
+  (Sync)y_reg[4][5]/CP
+  (Sync)y_reg[4][7]/CP
+  (Sync)x_reg[4][6]/CP
+ *DEPTH 1: RC_CG_HIER_INST4/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[2][0]/CP
+  (Sync)w_reg[2][1]/CP
+  (Sync)w_reg[2][2]/CP
+  (Sync)w_reg[2][3]/CP
+  (Sync)x_reg[2][0]/CP
+  (Sync)x_reg[2][2]/CP
+  (Sync)x_reg[2][3]/CP
+  (Sync)x_reg[2][4]/CP
+  (Sync)x_reg[2][5]/CP
+  (Sync)x_reg[2][6]/CP
+  (Sync)x_reg[2][7]/CP
+  (Sync)y_reg[2][0]/CP
+  (Sync)y_reg[2][1]/CP
+  (Sync)y_reg[2][3]/CP
+  (Sync)y_reg[2][6]/CP
+  (Sync)x_reg[2][1]/CP
+  (Sync)y_reg[2][2]/CP
+  (Sync)y_reg[2][7]/CP
+  (Sync)y_reg[2][4]/CP
+  (Sync)y_reg[2][5]/CP
+ *DEPTH 1: RC_CG_HIER_INST5/RC_CGIC_INST(CP->Q)
+  (Sync)w_reg[5][0]/CP
+  (Sync)w_reg[5][1]/CP
+  (Sync)w_reg[5][2]/CP
+  (Sync)w_reg[5][3]/CP
+  (Sync)x_reg[5][0]/CP
+  (Sync)x_reg[5][1]/CP
+  (Sync)x_reg[5][3]/CP
+  (Sync)x_reg[5][4]/CP
+  (Sync)x_reg[5][5]/CP
+  (Sync)y_reg[5][0]/CP
+  (Sync)y_reg[5][3]/CP
+  (Sync)y_reg[5][4]/CP
+  (Sync)y_reg[5][6]/CP
+  (Sync)x_reg[5][6]/CP
+  (Sync)x_reg[5][7]/CP
+  (Sync)y_reg[5][1]/CP
+  (Sync)y_reg[5][5]/CP
+  (Sync)y_reg[5][7]/CP
+  (Sync)y_reg[5][2]/CP
+  (Sync)x_reg[5][2]/CP
+ *DEPTH 1: RC_CG_HIER_INST6/RC_CGIC_INST(CP->Q)
+  (Sync)i_reg[1]/CP
+  (Sync)i_reg[2]/CP
+  (Sync)i_reg[0]/CP

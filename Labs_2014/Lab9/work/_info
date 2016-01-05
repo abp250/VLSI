@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anhho7/Desktop/EE465/Lab9
+T_opt
+VTP5M@czJiW_?N>;YGTIcU0
+04 14 4 work ALT_MULTADD_tb fast 0
+=1--544ebd1a-4005f-1d0d
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;6.5c;42
+vALT_MULTADD
+VPJl[OAfMknoPXBiP>4MVz1
+r1
+!s85 0
+31
+IH^;D_`=XmeBGXD@:YD?o_1
+w1414793241
+8/home/anhho7/Desktop/EE465/Lab9/rc/rtl/ALT_MULTADD.v
+F/home/anhho7/Desktop/EE465/Lab9/rc/rtl/ALT_MULTADD.v
+L0 1
+Z1 OL;L;6.5c;42
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+n@a@l@t_@m@u@l@t@a@d@d
+!s100 gHMmznHi34[FD1bUkRCJ<2
+vALT_MULTADD_tb
+VK==^Sk4DJ?mm9QEhQzh4?1
+r1
+31
+IfRi5LNzVEFOdbVle[JXEE0
+w1415056744
+8/home/anhho7/Desktop/EE465/Lab9/ALT_MULTADD_tb.v
+F/home/anhho7/Desktop/EE465/Lab9/ALT_MULTADD_tb.v
+L0 2
+R1
+R2
+R3
+n@a@l@t_@m@u@l@t@a@d@d_tb
+!s85 0
+!s100 l5082:JdbzkzkU0BYn7lJ3

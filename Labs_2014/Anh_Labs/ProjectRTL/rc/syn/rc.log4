@@ -1,0 +1,167 @@
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anhho7/.cadence/rc.gui'.
+Finished loading tool scripts (7 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v12.10-s012_1 (64-bit), built Jan 26 2013
+
+
+Copyright notice: Copyright 1997-2012 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 688 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Notice: Upcoming end of support for Linux 32-bit.
+Support for Linux 32-bit will be discontinued starting with the RC 13.1 release.
+To ensure continued access to the forthcoming releases, RC 13.1 and up, you are
+advised to start the transitioning to Linux 64-bit.
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  dp_perform_rewriting_operations
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+            design  ovf_current_verification_directory
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  logic0_driven
+               net  logic1_driven
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_area_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  enable_parallel_iopt
+              root  exact_match_seqs_async_controls
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+GUI is already visible.
+rc:/> Sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl' (Mon Dec 15 19:17:56 -0600 2014)...
+  Setting attribute of root '/': 'lib_search_path' = ../libdir
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+
+  Message Summary for Library tcbn65gpluswc.lib:
+  **********************************************
+  An unsupported construct was detected in this library. [LBR-40]: 4
+  Found 'statetable' group in cell. [LBR-83]: 20
+  Created nominal operating condition. [LBR-412]: 1
+ 
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+        : The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Mon Dec 15 19:17:57 -0600 2014)...
+Info    : Found library cells that are unusable for mapping. [LBR-415]
+        : Library: 'tcbn65gpluswc.lib', Total cells: 811, Usable cells: 714, Cells unusable for mapping: 97.
+	List of unusable cells: 'ANTENNA BHD BUFFD20 BUFFD24 BUFTD20 BUFTD24 CKBD20 CKBD24 CKLHQD1 CKLHQD2 ... and others.'
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'GCC' from file '../rtl/GCC.v'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'j' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'i' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Input port is wider than connected signal. [CDFG-467]
+        : Signal width (1) does not match width of port 'sum' (15) of instance 'centerx' of module 'Center' in file '../rtl/GCC.v' on line 80.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Input port is wider than connected signal. [CDFG-467]
+        : Signal width (1) does not match width of port 'sumw' (7) of instance 'centerx' of module 'Center' in file '../rtl/GCC.v' on line 80.
+Warning : Connected signal is wider than output port. [CDFG-465]
+        : Signal width (15) does not match width of port 'C' (8) of instance 'centerx' of module 'Center' in file '../rtl/GCC.v' on line 80.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Error   : Too many arguments to instance. [CDFG-414] [elaborate]
+        : Instance 'Center' in module 'GCC' in file '../rtl/GCC.v' on line 80.
+        : Error during elaboration.
+Info    : Error in Elaborating Design. [ELAB-4]
+        : Module 'GCC' contains errors and cannot be elaborated.
+GUI is already visible.
+Error sourcing '/home/anhho7/Desktop/EE465/ProjectRTL/rc/syn/scripts/run_synth.tcl'.
+1
+Normal exit.

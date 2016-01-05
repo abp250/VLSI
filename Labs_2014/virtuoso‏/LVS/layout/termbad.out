@@ -1,0 +1,12 @@
+T /+5 G /SEL
+? Terminal "G" on device /+5 should be connected to /SELbar instead of /SEL
+? Terminal D's type in the layout: inputOutput, in the schematic: input
+T -1  GND /GND
+? Terminal GND in the layout is not present in the schematic.
+? Terminal Q's type in the layout: inputOutput, in the schematic: output
+T -1  SEL /SEL
+? Terminal SEL in the layout is not present in the schematic.
+T -1  SELbar /SELbar
+? Terminal SELbar in the layout is not present in the schematic.
+T -1  VDD /VDD
+? Terminal VDD in the layout is not present in the schematic.

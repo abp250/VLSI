@@ -1,0 +1,137 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anhho7/.cadence/rc.gui'.
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v10.10-s209_1 (64-bit), built Feb  3 2011
+
+
+Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+Patent notices: Protected by U.S. Patents: 5892687; 6470486; 6772398; 6772399; 
+6807651; 6832357; 7007247 
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  dp_perform_rewriting_operations
+       design  lp_optimize_dynamic_power_first
+       design  multipass_mux_optimization
+       design  name_mapping_record_name_changes
+       design  name_mapping_version
+       design  output_name_mapping_file
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  dp_area_mode
+         root  dp_perform_csa_operations
+         root  dp_perform_rewriting_operations
+         root  dp_perform_sharing_operations
+         root  dp_perform_speculation_operations
+         root  exact_match_seqs_async_controls
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  ple_parameter_source_priority
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_no_exit
+         root  wlec_old_lp_ec_flow
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_skip_iso_check_hier_compare
+         root  wlec_skip_lvl_check_hier_compare
+         root  wlec_verbose
+    subdesign  allow_csa_subdesign
+    subdesign  allow_sharing_subdesign
+    subdesign  allow_speculation_subdesign
+    subdesign  dp_perform_rewriting_operations
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/>   Setting attribute of root '/': 'lib_search_path' = ../libdir
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Fri Oct 17 17:19:58 -0500 2014)...
+	else if (iRST_N ==1)
+	                |
+Warning : Ignoring redundant edge check. [VLOGPT-417]
+        : Edge signal 'iRST_N' in file '../rtl/ALT_MULTADD.v' on line 24, column 18.
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+  Elaborating top-level block 'ALT_MULTADD' from file '../rtl/ALT_MULTADD.v'.
+  Done elaborating 'ALT_MULTADD'.
+Error   : A required argument was not specified. [TUI-202] [set_attribute]
+        : An argument of type '<string>' was not specified.
+        : Rerun the command specifying all required arguments.
+  set_attribute: sets an attribute value on objects 
+
+Usage: set_attribute  [-quiet] [-lock] <string> <string> [<object>+]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-lock]:
+        attribute becomes read only once locked 
+    <string>:
+        attribute name 
+    <string>:
+        new value. A compound string (containing spaces) should be represented 
+        as a list (using double-quotes or braces). 
+    [<object>+]:
+        object(s) of interest 
+Error sourcing '/home/anhho7/Desktop/EE465/Lab7/rc/syn/scripts/run_synth.tcl'.
+1

@@ -1,0 +1,87 @@
+t 15 D inputOutput
+t 12 GND inputOutput
+t 14 Q inputOutput
+t 13 SEL inputOutput
+t 11 SELbar inputOutput
+t 16 VDD inputOutput
+
+n 0 /17
+n 1 /16
+n 2 /15
+n 3 /14
+n 4 /13
+n 5 /12
+n 6 /11
+n 7 /10
+n 8 /9
+n 9 /8
+n 10 /7
+n 11 /SELbar
+n 12 /GND
+n 13 /SEL
+n 14 /Q
+n 15 /D
+n 16 /VDD
+
+; pmos4 Instance /+19 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 14 5 16 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+16 = auLvs device Q1
+i 1 pmos 5 6 16 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+15 = auLvs device Q2
+i 2 pmos 6 1 9 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+14 = auLvs device Q3
+i 3 pmos 9 7 16 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+13 = auLvs device Q4
+i 4 pmos 10 11 7 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+10 = auLvs device Q5
+i 5 pmos 10 15 16 16 " m 1 l 600e-9 w 3e-6 "
+
+; nmos4 Instance /+9 = auLvs device Q6
+d nmos D G S B (p D S)
+i 6 nmos 7 11 4 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+8 = auLvs device Q7
+i 7 nmos 4 9 12 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+2 = auLvs device Q8
+i 8 nmos 8 0 9 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+1 = auLvs device Q9
+i 9 nmos 12 5 8 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+7 = auLvs device Q10
+i 10 nmos 14 5 12 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+6 = auLvs device Q11
+i 11 nmos 5 6 12 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+5 = auLvs device Q12
+i 12 nmos 6 13 9 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+4 = auLvs device Q13
+i 13 nmos 9 7 12 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+3 = auLvs device Q14
+i 14 nmos 10 13 7 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos4 Instance /+0 = auLvs device Q15
+i 15 nmos 10 15 12 12 " m 1 l 600e-9 w 1.5e-6 "
+
+; pmos4 Instance /+18 = auLvs device Q16
+i 16 pmos 7 13 2 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+17 = auLvs device Q17
+i 17 pmos 2 9 16 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+12 = auLvs device Q18
+i 18 pmos 3 11 9 16 " m 1 l 600e-9 w 3e-6 "
+
+; pmos4 Instance /+11 = auLvs device Q19
+i 19 pmos 16 5 3 16 " m 1 l 600e-9 w 3e-6 "
+

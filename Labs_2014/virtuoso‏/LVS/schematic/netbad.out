@@ -1,0 +1,12 @@
+N /gnd!
+? Net does not cross-match. It has 14 connections.
+N /vdd!
+? Net does not cross-match. It has 14 connections.
+N /net9
+? Net does not cross-match. It has 6 connections.
+N /CLKbar
+? Net does not cross-match. It has 4 connections.
+N /I13/net19
+? Net does not cross-match. It has 2 connections.
+N /I13/net18
+? Net does not cross-match. It has 2 connections.

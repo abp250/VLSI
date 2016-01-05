@@ -1,0 +1,42 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/Lab10/Elevator
+# Loading project Elevator
+# after#196
+# Compile of Elevator_tb.v was successful.
+# 1 compiles, 1 failed with no errors. 
+# Compile of Elevator.v was successful.
+# Compile of Elevator_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -novopt work.Elevator_tb
+# vsim -novopt work.Elevator_tb 
+# Refreshing /home/anhho7/Desktop/EE465/Lab10/work.Elevator_tb
+# Loading work.Elevator_tb
+# Refreshing /home/anhho7/Desktop/EE465/Lab10/work.Elevator
+# Loading work.Elevator
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Elevator' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /Elevator_tb/test
+add wave -r /*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

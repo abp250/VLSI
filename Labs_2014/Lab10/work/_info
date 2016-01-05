@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anhho7/Desktop/EE465/Lab10
+vElevator
+IEhAQ?Ul2lg7IRT:`jJbZY2
+Vg_8Cc>EBfC:MWQ575O_0O3
+w1415663667
+8/home/anhho7/Desktop/EE465/Lab10/Elevator.v
+F/home/anhho7/Desktop/EE465/Lab10/Elevator.v
+L0 1
+Z1 OL;L;6.5c;42
+r1
+31
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+n@elevator
+!s100 gV0=jDf1lT`;olZBZDQIg3
+!s85 0
+vElevator_tb
+!s100 lUT@5;iY:506leGXKmQQR2
+I:j8Pn3cJn>[752KzzkKhY0
+VQmOHQX;TAaG<enDS@UGYJ2
+w1415661578
+8/home/anhho7/Desktop/EE465/Lab10/Elevator_tb.v
+F/home/anhho7/Desktop/EE465/Lab10/Elevator_tb.v
+L0 2
+R1
+r1
+!s85 0
+31
+R2
+R3
+n@elevator_tb

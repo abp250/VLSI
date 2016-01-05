@@ -1,0 +1,191 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-504.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+project open /home/anhho7/Desktop/EE465/Project/Project
+# Loading project Project
+# after#367
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -novopt work.TestFixture
+# vsim -novopt work.TestFixture 
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: anhho7  Hostname: co2046-02.ece.iastate.edu  ProcessID: 6939
+#           Attempting to use alternate WLF file "./wlftWi7OTF".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftWi7OTF
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -r /*
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of TestFixture.v was successful.
+# Compile of Center.v was successful.
+# Compile of Comparator.v was successful.
+# Compile of MM.v was successful.
+# Compile of GCC.v was successful.
+# Compile of Distance.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.TestFixture
+# Loading work.TestFixture
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.GCC
+# Loading work.GCC
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Distance
+# Loading work.Distance
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Comparator
+# Loading work.Comparator
+# Refreshing /home/anhho7/Desktop/EE465/Project/work.Center
+# Loading work.Center
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

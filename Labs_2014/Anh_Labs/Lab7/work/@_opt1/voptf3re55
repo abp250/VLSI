@@ -1,0 +1,92 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anhho7/Desktop/EE465/Lab7
+T_opt
+Z1 VkjKinThk@C;L?ZB?IR^Cg0
+Z2 04 16 4 work ALT_MULTADD_pipe fast 0
+Z3 =1--543c4a7f-aa2c6-6c27
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.5c;42
+T_opt1
+Z7 V9lVZTS=[z`6>S3fIPf8Ma0
+Z8 04 14 4 work ALT_MULTADD_tb fast 0
+Z9 =1--5441764b-179bf-59fd
+R4
+Z10 n@_opt1
+R6
+vALT_MULTADD
+Z11 VPJl[OAfMknoPXBiP>4MVz1
+r1
+31
+Z12 I4L[ojb_Vn=IMFLj>86MhN0
+Z13 w1413242845
+Z14 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+Z15 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD.v
+L0 1
+Z16 OL;L;6.5c;42
+Z17 !s102 -nocovercells
+Z18 o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+Z19 n@a@l@t_@m@u@l@t@a@d@d
+!s85 0
+Z20 !s100 AFA8O_af4=6jdH4QL515a2
+vALT_MULTADD_pipe
+Z21 IaknIczHMCKShMQWmejW>`2
+Z22 VF5=NKbcdhj65Sz3O8U4YG0
+Z23 w1413235904
+Z24 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+Z25 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_pipe.v
+L0 2
+R16
+r1
+31
+R17
+R18
+Z26 n@a@l@t_@m@u@l@t@a@d@d_pipe
+Z27 !s100 @]LJO;U8?EoKin]C7Z^_V3
+!s85 0
+vALT_MULTADD_tb
+Z28 VK==^Sk4DJ?mm9QEhQzh4?1
+r1
+31
+Z29 I<Q<W@_OJaOL6N_dPYhLnB2
+Z30 w1413243779
+Z31 8/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+Z32 F/home/anhho7/Desktop/EE465/Lab7/ALT_MULTADD_tb.v
+L0 2
+R16
+R17
+R18
+Z33 n@a@l@t_@m@u@l@t@a@d@d_tb
+!s85 0
+Z34 !s100 <dcYcogY@mBSiN0X<jL7o0
+vlab1
+Z35 I939^:J6;KdB8[D8EHD>0U3
+Z36 V>]a[^kaTE;3LJ]Tbkd@A^3
+Z37 w1411859443
+R14
+R15
+L0 1
+R16
+r1
+31
+R17
+R18
+Z38 !s100 o<nG]?m19FTX8zGU@b8QJ2
+!s85 0
+vlab1_tb
+Z39 I`=AZ2KS^>I6eg9^MzTPl=0
+Z40 VdO]ZRJZ:5FGg2UXEPToZj0
+Z41 w1413237282
+R31
+R32
+L0 2
+R16
+r1
+31
+R17
+R18
+Z42 !s100 15n3_JR14gWmaE8TE^HX;0
+!s85 0

@@ -1,0 +1,30 @@
+#Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+
+ovf_setup -ungroup_separator { _ }
+
+ovf_transform \
+-module { ALT_MULTADD } \
+-type { share } \
+-internal_type { 213 } \
+-internal_index { 5 } \
+-input { 17 add_55_31.A } \
+-input { 17 add_55_31.B } \
+-input { 17 add_55_19.A } \
+-input { 17 add_55_19.B } \
+-output { 17 O1 } \
+-output { 17 O2 } \
+-switch { s1 add_55_31 } \
+-switch { s2 add_55_19 } \
+-from { \
+   { 17 add_55_31 : UADD { { add_55_31.A } { add_55_31.B } } } \
+   { 17 add_55_19 : UADD { { add_55_19.A } { add_55_19.B } } } \
+   { O1 = { add_55_31.1 } } \
+   { O2 = { add_55_19.1 } } } \
+-to { \
+   { 17 MUX_0 : SELECT { { s1 } { s2 } { add_55_31.B } { add_55_19.B } } } \
+   { 17 MUX_1 : SELECT { { s1 } { s2 } { add_55_31.A } { add_55_19.A } } } \
+   { 17 add_55_31_Y_add_55_19 : UADD { { MUX_0.1 } { MUX_1.1 } } } \
+   { O1 = { add_55_31_Y_add_55_19.1 } } \
+   { O2 = { add_55_31_Y_add_55_19.1 } } }
+

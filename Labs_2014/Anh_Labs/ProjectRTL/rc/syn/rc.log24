@@ -1,0 +1,306 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+Reading GUI preferences file '/home/anhho7/.cadence/rc.gui'.
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v10.10-s209_1 (32-bit), built Feb  3 2011
+
+
+Copyright notice: Copyright 1997-2010 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+Patent notices: Protected by U.S. Patents: 5892687; 6470486; 6772398; 6772399; 
+6807651; 6832357; 7007247 
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  dp_perform_rewriting_operations
+       design  lp_optimize_dynamic_power_first
+       design  multipass_mux_optimization
+       design  name_mapping_record_name_changes
+       design  name_mapping_version
+       design  output_name_mapping_file
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  dp_area_mode
+         root  dp_perform_csa_operations
+         root  dp_perform_rewriting_operations
+         root  dp_perform_sharing_operations
+         root  dp_perform_speculation_operations
+         root  exact_match_seqs_async_controls
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  ple_parameter_source_priority
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_no_exit
+         root  wlec_old_lp_ec_flow
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_skip_iso_check_hier_compare
+         root  wlec_skip_lvl_check_hier_compare
+         root  wlec_verbose
+    subdesign  allow_csa_subdesign
+    subdesign  allow_sharing_subdesign
+    subdesign  allow_speculation_subdesign
+    subdesign  dp_perform_rewriting_operations
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/>   Setting attribute of root '/': 'lib_search_path' = ../libdir
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'.
+        : To use the cell in clock gating, Set cell attribute 'dont_use' false in the library.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'.
+Warning : Unusable clock gating integrated cell. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc.lib
+Sourcing './scripts/read_rtl.tcl' (Wed Dec 17 20:47:30 -0600 2014)...
+  Library has 432 usable logic and 280 usable sequential lib-cells.
+  Elaborating top-level block 'GCC' from file '../rtl/GCC.v'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'j' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'i' in module 'Comparator' in file '../rtl/Comparator.v' on line 14.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'READY' in module 'GCC' in file '../rtl/GCC.v' on line 9, column 13.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+  Done elaborating 'GCC'.
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+Statistics for commands executed by read_sdc:
+ "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"               - successful      4 , failed      0 (runtime  0.00)
+ "set_input_delay"         - successful      3 , failed      0 (runtime  0.00)
+Total runtime 0
+  Library has 428 usable logic and 280 usable sequential lib-cells.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 19 hierarchical instances.
+        : Optimizations like for example constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+*User Hierarchy Ungrouped* - The instance 'distance5' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'distance4' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'distance3' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'distance2' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'distance1' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'distance0' of module 'Distance' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'centery' of module 'Center' will be ungrouped.
+*User Hierarchy Ungrouped* - The instance 'centerx' of module 'Center' will be ungrouped.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_212'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_212'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_210'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_210'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_214'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_214'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_213'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_213'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_211'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'GCC_csa_cluster_211'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_211'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'GCC_csa_cluster_211'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_215'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_215'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_215'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_215'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_216'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_216'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_216'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_216'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_217'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_217'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_217'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_217'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_218'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_218'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_218'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_218'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_219'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_219'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_219'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_219'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_220'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_220'... Accepted.
+        Trying carrysave optimization (configuration 1 of 1) on module 'GCC_csa_cluster_220'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There is 1 CSA group in module 'GCC_csa_cluster_220'... Accepted.
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'lt_44_15' and 'gt_40_15' in subdesign 'Comparator'.
+	: RTL resource sharing move has been accepted
+Info    : Performing RTL resource sharing. [RTLOPT-30]
+        : Merging instances 'inc_centery_add_16_27_7' and 'inc_centerx_add_16_27_6' in design 'GCC'.
+	: RTL resource sharing move has been accepted
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_16_10' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_32_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'gt_24_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_20_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_36_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'lt_28_15' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance5_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance4_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance3_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance2_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance1_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_13_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'distance0_gt_12_18' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP972' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP982' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP977' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP992' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP987' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1002' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP997' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1012' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1007' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1022' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'SUB_UNS_OP1017' to slow architecture.
+Info    : Performing pre-map downsize. [RTLOPT-16]
+        : Downsize instance 'inc_centery_add_16_27_7_Y_inc_centerx_add_16_27_6' to slow architecture.
+Mapping GCC to gates.
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        123		 88%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             16		 12%
+  Excluded from clock-gating            0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        139		100%
+Total CG Modules                        7
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare23/max_reg[1]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare23/max_reg[2]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare45/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 1. [GLO-15]
+        : The instance is 'Compare45/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[1]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'compare01/max_reg[2]'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'Compare0123/max_reg[2]'.
+ 
+Global mapping target info
+==========================
+Cost Group 'CLK' target slack: -1984 ps
+Target path end-point (Pin: Ycc_reg[0]/d)
+
+Cost Group 'cg_enable_group_CLK' target slack:    34 ps
+Target path end-point (Pin: RC_CG_HIER_INST0/RC_CGIC_INST/E (CKLNQD1/E))
+
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'tmd_adder_pnode_level', value: '18' (default: '40')
+        : Some Tcl variables are used internally to enable features that are not officially supported.

@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\iastate.edu\cyfiles\anhho7\Desktop\EE465\Project
+vCenter
+Z1 !s100 5fCJlg[kEdHin8O?mJ?5J1
+Z2 I1UJJbfi8>8Jl1mJ>@aQaE0
+Z3 V<mX7Jlj`gCAn6IHb^YRUB1
+Z4 d\\iastate.edu\cyfiles\anhho7\Desktop\Classes\EE\EE 465\Lab\Lab 6
+Z5 w1418010763
+Z6 8//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Center.v
+Z7 F//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Center.v
+L0 1
+Z8 OV;L;10.1b;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Center.v|
+Z10 o-work work -O0
+Z11 n@center
+Z12 !s108 1418165270.947000
+Z13 !s107 //iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Center.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCompare
+Z14 !s100 kFj1AQc21]jY@Ic`?YmRn2
+Z15 I?SdiF2jg=jOd863JhDzMO1
+Z16 V5hMf`dQ@kdb`i^2CB7<fI2
+R4
+Z17 w1418085849
+Z18 8//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Order.v
+Z19 F//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Order.v
+L0 1
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Order.v|
+R10
+Z21 n@compare
+Z22 !s108 1418165273.302000
+Z23 !s107 //iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Order.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDistance
+!i10b 1
+Z24 !s100 SMz6Ej?^6?E9A@HMAVUYn1
+Z25 I3N5CF<QQ3geozGC9?T>TL0
+Z26 V7PNEM_LYBJ?0a56nUM07Z1
+R4
+Z27 w1418088967
+Z28 8//iastate.edu/cyfiles/anhho7/Desktop/Classes/EE/EE 465/Lab/Lab 6/Distance.v
+Z29 F//iastate.edu/cyfiles/anhho7/Desktop/Classes/EE/EE 465/Lab/Lab 6/Distance.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1418165276.756000
+!s107 //iastate.edu/cyfiles/anhho7/Desktop/Classes/EE/EE 465/Lab/Lab 6/Distance.v|
+Z30 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/Classes/EE/EE 465/Lab/Lab 6/Distance.v|
+!s101 -O0
+R10
+Z31 n@distance
+vGCC
+Z32 !s100 LL@9BL79ZP_W;L>`^>ZQ12
+Z33 I9l`?PHToooSS3lXO`3_Xi3
+Z34 VQIDdni^GGd^:H`ko`6DYC1
+R4
+Z35 w1418089959
+Z36 8//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/GCC.v
+Z37 F//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/GCC.v
+L0 1
+R8
+r1
+31
+Z38 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/GCC.v|
+R10
+Z39 n@g@c@c
+Z40 !s108 1418165272.879000
+Z41 !s107 //iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/GCC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMax
+Z42 !s100 JGdDoIbREi`Y`;<n1BjcE2
+Z43 IbAE0eS<2^md4MQ4X;6e[K3
+Z44 VEeW<lR6:aAEcBSeZ?dCSZ1
+R4
+Z45 w1418011868
+Z46 8//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Comparing.v
+Z47 F//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Comparing.v
+L0 1
+R8
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Comparing.v|
+R10
+n@max
+Z49 !s108 1418165272.318000
+Z50 !s107 //iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/Comparing.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestFixture
+Z51 !s100 BZCej_CO]N[m;D3h?X]YV2
+Z52 IPA`05][L54_eAih7?EYYJ0
+Z53 VlY0Wn0z5cQUOT<31fK3Tk3
+R4
+Z54 w1418089434
+Z55 8//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/TestFixture~1.v
+Z56 F//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/TestFixture~1.v
+L0 2
+R8
+r1
+31
+Z57 !s90 -reportprogress|300|-work|work|//iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/TestFixture~1.v|
+R10
+Z58 n@test@fixture
+!i10b 1
+!s85 0
+Z59 !s108 1418165274.267000
+Z60 !s107 //iastate.edu/cyfiles/anhho7/Desktop/EE465/Project/TestFixture~1.v|
+!s101 -O0
